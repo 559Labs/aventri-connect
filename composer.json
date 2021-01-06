@@ -1,22 +1,23 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "ffnlabs/aventri-connect",
+    "description": "A wrapper for the Aventri event management API",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "FFNLabs",
+        "aventri-connect"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/559labs/aventri-connect",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_homepage",
+            "name": "Andrew Marconi",
+            "email": "hello@559labs.com",
+            "homepage": "https://559labs.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0"
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.17",
@@ -25,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "FFNLabs\\AventriConnect\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "FFNLabs\\AventriConnect\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,11 +48,11 @@
     "funding": [
         {
             "type": "github",
-            "url": "https://github.com/sponsors/:vendor_name"
+            "url": "https://github.com/sponsors/FFNLabs"
         },
         {
             "type": "other",
-            "url": ":author_homepage"
+            "url": "https://559labs.com"
         }
     ]
 }
