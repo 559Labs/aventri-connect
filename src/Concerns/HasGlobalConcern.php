@@ -24,7 +24,14 @@ trait HasGlobalConcern
 
     // Speakers
     public function listSpeakers($params=[]) {}
-    public function getSpeaker($params=[]) {}
+
+    /**
+     * This function will return detailed information for a given account level speaker.
+     */
+    public function getSpeaker($params=[]) {
+        $path = "global/getSpeaker.json";
+    }
+
     public function createSpeaker($params=[]) {}
     public function updateSpeaker($params=[]) {}
 
