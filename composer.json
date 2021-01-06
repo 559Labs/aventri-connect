@@ -39,7 +39,7 @@
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
-        "docs": "php /usr/local/bin/doctum.phar update doctum.config.php"
+        "docs:buildall": "php /usr/local/bin/doctum.phar update doctum.config.php && git checkout develop"
     },
     "config": {
         "sort-packages": true
@@ -49,7 +49,7 @@
     "funding": [
         {
             "type": "github",
-            "url": "https://github.com/sponsors/559labs"
+            "url": "https://github.com/sponsors/FFNLabs"
         },
         {
             "type": "other",
