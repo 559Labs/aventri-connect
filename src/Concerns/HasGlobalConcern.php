@@ -4,6 +4,9 @@ namespace FFNLabs\AventriConnect\Concerns;
 
 trait HasGlobalConcern
 {
+    /**
+     * Use the authorize function to authorize your API session. Authorization is required to make any other API calls.
+     */
     public function authorize($params = [])
     {
     }
@@ -12,6 +15,10 @@ trait HasGlobalConcern
     {
     }
 
+    /**
+     * Returns a list of available functions within the Aventri API. Details include which module
+     * the function belongs to and what HTTP method is required to call it.
+     */
     public function listAvailableFunctions($params = [])
     {
     }
@@ -21,6 +28,9 @@ trait HasGlobalConcern
     {
     }
 
+    /**
+     * Use this function to get detailed set of information of any contact you currently have in your account.
+     */
     public function getContact($params = [])
     {
     }
@@ -29,6 +39,9 @@ trait HasGlobalConcern
     {
     }
 
+    /**
+     * Use this function to delete a contact in your account.
+     */
     public function deleteContact($params = [])
     {
     }
@@ -37,7 +50,9 @@ trait HasGlobalConcern
     {
     }
 
-    // Contact Questions
+    /**
+     * This function will return detailed information for a given contact question.
+     */
     public function getContactQuestion($params = [])
     {
     }
@@ -59,6 +74,9 @@ trait HasGlobalConcern
         $path = "global/getSpeaker.json";
     }
 
+    /**
+     * Use this function to create an account level speaker.
+     */
     public function createSpeaker($params = [])
     {
     }
@@ -76,6 +94,9 @@ trait HasGlobalConcern
     {
     }
 
+    /**
+     * The clone event function allows you to take an existing event within the Aventri system and create a copy of it.
+     */
     public function cloneEvent($params = [])
     {
     }
