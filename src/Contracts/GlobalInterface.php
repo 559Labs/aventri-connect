@@ -4,29 +4,51 @@ namespace FFNLabs\AventriConnect\Contracts;
 
 interface GlobalInterface
 {
-    function AddContact();
-    function authorize();
-    function cloneEvent();
-    function createSpeaker();
-    function deleteContact();
-    function getContact();
-    function getContactQuestion();
-    function getSpeaker();
-    function listAvailableFunctions();
-    function listContactQuestions();
-    function listContacts();
-    function listEvents();
-    function listFolders();
-    function listLanguages();
-    function listSessions();
-    function listTaxRegimes();
-    function listTracks();
-    function listTransactionTypes();
-    function resetSession();
-    function searchEvents();
-    function listCurrencies();
-    function updateContact();
-    function updateSpeaker();
-    function listSpeakers();
-}
+    public function AddContact();
 
+    public function authorize();
+
+    public function cloneEvent();
+
+    public function createSpeaker();
+
+    public function deleteContact();
+
+    public function getContact();
+
+    public function getContactQuestion();
+
+    public function getSpeaker();
+
+    public function listAvailableFunctions();
+
+    public function listContactQuestions();
+
+    public function listContacts();
+
+    public function listEvents();
+
+    public function listFolders();
+
+    public function listLanguages();
+
+    public function listSessions();
+
+    public function listTaxRegimes();
+
+    public function listTracks();
+
+    public function listTransactionTypes();
+
+    public function resetSession();
+
+    public function searchEvents();
+
+    public function listCurrencies();
+
+    public function updateContact();
+
+    public function updateSpeaker();
+
+    public function listSpeakers();
+}
