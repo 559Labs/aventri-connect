@@ -6,7 +6,6 @@ use FFNLabs\AventriConnect\Concerns\HasGlobalConcern;
 
 class AventriConnect
 {
-
     use HasGlobalConcern;
 
     // Data Container
