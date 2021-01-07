@@ -12,7 +12,7 @@ print("--> " . $dir);
 $iterator = Finder::create()
     ->files()
     ->name("*.php")
-    // ->exclude("vendor")
+    ->exclude("vendor")
     ->exclude("docs")
     ->exclude("_parked")
     ->in($dir);
