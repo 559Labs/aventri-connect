@@ -18,8 +18,7 @@ composer require FFNLabs/aventri-connect
 ## Usage
 
 ```php
-$skeleton = new FFNLabs\AventriConnect();
-echo $skeleton->echoPhrase('Hello, FFNLabs!');
+$client = new FFNLabs\AventriConnect\AventriClient(["access_key"=>"", "account_key"=>""]);
 ```
 
 ## Testing
