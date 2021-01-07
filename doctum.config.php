@@ -12,8 +12,9 @@ print("--> " . $dir);
 $iterator = Finder::create()
     ->files()
     ->name("*.php")
-    // ->exclude("vendor")
+    ->exclude("vendor")
     ->exclude("docs")
+    ->exclude("dist")
     ->exclude("_parked")
     ->in($dir);
 
@@ -28,8 +29,8 @@ return new Doctum (
     [
         "theme"                => "default",
         "title"                => "Aventri Connect API",
-        "build_dir"            => $dir . "/docs/build/%version%",
-        "cache_dir"            => $dir . "/docs/cache/%version%",
+        "build_dir"            => $dir . "/docs/%version%",
+        "cache_dir"            => $dir . "/dist/cache/%version%",
         "default_opened_level" => 1,
         // "versions" => $versions,
     ]

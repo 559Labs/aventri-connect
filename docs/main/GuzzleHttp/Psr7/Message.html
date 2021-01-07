@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\Message | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_Message" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>Message</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Message
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Message</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message)
+        
+                                            <p>Returns the string representation of an HTTP message.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bodySummary">bodySummary</a>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message, int $truncateAt = 120)
+        
+                                            <p>Get a short summary of the message body.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewindBody">rewindBody</a>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message)
+        
+                                            <p>Attempts to rewind a message body and throws an exception on failure.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseMessage">parseMessage</a>(string $message)
+        
+                                            <p>Parses an HTTP message into an associative array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseRequestUri">parseRequestUri</a>(string $path, array $headers)
+        
+                                            <p>Constructs a URI for an HTTP request message.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Request
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseRequest">parseRequest</a>(string $message)
+        
+                                            <p>Parses a request message string into a request object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Response
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseResponse">parseResponse</a>(string $message)
+        
+                                            <p>Parses a response message string into a response object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">at line 18</div>
+        <code>        static            string
+    <strong>toString</strong>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the string representation of an HTTP message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a></td>
+                <td>$message</td>
+                <td>Message to convert to a string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bodySummary">
+        <div class="location">at line 58</div>
+        <code>        static            string|null
+    <strong>bodySummary</strong>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message, int $truncateAt = 120)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a short summary of the message body.</p>                    <p>Will return <code>null</code> if the response is not printable.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a></td>
+                <td>$message</td>
+                <td>The message to get the body summary</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$truncateAt</td>
+                <td>The maximum allowed size of the summary</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewindBody">
+        <div class="location">at line 98</div>
+        <code>        static            
+    <strong>rewindBody</strong>(<a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a> $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attempts to rewind a message body and throws an exception on failure.</p>                    <p>The body of the message will only be rewound if a call to <code>tell()</code>
+returns a value other than <code>0</code>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/MessageInterface.html"><abbr title="Psr\Http\Message\MessageInterface">MessageInterface</abbr></a></td>
+                <td>$message</td>
+                <td>Message to rewind</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseMessage">
+        <div class="location">at line 118</div>
+        <code>        static            array
+    <strong>parseMessage</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses an HTTP message into an associative array.</p>                    <p>The array contains the "start-line" key containing the start line of
+the message, "headers" key containing an associative array of header
+array values, and a "body" key containing the body of the message.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>HTTP request or response to parse.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseRequestUri">
+        <div class="location">at line 181</div>
+        <code>        static            string
+    <strong>parseRequestUri</strong>(string $path, array $headers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructs a URI for an HTTP request message.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Path from the start-line</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>Array of headers (each value an array).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseRequest">
+        <div class="location">at line 205</div>
+        <code>        static            Request
+    <strong>parseRequest</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a request message string into a request object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>Request message string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Request</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseResponse">
+        <div class="location">at line 233</div>
+        <code>        static            Response
+    <strong>parseResponse</strong>(string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses a response message string into a response object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>Response message string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Response</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

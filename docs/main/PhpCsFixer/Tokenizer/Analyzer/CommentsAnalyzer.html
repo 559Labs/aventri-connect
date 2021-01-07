@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpCsFixer\Tokenizer\Analyzer\CommentsAnalyzer | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:PhpCsFixer_Tokenizer_Analyzer_CommentsAnalyzer" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpCsFixer.html">PhpCsFixer</a></li><li class="backslash">\</li><li><a href="../../../PhpCsFixer/Tokenizer.html">Tokenizer</a></li><li class="backslash">\</li><li><a href="../../../PhpCsFixer/Tokenizer/Analyzer.html">Analyzer</a></li><li class="backslash">\</li><li>CommentsAnalyzer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CommentsAnalyzer
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>CommentsAnalyzer</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TYPE_HASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_DOUBLE_SLASH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TYPE_SLASH_ASTERISK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isHeaderComment">isHeaderComment</a>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBeforeStructuralElement">isBeforeStructuralElement</a>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        
+                                            <p>Check if comment at given index precedes structural element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommentBlockIndices">getCommentBlockIndices</a>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        
+                                            <p>Return array of indices that are part of a comment started at given index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_isHeaderComment">
+        <div class="location">at line 37</div>
+        <code>                    bool
+    <strong>isHeaderComment</strong>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a></td>
+                <td>$tokens</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBeforeStructuralElement">
+        <div class="location">at line 76</div>
+        <code>                    bool
+    <strong>isBeforeStructuralElement</strong>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if comment at given index precedes structural element.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a></td>
+                <td>$tokens</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md#3-definitions">https://github.com/php-fig/fig-standards/blob/master/proposed/phpdoc.md#3-definitions</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommentBlockIndices">
+        <div class="location">at line 121</div>
+        <code>                    null|array
+    <strong>getCommentBlockIndices</strong>(<a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a> $tokens, int $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return array of indices that are part of a comment started at given index.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tokenizer/Tokens.html"><abbr title="PhpCsFixer\Tokenizer\Tokens">Tokens</abbr></a></td>
+                <td>$tokens</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$index</td>
+                <td>T_COMMENT index</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

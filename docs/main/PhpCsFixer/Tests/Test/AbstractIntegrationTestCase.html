@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpCsFixer\Tests\Test\AbstractIntegrationTestCase | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:PhpCsFixer_Tests_Test_AbstractIntegrationTestCase" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../PhpCsFixer.html">PhpCsFixer</a></li><li class="backslash">\</li><li><a href="../../../PhpCsFixer/Tests.html">Tests</a></li><li class="backslash">\</li><li><a href="../../../PhpCsFixer/Tests/Test.html">Test</a></li><li class="backslash">\</li><li>AbstractIntegrationTestCase</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractIntegrationTestCase
+                
+        </h1>
+    </div>
+
+    <p>    abstract     class
+    <strong>AbstractIntegrationTestCase</strong>        extends <a href="../../../PhpCsFixer/Tests/TestCase.html"><abbr title="PhpCsFixer\Tests\TestCase">TestCase</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Integration test base class.</p>            <p>This test searches for '.test' fixture files in the given directory.
+Each fixture file will be parsed and tested against the expected result.</p>
+
+<p>Fixture files have the following format:</p>
+
+<p>--TEST--
+Example test description.
+--RULESET--
+{"@PSR2": true, "strict": true}
+--CONFIG--*
+{"indent": "    ", "lineEnding": "\n"}
+--SETTINGS--*
+{"key": "value"} # optional extension point for custom IntegrationTestCase class
+--EXPECT--
+Expected code after fixing
+--INPUT--*
+Code to fix</p>
+
+<ul>
+<li>Section or any line in it may be omitted.
+** PHP minimum version. Default to current running php version (no effect).</li>
+</ul>
+</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../PhpCsFixer/Tests/Test/IsIdenticalConstraint.html"><abbr title="PhpCsFixer\Tests\Test\IsIdenticalConstraint">IsIdenticalConstraint</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_linter">
+                                        protected                                        null|LinterInterface
+                </td>
+                <td>$linter</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doSetUpBeforeClass">doSetUpBeforeClass</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doTearDownAfterClass">doTearDownAfterClass</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doSetUp">doSetUp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doTearDown">doTearDown</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testIntegration">testIntegration</a>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    IntegrationCase[][]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_provideIntegrationCases">provideIntegrationCases</a>()
+        
+                                            <p>Creates test data by parsing '.test' files.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;IntegrationCaseFactoryInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createIntegrationCaseFactory">createIntegrationCaseFactory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFixturesDir">getFixturesDir</a>()
+        
+                                            <p>Returns the full path to directory which contains the tests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTempFile">getTempFile</a>()
+        
+                                            <p>Returns the full path to the temporary file where the test will write to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doTest">doTest</a>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case)
+        
+                                            <p>Applies the given fixers on the input and checks the result.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_assertRevertedOrderFixing">assertRevertedOrderFixing</a>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case, string $fixedInputCode, string $fixedInputCodeWithReversedFixers)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_doSetUpBeforeClass">
+        <div class="location">at line 78</div>
+        <code>        static            
+    <strong>doSetUpBeforeClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doTearDownAfterClass">
+        <div class="location">at line 96</div>
+        <code>        static            
+    <strong>doTearDownAfterClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doSetUp">
+        <div class="location">at line 106</div>
+        <code>            protected        
+    <strong>doSetUp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doTearDown">
+        <div class="location">at line 118</div>
+        <code>            protected        
+    <strong>doTearDown</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIntegration">
+        <div class="location">at line 133</div>
+        <code>                    
+    <strong>testIntegration</strong>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a></td>
+                <td>$case</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            doTest()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provideIntegrationCases">
+        <div class="location">at line 143</div>
+        <code>                    IntegrationCase[][]
+    <strong>provideIntegrationCases</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates test data by parsing '.test' files.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>IntegrationCase[][]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createIntegrationCaseFactory">
+        <div class="location">at line 170</div>
+        <code>        static    protected        IntegrationCaseFactoryInterface
+    <strong>createIntegrationCaseFactory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>IntegrationCaseFactoryInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFixturesDir">
+        <div class="location">at line 180</div>
+        <code>        static    protected        string
+    <strong>getFixturesDir</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the full path to directory which contains the tests.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTempFile">
+        <div class="location">at line 190</div>
+        <code>        static    protected        string
+    <strong>getTempFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the full path to the temporary file where the test will write to.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doTest">
+        <div class="location">at line 202</div>
+        <code>            protected        
+    <strong>doTest</strong>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Applies the given fixers on the input and checks the result.</p>                    <p>It will write the input to a temp file. The file will be fixed by a Fixer instance
+configured with the given fixers. The result is compared with the expected output.
+It checks if no errors were reported during the fixing.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a></td>
+                <td>$case</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertRevertedOrderFixing">
+        <div class="location">at line 318</div>
+        <code>        static    protected        
+    <strong>assertRevertedOrderFixing</strong>(<a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a> $case, string $fixedInputCode, string $fixedInputCodeWithReversedFixers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpCsFixer/Tests/Test/IntegrationCase.html"><abbr title="PhpCsFixer\Tests\Test\IntegrationCase">IntegrationCase</abbr></a></td>
+                <td>$case</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fixedInputCode</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fixedInputCodeWithReversedFixers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,3752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Codebase | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Codebase" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../Psalm.html">Psalm</a></li><li class="backslash">\</li><li>Codebase</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Codebase
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>Codebase</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_config">
+                                                                                Config
+                </td>
+                <td>$config</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_referencing_locations">
+                                                                                
+                </td>
+                <td>$use_referencing_locations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_referencing_files">
+                                                                                
+                </td>
+                <td>$use_referencing_files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_file_storage_provider">
+                                                                                FileStorageProvider
+                </td>
+                <td>$file_storage_provider</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_classlike_storage_provider">
+                                                                                ClassLikeStorageProvider
+                </td>
+                <td>$classlike_storage_provider</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_collect_references">
+                                                                                bool
+                </td>
+                <td>$collect_references</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_collect_locations">
+                                                                                bool
+                </td>
+                <td>$collect_locations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_find_unused_code">
+                                                                                
+                </td>
+                <td>$find_unused_code</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_file_provider">
+                                                                                FileProvider
+                </td>
+                <td>$file_provider</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_file_reference_provider">
+                                                                                FileReferenceProvider
+                </td>
+                <td>$file_reference_provider</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_statements_provider">
+                                                                                StatementsProvider
+                </td>
+                <td>$statements_provider</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_register_autoload_files">
+                                                                                bool
+                </td>
+                <td>$register_autoload_files</td>
+                <td class="last">Whether to register autoloaded information</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_register_stub_files">
+                                                                                bool
+                </td>
+                <td>$register_stub_files</td>
+                <td class="last">Whether to log functions just at the file level or globally (for stubs)</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_find_unused_variables">
+                                                                                bool
+                </td>
+                <td>$find_unused_variables</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_scanner">
+                                                                                <abbr title="Internal\Codebase\Scanner">Scanner</abbr>
+                </td>
+                <td>$scanner</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_analyzer">
+                                                                                <abbr title="Internal\Codebase\Analyzer">Analyzer</abbr>
+                </td>
+                <td>$analyzer</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_functions">
+                                                                                <abbr title="Internal\Codebase\Functions">Functions</abbr>
+                </td>
+                <td>$functions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_classlikes">
+                                                                                <abbr title="Internal\Codebase\ClassLikes">ClassLikes</abbr>
+                </td>
+                <td>$classlikes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_methods">
+                                                                                <abbr title="Internal\Codebase\Methods">Methods</abbr>
+                </td>
+                <td>$methods</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_properties">
+                                                                                <abbr title="Internal\Codebase\Properties">Properties</abbr>
+                </td>
+                <td>$properties</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_populator">
+                                                                                <abbr title="Internal\Codebase\Populator">Populator</abbr>
+                </td>
+                <td>$populator</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_taint_flow_graph">
+                                                                                <abbr title="Psalm\?\Internal\Codebase\TaintFlowGraph">TaintFlowGraph</abbr>
+                </td>
+                <td>$taint_flow_graph</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_server_mode">
+                                                                                bool
+                </td>
+                <td>$server_mode</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_store_node_types">
+                                                                                bool
+                </td>
+                <td>$store_node_types</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_infer_types_from_usage">
+                                                                                bool
+                </td>
+                <td>$infer_types_from_usage</td>
+                <td class="last">Whether or not to infer types from usage. Computationally expensive, so turned off by default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_alter_code">
+                                                                                bool
+                </td>
+                <td>$alter_code</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_diff_methods">
+                                                                                bool
+                </td>
+                <td>$diff_methods</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_methods_to_move">
+                                                                                
+                </td>
+                <td>$methods_to_move</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_methods_to_rename">
+                                                                                
+                </td>
+                <td>$methods_to_rename</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_properties_to_move">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$properties_to_move</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_properties_to_rename">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$properties_to_rename</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_class_constants_to_move">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$class_constants_to_move</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_class_constants_to_rename">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$class_constants_to_rename</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_classes_to_move">
+                                                                                
+                </td>
+                <td>$classes_to_move</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_call_transforms">
+                                                                                
+                </td>
+                <td>$call_transforms</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_property_transforms">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$property_transforms</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_class_constant_transforms">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$class_constant_transforms</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_class_transforms">
+                                                                                
+                </td>
+                <td>$class_transforms</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_backwards_incompatible_changes">
+                                                                                bool
+                </td>
+                <td>$allow_backwards_incompatible_changes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_php_major_version">
+                                                                                int
+                </td>
+                <td>$php_major_version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_php_minor_version">
+                                                                                int
+                </td>
+                <td>$php_minor_version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_track_unused_suppressions">
+                                                                                bool
+                </td>
+                <td>$track_unused_suppressions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a> $config, <a href="../Psalm/Internal/Provider/Providers.html"><abbr title="Psalm\Internal\Provider\Providers">Providers</abbr></a> $providers, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reloadFiles">reloadFiles</a>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer, array $candidate_files)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enterServerMode">enterServerMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collectLocations">collectLocations</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reportUnusedCode">reportUnusedCode</a>(string $find_unused_code = &#039;auto&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reportUnusedVariables">reportUnusedVariables</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFilesToAnalyze">addFilesToAnalyze</a>(array $files_to_analyze)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scanFiles">scanFiles</a>(int $threads = 1)
+        
+                                            <p>Scans all files their related files</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFileContents">getFileContents</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatementsForFile">getStatementsForFile</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createClassLikeStorage">createClassLikeStorage</a>(string $fq_classlike_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheClassLikeStorage">cacheClassLikeStorage</a>(<a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a> $classlike_storage, string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exhumeClassLikeStorage">exhumeClassLikeStorage</a>(string $fq_classlike_name, string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPsalmTypeFromReflection">getPsalmTypeFromReflection</a>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionType">ReflectionType</a>|null $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psalm/Storage/FileStorage.html"><abbr title="Psalm\Storage\FileStorage">FileStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFileStorageForPath">createFileStorageForPath</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findReferencesToSymbol">findReferencesToSymbol</a>(string $symbol)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findReferencesToMethod">findReferencesToMethod</a>(string $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findReferencesToProperty">findReferencesToProperty</a>(string $property_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findReferencesToClassLike">findReferencesToClassLike</a>(string $fq_class_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psalm/Storage/FunctionStorage.html"><abbr title="Psalm\Storage\FunctionStorage">FunctionStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClosureStorage">getClosureStorage</a>(string $file_path, string $closure_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGlobalConstantType">addGlobalConstantType</a>(string $const_id, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStubbedConstantType">getStubbedConstantType</a>(string $const_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllStubbedConstants">getAllStubbedConstants</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fileExists">fileExists</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classOrInterfaceExists">classOrInterfaceExists</a>(string $fq_class_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        
+                                            <p>Check whether a class/interface exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classExtendsOrImplements">classExtendsOrImplements</a>(string $fq_class_name, string $possible_parent)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classExists">classExists</a>(string $fq_class_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        
+                                            <p>Determine whether or not a given class exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classExtends">classExtends</a>(string $fq_class_name, string $possible_parent)
+        
+                                            <p>Determine whether or not a class extends a parent</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classImplements">classImplements</a>(string $fq_class_name, string $interface)
+        
+                                            <p>Check whether a class implements an interface</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interfaceExists">interfaceExists</a>(string $fq_interface_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interfaceExtends">interfaceExtends</a>(string $interface_name, string $possible_parent)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParentInterfaces">getParentInterfaces</a>(string $fq_interface_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classHasCorrectCasing">classHasCorrectCasing</a>(string $fq_class_name)
+        
+                                            <p>Determine whether or not a class has the correct casing</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_interfaceHasCorrectCasing">interfaceHasCorrectCasing</a>(string $fq_interface_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_traitHasCorrectCase">traitHasCorrectCase</a>(string $fq_trait_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFunctionLikeStorage">getFunctionLikeStorage</a>(<a href="../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, string $function_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_methodExists">methodExists</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $calling_method_id = null, string|null $file_path = null)
+        
+                                            <p>Whether or not a given method exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodParams">getMethodParams</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isVariadic">isVariadic</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodReturnType">getMethodReturnType</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, string|null $self_class, array $call_args = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodReturnsByRef">getMethodReturnsByRef</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodReturnTypeLocation">getMethodReturnTypeLocation</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $defined_location = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDeclaringMethodId">getDeclaringMethodId</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAppearingMethodId">getAppearingMethodId</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p>Get the class this method appears in (vs is declared in, which could give a trait)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOverriddenMethodIds">getOverriddenMethodIds</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCasedMethodId">getCasedMethodId</a>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_invalidateInformationForFile">invalidateInformationForFile</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSymbolInformation">getSymbolInformation</a>(string $file_path, string $symbol)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSymbolLocation">getSymbolLocation</a>(string $file_path, string $symbol)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferenceAtPosition">getReferenceAtPosition</a>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFunctionArgumentAtPosition">getFunctionArgumentAtPosition</a>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psalm\LanguageServerProtocol\SignatureInformation">SignatureInformation</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSignatureInformation">getSignatureInformation</a>(string $function_symbol)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCompletionDataAtPosition">getCompletionDataAtPosition</a>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCompletionItemsForClassishThing">getCompletionItemsForClassishThing</a>(string $type_string, string $gap)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCompletionItemsForPartialSymbol">getCompletionItemsForPartialSymbol</a>(string $type_string, int $offset, string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTemporaryFileChanges">addTemporaryFileChanges</a>(string $file_path, string $new_content)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeTemporaryFileChanges">removeTemporaryFileChanges</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isTypeContainedByType">isTypeContainedByType</a>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $container_type)
+        
+                                            <p>Checks if type is a subtype of other</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canTypeBeContainedByType">canTypeBeContainedByType</a>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $container_type)
+        
+                                            <p>Checks if type has any part that is a subtype of other</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyValueParamsForTraversableObject">getKeyValueParamsForTraversableObject</a>(<a href="../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_queueClassLikeForScanning">queueClassLikeForScanning</a>(string $fq_classlike_name, bool $analyze_too = false, bool $store_failure = true, array $phantom_classes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTaintSource">addTaintSource</a>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $expr_type, string $taint_id, array $taints = \Psalm\Type\TaintKindGroup::ALL_INPUT, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTaintSink">addTaintSink</a>(string $taint_id, array $taints = \Psalm\Type\TaintKindGroup::ALL_INPUT, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 277</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a> $config, <a href="../Psalm/Internal/Provider/Providers.html"><abbr title="Psalm\Internal\Provider\Providers">Providers</abbr></a> $providers, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Internal/Provider/Providers.html"><abbr title="Psalm\Internal\Provider\Providers">Providers</abbr></a></td>
+                <td>$providers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null</td>
+                <td>$progress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reloadFiles">
+        <div class="location">at line 357</div>
+        <code>                    void
+    <strong>reloadFiles</strong>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer, array $candidate_files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a></td>
+                <td>$project_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$candidate_files</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enterServerMode">
+        <div class="location">at line 415</div>
+        <code>                    void
+    <strong>enterServerMode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collectLocations">
+        <div class="location">at line 421</div>
+        <code>                    void
+    <strong>collectLocations</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reportUnusedCode">
+        <div class="location">at line 433</div>
+        <code>                    void
+    <strong>reportUnusedCode</strong>(string $find_unused_code = &#039;auto&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$find_unused_code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reportUnusedVariables">
+        <div class="location">at line 441</div>
+        <code>                    void
+    <strong>reportUnusedVariables</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFilesToAnalyze">
+        <div class="location">at line 451</div>
+        <code>                    void
+    <strong>addFilesToAnalyze</strong>(array $files_to_analyze)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files_to_analyze</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scanFiles">
+        <div class="location">at line 461</div>
+        <code>                    void
+    <strong>scanFiles</strong>(int $threads = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Scans all files their related files</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$threads</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileContents">
+        <div class="location">at line 470</div>
+        <code>                    string
+    <strong>getFileContents</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatementsForFile">
+        <div class="location">at line 478</div>
+        <code>                    array
+    <strong>getStatementsForFile</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createClassLikeStorage">
+        <div class="location">at line 487</div>
+        <code>                    <a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a>
+    <strong>createClassLikeStorage</strong>(string $fq_classlike_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_classlike_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheClassLikeStorage">
+        <div class="location">at line 492</div>
+        <code>                    void
+    <strong>cacheClassLikeStorage</strong>(<a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a> $classlike_storage, string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Storage/ClassLikeStorage.html"><abbr title="Psalm\Storage\ClassLikeStorage">ClassLikeStorage</abbr></a></td>
+                <td>$classlike_storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exhumeClassLikeStorage">
+        <div class="location">at line 501</div>
+        <code>                    void
+    <strong>exhumeClassLikeStorage</strong>(string $fq_classlike_name, string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_classlike_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPsalmTypeFromReflection">
+        <div class="location">at line 519</div>
+        <code>        static            <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>
+    <strong>getPsalmTypeFromReflection</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionType">ReflectionType</a>|null $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionType">ReflectionType</a>|null</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createFileStorageForPath">
+        <div class="location">at line 524</div>
+        <code>                    <a href="../Psalm/Storage/FileStorage.html"><abbr title="Psalm\Storage\FileStorage">FileStorage</abbr></a>
+    <strong>createFileStorageForPath</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Storage/FileStorage.html"><abbr title="Psalm\Storage\FileStorage">FileStorage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findReferencesToSymbol">
+        <div class="location">at line 532</div>
+        <code>                    array
+    <strong>findReferencesToSymbol</strong>(string $symbol)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$symbol</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findReferencesToMethod">
+        <div class="location">at line 552</div>
+        <code>                    array
+    <strong>findReferencesToMethod</strong>(string $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findReferencesToProperty">
+        <div class="location">at line 560</div>
+        <code>                    array
+    <strong>findReferencesToProperty</strong>(string $property_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findReferencesToClassLike">
+        <div class="location">at line 574</div>
+        <code>                    array
+    <strong>findReferencesToClassLike</strong>(string $fq_class_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClosureStorage">
+        <div class="location">at line 586</div>
+        <code>                    <a href="../Psalm/Storage/FunctionStorage.html"><abbr title="Psalm\Storage\FunctionStorage">FunctionStorage</abbr></a>
+    <strong>getClosureStorage</strong>(string $file_path, string $closure_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$closure_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Storage/FunctionStorage.html"><abbr title="Psalm\Storage\FunctionStorage">FunctionStorage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGlobalConstantType">
+        <div class="location">at line 600</div>
+        <code>                    void
+    <strong>addGlobalConstantType</strong>(string $const_id, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$const_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStubbedConstantType">
+        <div class="location">at line 605</div>
+        <code>                    <abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null
+    <strong>getStubbedConstantType</strong>(string $const_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$const_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllStubbedConstants">
+        <div class="location">at line 613</div>
+        <code>                    array
+    <strong>getAllStubbedConstants</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fileExists">
+        <div class="location">at line 618</div>
+        <code>                    bool
+    <strong>fileExists</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classOrInterfaceExists">
+        <div class="location">at line 626</div>
+        <code>                    bool
+    <strong>classOrInterfaceExists</strong>(string $fq_class_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check whether a class/interface exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classExtendsOrImplements">
+        <div class="location">at line 640</div>
+        <code>                    bool
+    <strong>classExtendsOrImplements</strong>(string $fq_class_name, string $possible_parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$possible_parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classExists">
+        <div class="location">at line 649</div>
+        <code>                    bool
+    <strong>classExists</strong>(string $fq_class_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine whether or not a given class exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classExtends">
+        <div class="location">at line 669</div>
+        <code>                    bool
+    <strong>classExtends</strong>(string $fq_class_name, string $possible_parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine whether or not a class extends a parent</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$possible_parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Exception/UnpopulatedClasslikeException.html"><abbr title="Psalm\Exception\UnpopulatedClasslikeException">UnpopulatedClasslikeException</abbr></a></td>
+                <td>when called on unpopulated class</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>when class does not exist</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classImplements">
+        <div class="location">at line 677</div>
+        <code>                    bool
+    <strong>classImplements</strong>(string $fq_class_name, string $interface)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check whether a class implements an interface</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$interface</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interfaceExists">
+        <div class="location">at line 682</div>
+        <code>                    bool
+    <strong>interfaceExists</strong>(string $fq_interface_name, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|null $calling_fq_class_name = null, string|null $calling_method_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_interface_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interfaceExtends">
+        <div class="location">at line 696</div>
+        <code>                    bool
+    <strong>interfaceExtends</strong>(string $interface_name, string $possible_parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$interface_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$possible_parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParentInterfaces">
+        <div class="location">at line 704</div>
+        <code>                    array
+    <strong>getParentInterfaces</strong>(string $fq_interface_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_interface_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classHasCorrectCasing">
+        <div class="location">at line 714</div>
+        <code>                    bool
+    <strong>classHasCorrectCasing</strong>(string $fq_class_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine whether or not a class has the correct casing</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_class_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_interfaceHasCorrectCasing">
+        <div class="location">at line 719</div>
+        <code>                    bool
+    <strong>interfaceHasCorrectCasing</strong>(string $fq_interface_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_interface_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_traitHasCorrectCase">
+        <div class="location">at line 724</div>
+        <code>                    bool
+    <strong>traitHasCorrectCase</strong>(string $fq_trait_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_trait_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFunctionLikeStorage">
+        <div class="location">at line 737</div>
+        <code>                    <a href="../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a>
+    <strong>getFunctionLikeStorage</strong>(<a href="../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, string $function_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a></td>
+                <td>$statements_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$function_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_methodExists">
+        <div class="location">at line 768</div>
+        <code>                    bool
+    <strong>methodExists</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null, string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $calling_method_id = null, string|null $file_path = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Whether or not a given method exists</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null</td>
+                <td>$calling_method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodParams">
+        <div class="location">at line 788</div>
+        <code>                    array
+    <strong>getMethodParams</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isVariadic">
+        <div class="location">at line 797</div>
+        <code>                    bool
+    <strong>isVariadic</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodReturnType">
+        <div class="location">at line 807</div>
+        <code>                    <abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null
+    <strong>getMethodReturnType</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, string|null $self_class, array $call_args = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$self_class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$call_args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psalm\Psalm\Type\Union">Union</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodReturnsByRef">
+        <div class="location">at line 821</div>
+        <code>                    bool
+    <strong>getMethodReturnsByRef</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodReturnTypeLocation">
+        <div class="location">at line 831</div>
+        <code>                    <abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null
+    <strong>getMethodReturnTypeLocation</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $defined_location = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a></td>
+                <td>$defined_location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDeclaringMethodId">
+        <div class="location">at line 845</div>
+        <code>                    string|null
+    <strong>getDeclaringMethodId</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAppearingMethodId">
+        <div class="location">at line 858</div>
+        <code>                    string|null
+    <strong>getAppearingMethodId</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the class this method appears in (vs is declared in, which could give a trait)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOverriddenMethodIds">
+        <div class="location">at line 870</div>
+        <code>                    array
+    <strong>getOverriddenMethodIds</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCasedMethodId">
+        <div class="location">at line 879</div>
+        <code>                    string
+    <strong>getCasedMethodId</strong>(string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a> $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a></td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invalidateInformationForFile">
+        <div class="location">at line 884</div>
+        <code>                    void
+    <strong>invalidateInformationForFile</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSymbolInformation">
+        <div class="location">at line 902</div>
+        <code>                    string|null
+    <strong>getSymbolInformation</strong>(string $file_path, string $symbol)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$symbol</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSymbolLocation">
+        <div class="location">at line 977</div>
+        <code>                    <abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null
+    <strong>getSymbolLocation</strong>(string $file_path, string $symbol)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$symbol</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psalm\Psalm\CodeLocation">CodeLocation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferenceAtPosition">
+        <div class="location">at line 1065</div>
+        <code>                    array|null
+    <strong>getReferenceAtPosition</strong>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFunctionArgumentAtPosition">
+        <div class="location">at line 1118</div>
+        <code>                    array|null
+    <strong>getFunctionArgumentAtPosition</strong>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSignatureInformation">
+        <div class="location">at line 1172</div>
+        <code>                    <abbr title="Psalm\LanguageServerProtocol\SignatureInformation">SignatureInformation</abbr>|null
+    <strong>getSignatureInformation</strong>(string $function_symbol)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$function_symbol</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psalm\LanguageServerProtocol\SignatureInformation">SignatureInformation</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompletionDataAtPosition">
+        <div class="location">at line 1234</div>
+        <code>                    array|null
+    <strong>getCompletionDataAtPosition</strong>(string $file_path, <a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompletionItemsForClassishThing">
+        <div class="location">at line 1298</div>
+        <code>                    array
+    <strong>getCompletionItemsForClassishThing</strong>(string $type_string, string $gap)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type_string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$gap</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompletionItemsForPartialSymbol">
+        <div class="location">at line 1389</div>
+        <code>                    array
+    <strong>getCompletionItemsForPartialSymbol</strong>(string $type_string, int $offset, string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type_string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTemporaryFileChanges">
+        <div class="location">at line 1504</div>
+        <code>                    void
+    <strong>addTemporaryFileChanges</strong>(string $file_path, string $new_content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$new_content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeTemporaryFileChanges">
+        <div class="location">at line 1509</div>
+        <code>                    void
+    <strong>removeTemporaryFileChanges</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTypeContainedByType">
+        <div class="location">at line 1526</div>
+        <code>                    bool
+    <strong>isTypeContainedByType</strong>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $container_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if type is a subtype of other</p>                    <p>Given two types, checks if <code>$input_type</code> is a subtype of <code>$container_type</code>.
+If you consider <code>Type\Union</code> as a set of types, this will tell you
+if <code>$input_type</code> is fully contained in <code>$container_type</code>,</p>
+
+<p>$input_type ⊆ $container_type</p>
+
+<p>Useful for emitting issues like InvalidArgument, where argument at the call site
+should be a subset of the function parameter type.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$input_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$container_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canTypeBeContainedByType">
+        <div class="location">at line 1546</div>
+        <code>                    bool
+    <strong>canTypeBeContainedByType</strong>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $container_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if type has any part that is a subtype of other</p>                    <p>Given two types, checks if <em>any part</em> of <code>$input_type</code> is a subtype of <code>$container_type</code>.
+If you consider <code>Type\Union</code> as a set of types, this will tell you if intersection
+of <code>$input_type</code> with <code>$container_type</code> is not empty.</p>
+
+<p>$input_type ∩ $container_type ≠ ∅ , e.g. they are not disjoint.</p>
+
+<p>Useful for emitting issues like PossiblyInvalidArgument, where argument at the call
+site should be a subtype of the function parameter type, but it's has some types that are
+not a subtype of the required type.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$input_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$container_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyValueParamsForTraversableObject">
+        <div class="location">at line 1567</div>
+        <code>                    array
+    <strong>getKeyValueParamsForTraversableObject</strong>(<a href="../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queueClassLikeForScanning">
+        <div class="location">at line 1584</div>
+        <code>                    void
+    <strong>queueClassLikeForScanning</strong>(string $fq_classlike_name, bool $analyze_too = false, bool $store_failure = true, array $phantom_classes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_classlike_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$analyze_too</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$store_failure</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$phantom_classes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTaintSource">
+        <div class="location">at line 1598</div>
+        <code>                    void
+    <strong>addTaintSource</strong>(<a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $expr_type, string $taint_id, array $taints = \Psalm\Type\TaintKindGroup::ALL_INPUT, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$expr_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$taint_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$taints</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTaintSink">
+        <div class="location">at line 1628</div>
+        <code>                    void
+    <strong>addTaintSink</strong>(string $taint_id, array $taints = \Psalm\Type\TaintKindGroup::ALL_INPUT, <a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null $code_location = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$taint_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$taints</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a>|null</td>
+                <td>$code_location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

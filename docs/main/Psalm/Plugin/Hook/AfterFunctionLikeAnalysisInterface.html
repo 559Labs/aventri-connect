@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Plugin\Hook\AfterFunctionLikeAnalysisInterface | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Plugin_Hook_AfterFunctionLikeAnalysisInterface" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Plugin.html">Plugin</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Plugin/Hook.html">Hook</a></li><li class="backslash">\</li><li>AfterFunctionLikeAnalysisInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AfterFunctionLikeAnalysisInterface
+                
+        </h1>
+    </div>
+
+    <p>        interface
+    <strong>AfterFunctionLikeAnalysisInterface</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_afterStatementAnalysis">afterStatementAnalysis</a>(<a href="../../../PhpParser/Node/FunctionLike.html"><abbr title="PhpParser\Node\FunctionLike">FunctionLike</abbr></a> $stmt, <a href="../../../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a> $classlike_storage, <a href="../../../Psalm/StatementsSource.html"><abbr title="Psalm\StatementsSource">StatementsSource</abbr></a> $statements_source, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, array $file_replacements = [])
+        
+                                            <p>Called after a statement has been checked</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_afterStatementAnalysis">
+        <div class="location">at line 19</div>
+        <code>        static            bool|null
+    <strong>afterStatementAnalysis</strong>(<a href="../../../PhpParser/Node/FunctionLike.html"><abbr title="PhpParser\Node\FunctionLike">FunctionLike</abbr></a> $stmt, <a href="../../../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a> $classlike_storage, <a href="../../../Psalm/StatementsSource.html"><abbr title="Psalm\StatementsSource">StatementsSource</abbr></a> $statements_source, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, array $file_replacements = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Called after a statement has been checked</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../PhpParser/Node/FunctionLike.html"><abbr title="PhpParser\Node\FunctionLike">FunctionLike</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Storage/FunctionLikeStorage.html"><abbr title="Psalm\Storage\FunctionLikeStorage">FunctionLikeStorage</abbr></a></td>
+                <td>$classlike_storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/StatementsSource.html"><abbr title="Psalm\StatementsSource">StatementsSource</abbr></a></td>
+                <td>$statements_source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$file_replacements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

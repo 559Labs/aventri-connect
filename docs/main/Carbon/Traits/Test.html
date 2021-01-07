@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Carbon\Traits\Test | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Carbon_Traits_Test" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../Carbon.html">Carbon</a></li><li class="backslash">\</li><li><a href="../../Carbon/Traits.html">Traits</a></li><li class="backslash">\</li><li>Test</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Test
+                
+        </h1>
+    </div>
+
+    <p>        trait
+    <strong>Test</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_testNow">
+                    static                    protected                                        <a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>
+                </td>
+                <td>$testNow</td>
+                <td class="last">A test Carbon instance to be returned when now instances are created.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTestNow">setTestNow</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null $testNow = null)
+        
+                                            <p>Set a Carbon instance (real or mock) to be returned when a "now"
+instance is created.  The provided instance will be returned
+specifically under the following conditions:
+  - A call to the static now() method, ex. Carbon::now()
+  - When a null (or blank string) is passed to the constructor or parse(), ex. new Carbon(null)
+  - When the string "now" is passed to the constructor or parse(), ex. new Carbon('now')
+  - When a string containing the desired time is passed to Carbon::parse().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withTestNow">withTestNow</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null $testNow = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
+        
+                                            <p>Temporarily sets a static date to be used within the callback.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTestNow">getTestNow</a>()
+        
+                                            <p>Get the Carbon instance (real or mock) to be returned when a "now"
+instance is created.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTestNow">hasTestNow</a>()
+        
+                                            <p>Determine if there is a valid test instance set. A valid test instance
+is anything that is not null.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handleMockTimezone">handleMockTimezone</a>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a> $tz, <a href="../../Carbon/CarbonInterface.html"><abbr title="Carbon\CarbonInterface">CarbonInterface</abbr></a> $testInstance)
+        
+                                            <p>Return the given timezone and set it to the test instance if not null.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Carbon/CarbonImmutable.html"><abbr title="Carbon\CarbonImmutable">CarbonImmutable</abbr></a>|<a href="../../Carbon/Carbon.html"><abbr title="Carbon\Carbon">Carbon</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockedTestNow">getMockedTestNow</a>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a> $tz)
+        
+                                            <p>Get the mocked date passed in setTestNow() and if it's a Closure, execute it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mockConstructorParameters">mockConstructorParameters</a>($time, $tz)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setTestNow">
+        <div class="location">at line 48</div>
+        <code>        static            
+    <strong>setTestNow</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null $testNow = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a Carbon instance (real or mock) to be returned when a "now"
+instance is created.  The provided instance will be returned
+specifically under the following conditions:
+  - A call to the static now() method, ex. Carbon::now()
+  - When a null (or blank string) is passed to the constructor or parse(), ex. new Carbon(null)
+  - When the string "now" is passed to the constructor or parse(), ex. new Carbon('now')
+  - When a string containing the desired time is passed to Carbon::parse().</p>                    <p>Note the timezone parameter was left out of the examples above and
+has no affect as the mock value will be returned regardless of its value.</p>
+
+<p>To clear the test instance call this method using the default
+parameter of null.</p>
+
+<p>/!\ Use this method for unit tests only.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null</td>
+                <td>$testNow</td>
+                <td>real or mock Carbon instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withTestNow">
+        <div class="location">at line 67</div>
+        <code>        static            
+    <strong>withTestNow</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null $testNow = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Temporarily sets a static date to be used within the callback.</p>                    <p>Using setTestNow to set the date, executing the callback, then
+clearing the test instance.</p>
+
+<p>/!\ Use this method for unit tests only.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>|string|bool|null</td>
+                <td>$testNow</td>
+                <td>real or mock Carbon instance</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTestNow">
+        <div class="location">at line 80</div>
+        <code>        static            <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a>
+    <strong>getTestNow</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the Carbon instance (real or mock) to be returned when a "now"
+instance is created.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|<a href="../../Carbon/Traits/Test.html"><abbr title="Carbon\Traits\Test">Test</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTestNow">
+        <div class="location">at line 91</div>
+        <code>        static            bool
+    <strong>hasTestNow</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine if there is a valid test instance set. A valid test instance
+is anything that is not null.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handleMockTimezone">
+        <div class="location">at line 105</div>
+        <code>        static    protected        string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a>
+    <strong>handleMockTimezone</strong>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a> $tz, <a href="../../Carbon/CarbonInterface.html"><abbr title="Carbon\CarbonInterface">CarbonInterface</abbr></a> $testInstance)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return the given timezone and set it to the test instance if not null.</p>                    <p>If null, get the timezone from the test instance and return it.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a></td>
+                <td>$tz</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Carbon/CarbonInterface.html"><abbr title="Carbon\CarbonInterface">CarbonInterface</abbr></a></td>
+                <td>$testInstance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockedTestNow">
+        <div class="location">at line 124</div>
+        <code>        static    protected        <a href="../../Carbon/CarbonImmutable.html"><abbr title="Carbon\CarbonImmutable">CarbonImmutable</abbr></a>|<a href="../../Carbon/Carbon.html"><abbr title="Carbon\Carbon">Carbon</abbr></a>|null
+    <strong>getMockedTestNow</strong>(string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a> $tz)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the mocked date passed in setTestNow() and if it's a Closure, execute it.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a target="_blank" rel="noopener" href="https://www.php.net/DateTimeZone">DateTimeZone</a></td>
+                <td>$tz</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Carbon/CarbonImmutable.html"><abbr title="Carbon\CarbonImmutable">CarbonImmutable</abbr></a>|<a href="../../Carbon/Carbon.html"><abbr title="Carbon\Carbon">Carbon</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mockConstructorParameters">
+        <div class="location">at line 140</div>
+        <code>        static    protected        
+    <strong>mockConstructorParameters</strong>($time, $tz)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tz</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

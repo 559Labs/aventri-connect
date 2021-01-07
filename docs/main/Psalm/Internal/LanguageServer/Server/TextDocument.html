@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Internal\LanguageServer\Server\TextDocument | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Internal_LanguageServer_Server_TextDocument" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../../Psalm/Internal.html">Internal</a></li><li class="backslash">\</li><li><a href="../../../../Psalm/Internal/LanguageServer.html">LanguageServer</a></li><li class="backslash">\</li><li><a href="../../../../Psalm/Internal/LanguageServer/Server.html">Server</a></li><li class="backslash">\</li><li>TextDocument</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TextDocument
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>TextDocument</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Provides method handlers for all textDocument/* methods</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_server">
+                                        protected                                        LanguageServer
+                </td>
+                <td>$server</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_codebase">
+                                        protected                                        Codebase
+                </td>
+                <td>$codebase</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_onchange_line_limit">
+                                        protected                                        <abbr title="Psalm\Internal\LanguageServer\Server\?int">?int</abbr>
+                </td>
+                <td>$onchange_line_limit</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../Psalm/Internal/LanguageServer/LanguageServer.html"><abbr title="Psalm\Internal\LanguageServer\LanguageServer">LanguageServer</abbr></a> $server, <a href="../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, int|null $onchange_line_limit)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_didOpen">didOpen</a>(<a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a> $textDocument)
+        
+                                            <p>The document open notification is sent from the client to the server to signal newly opened text documents. The
+document's truth is now managed by the client and the server must not try to read the document's truth using the
+document's uri.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_didSave">didSave</a>(<a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a> $textDocument)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_didChange">didChange</a>(<a href="../../../../LanguageServerProtocol/VersionedTextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\VersionedTextDocumentIdentifier">VersionedTextDocumentIdentifier</abbr></a> $textDocument, array $contentChanges)
+        
+                                            <p>The document change notification is sent from the client to the server to signal changes to a text document.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_didClose">didClose</a>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument)
+        
+                                            <p>The document close notification is sent from the client to the server when the document got closed in the client.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_definition">definition</a>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p>The goto definition request is sent from the client to the server to resolve the definition location of a symbol
+at a given text document position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hover">hover</a>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p>The hover request is sent from the client to the server to request
+hover information at a given text document position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_completion">completion</a>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p>The Completion request is sent from the client to the server to compute completion items at a given cursor
+position. Completion items are presented in the IntelliSense user interface. If computing full completion items
+is expensive, servers can additionally provide a handler for the completion item resolve request
+('completionItem/resolve'). This request is sent when a completion item is selected in the user interface. A
+typically use case is for example: the 'textDocument/completion' request doesn't fill in the documentation
+property for returned completion items since it is expensive to compute. When the item is selected in the user
+interface then a 'completionItem/resolve' request is sent with the selected completion item as a param. The
+returned completion item should have the documentation property filled in.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_signatureHelp">signatureHelp</a>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 40</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../Psalm/Internal/LanguageServer/LanguageServer.html"><abbr title="Psalm\Internal\LanguageServer\LanguageServer">LanguageServer</abbr></a> $server, <a href="../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, int|null $onchange_line_limit)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Psalm/Internal/LanguageServer/LanguageServer.html"><abbr title="Psalm\Internal\LanguageServer\LanguageServer">LanguageServer</abbr></a></td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$onchange_line_limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_didOpen">
+        <div class="location">at line 57</div>
+        <code>                    void
+    <strong>didOpen</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a> $textDocument)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The document open notification is sent from the client to the server to signal newly opened text documents. The
+document's truth is now managed by the client and the server must not try to read the document's truth using the
+document's uri.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a></td>
+                <td>$textDocument</td>
+                <td>the document that was opened</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_didSave">
+        <div class="location">at line 72</div>
+        <code>                    void
+    <strong>didSave</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a> $textDocument)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentItem.html"><abbr title="LanguageServerProtocol\TextDocumentItem">TextDocumentItem</abbr></a></td>
+                <td>$textDocument</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_didChange">
+        <div class="location">at line 93</div>
+        <code>                    void
+    <strong>didChange</strong>(<a href="../../../../LanguageServerProtocol/VersionedTextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\VersionedTextDocumentIdentifier">VersionedTextDocumentIdentifier</abbr></a> $textDocument, array $contentChanges)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The document change notification is sent from the client to the server to signal changes to a text document.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/VersionedTextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\VersionedTextDocumentIdentifier">VersionedTextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$contentChanges</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_didClose">
+        <div class="location">at line 129</div>
+        <code>                    void
+    <strong>didClose</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The document close notification is sent from the client to the server when the document got closed in the client.</p>                    <p>The document's truth now exists where the document's uri points to (e.g. if the document's uri is a file uri the
+truth now exists on disk).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td>The document that was closed</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_definition">
+        <div class="location">at line 145</div>
+        <code>                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+    <strong>definition</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The goto definition request is sent from the client to the server to resolve the definition location of a symbol
+at a given text document position.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td>The text document</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td>The position inside the text document</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hover">
+        <div class="location">at line 189</div>
+        <code>                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+    <strong>hover</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The hover request is sent from the client to the server to request
+hover information at a given text document position.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td>The text document</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td>The position inside the text document</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_completion">
+        <div class="location">at line 234</div>
+        <code>                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+    <strong>completion</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The Completion request is sent from the client to the server to compute completion items at a given cursor
+position. Completion items are presented in the IntelliSense user interface. If computing full completion items
+is expensive, servers can additionally provide a handler for the completion item resolve request
+('completionItem/resolve'). This request is sent when a completion item is selected in the user interface. A
+typically use case is for example: the 'textDocument/completion' request doesn't fill in the documentation
+property for returned completion items since it is expensive to compute. When the item is selected in the user
+interface then a 'completionItem/resolve' request is sent with the selected completion item as a param. The
+returned completion item should have the documentation property filled in.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td>The text document</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td>The position</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_signatureHelp">
+        <div class="location">at line 269</div>
+        <code>                    <a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+    <strong>signatureHelp</strong>(<a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a> $textDocument, <a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a> $position)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/TextDocumentIdentifier.html"><abbr title="LanguageServerProtocol\TextDocumentIdentifier">TextDocumentIdentifier</abbr></a></td>
+                <td>$textDocument</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../LanguageServerProtocol/Position.html"><abbr title="LanguageServerProtocol\Position">Position</abbr></a></td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

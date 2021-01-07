@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Carbon\Traits\Week | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Carbon_Traits_Week" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../Carbon.html">Carbon</a></li><li class="backslash">\</li><li><a href="../../Carbon/Traits.html">Traits</a></li><li class="backslash">\</li><li>Week</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Week
+                
+        </h1>
+    </div>
+
+    <p>        trait
+    <strong>Week</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Trait Week.</p>            <p>week and ISO week number, year and count in year.</p>
+
+<p>Depends on the following properties:</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_daysInYear">
+                                                                                int
+                </td>
+                <td>$daysInYear</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dayOfWeek">
+                                                                                int
+                </td>
+                <td>$dayOfWeek</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dayOfYear">
+                                                                                int
+                </td>
+                <td>$dayOfYear</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_year">
+                                                                                int
+                </td>
+                <td>$year</td>
+                <td class="last">Depends on the following methods:</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isoWeekYear">isoWeekYear</a>(int|null $year = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Set/get the week number of year using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_weekYear">weekYear</a>(int|null $year = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Set/get the week number of year using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isoWeeksInYear">isoWeeksInYear</a>(int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Get the number of weeks of the current week-year using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_weeksInYear">weeksInYear</a>(int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Get the number of weeks of the current week-year using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_week">week</a>(int|null $week = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Get/set the week number using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isoWeek">isoWeek</a>(int|null $week = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        
+                                            <p>Get/set the week number using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTranslationMessage">getTranslationMessage</a>(string  $key, string  $locale = null, string  $default = null, void  $translator)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_isoWeekYear">
+        <div class="location">at line 49</div>
+        <code>                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+    <strong>isoWeekYear</strong>(int|null $year = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set/get the week number of year using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td>if null, act as a getter, if not null, set the year and return current instance.</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td>first date of week from 0 (Sunday) to 6 (Saturday)</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td>first day of year included in the week #1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_weekYear">
+        <div class="location">at line 69</div>
+        <code>                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+    <strong>weekYear</strong>(int|null $year = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set/get the week number of year using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$year</td>
+                <td>if null, act as a getter, if not null, set the year and return current instance.</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td>first date of week from 0 (Sunday) to 6 (Saturday)</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td>first day of year included in the week #1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isoWeeksInYear">
+        <div class="location">at line 131</div>
+        <code>                    int
+    <strong>isoWeeksInYear</strong>(int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of weeks of the current week-year using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td>first date of week from 0 (Sunday) to 6 (Saturday)</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td>first day of year included in the week #1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_weeksInYear">
+        <div class="location">at line 149</div>
+        <code>                    int
+    <strong>weeksInYear</strong>(int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of weeks of the current week-year using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td>first date of week from 0 (Sunday) to 6 (Saturday)</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td>first day of year included in the week #1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_week">
+        <div class="location">at line 179</div>
+        <code>                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+    <strong>week</strong>(int|null $week = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get/set the week number using given first day of week and first
+day of year included in the first week. Or use US format if no settings
+given (Sunday / Jan 6).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$week</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isoWeek">
+        <div class="location">at line 210</div>
+        <code>                    int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a>
+    <strong>isoWeek</strong>(int|null $week = null, int|null $dayOfWeek = null, int|null $dayOfYear = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get/set the week number using given first day of week and first
+day of year included in the first week. Or use ISO format if no settings
+given.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|null</td>
+                <td>$week</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfWeek</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$dayOfYear</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|<a href="../../Carbon/Traits/Week.html"><abbr title="Carbon\Traits\Week">Week</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslationMessage">
+        <div class="location">at line 36</div>
+        <code>                    string
+    <strong>getTranslationMessage</strong>(string  $key, string  $locale = null, string  $default = null, void  $translator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string </td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string </td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>void </td>
+                <td>$translator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

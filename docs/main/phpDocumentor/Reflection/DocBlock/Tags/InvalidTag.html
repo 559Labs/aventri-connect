@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpDocumentor\Reflection\DocBlock\Tags\InvalidTag | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:phpDocumentor_Reflection_DocBlock_Tags_InvalidTag" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../phpDocumentor.html">phpDocumentor</a></li><li class="backslash">\</li><li><a href="../../../../phpDocumentor/Reflection.html">Reflection</a></li><li class="backslash">\</li><li><a href="../../../../phpDocumentor/Reflection/DocBlock.html">DocBlock</a></li><li class="backslash">\</li><li><a href="../../../../phpDocumentor/Reflection/DocBlock/Tags.html">Tags</a></li><li class="backslash">\</li><li>InvalidTag</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            InvalidTag
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>InvalidTag</strong>        implements
+        <a href="../../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class represents an exception during the tag creation</p>            <p>Since the internals of the library are relaying on the correct syntax of a docblock
+we cannot simply throw exceptions at all time because the exceptions will break the creation of a
+docklock. Just silently ignore the exceptions is not an option because the user as an issue to fix.</p>
+
+<p>This tag holds that error information until a using application is able to display it. The object wil just behave
+like any normal tag. So the normal application flow will not break.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpDocumentor\Reflection\DocBlock\Tags\Throwable">Throwable</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getException">getException</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Tag|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $body, string $name = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/InvalidTag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\InvalidTag">InvalidTag</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withError">withError</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a> $exception)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(<a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a>|null $formatter = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getException">
+        <div class="location">at line 49</div>
+        <code>                    <abbr title="phpDocumentor\Reflection\DocBlock\Tags\Throwable">Throwable</abbr>|null
+    <strong>getException</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Throwable">Throwable</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line 54</div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line 59</div>
+        <code>        static            Tag|mixed
+    <strong>create</strong>(string $body, string $name = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Tag|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withError">
+        <div class="location">at line 64</div>
+        <code>                    <a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/InvalidTag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\InvalidTag">InvalidTag</abbr></a>
+    <strong>withError</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/InvalidTag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\InvalidTag">InvalidTag</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line 131</div>
+        <code>                    string
+    <strong>render</strong>(<a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a>|null $formatter = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpDocumentor/Reflection/DocBlock/Tags/Formatter.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tags\Formatter">Formatter</abbr></a>|null</td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 140</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

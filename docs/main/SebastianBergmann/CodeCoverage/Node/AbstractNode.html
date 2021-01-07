@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>SebastianBergmann\CodeCoverage\Node\AbstractNode | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:SebastianBergmann_CodeCoverage_Node_AbstractNode" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../SebastianBergmann.html">SebastianBergmann</a></li><li class="backslash">\</li><li><a href="../../../SebastianBergmann/CodeCoverage.html">CodeCoverage</a></li><li class="backslash">\</li><li><a href="../../../SebastianBergmann/CodeCoverage/Node.html">Node</a></li><li class="backslash">\</li><li>AbstractNode</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractNode
+                
+        </h1>
+    </div>
+
+    <p>    abstract     class
+    <strong>AbstractNode</strong>        implements
+        <a target="_blank" rel="noopener" href="https://www.php.net/Countable">Countable</a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, <a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a> $parent = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_name">name</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_id">id</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pathAsString">pathAsString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pathAsArray">pathAsArray</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parent">parent</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedClasses">percentageOfTestedClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedTraits">percentageOfTestedTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedClassesAndTraits">percentageOfTestedClassesAndTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedFunctions">percentageOfTestedFunctions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedMethods">percentageOfTestedMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfTestedFunctionsAndMethods">percentageOfTestedFunctionsAndMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfExecutedLines">percentageOfExecutedLines</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfExecutedBranches">percentageOfExecutedBranches</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_percentageOfExecutedPaths">percentageOfExecutedPaths</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfClassesAndTraits">numberOfClassesAndTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedClassesAndTraits">numberOfTestedClassesAndTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classesAndTraits">classesAndTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfFunctionsAndMethods">numberOfFunctionsAndMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedFunctionsAndMethods">numberOfTestedFunctionsAndMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_classes">classes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_traits">traits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_functions">functions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../SebastianBergmann/LinesOfCode/LinesOfCode.html"><abbr title="SebastianBergmann\LinesOfCode\LinesOfCode">LinesOfCode</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_linesOfCode">linesOfCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutableLines">numberOfExecutableLines</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutedLines">numberOfExecutedLines</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutableBranches">numberOfExecutableBranches</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutedBranches">numberOfExecutedBranches</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutablePaths">numberOfExecutablePaths</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfExecutedPaths">numberOfExecutedPaths</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfClasses">numberOfClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedClasses">numberOfTestedClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTraits">numberOfTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedTraits">numberOfTestedTraits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfMethods">numberOfMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedMethods">numberOfTestedMethods</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfFunctions">numberOfFunctions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_numberOfTestedFunctions">numberOfTestedFunctions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 50</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, <a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a> $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a></td>
+                <td>$parent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_name">
+        <div class="location">at line 60</div>
+        <code>                    string
+    <strong>name</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_id">
+        <div class="location">at line 65</div>
+        <code>                    string
+    <strong>id</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pathAsString">
+        <div class="location">at line 86</div>
+        <code>                    string
+    <strong>pathAsString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pathAsArray">
+        <div class="location">at line 99</div>
+        <code>                    array
+    <strong>pathAsArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parent">
+        <div class="location">at line 114</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a>|null
+    <strong>parent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Node/AbstractNode.html"><abbr title="SebastianBergmann\CodeCoverage\Node\AbstractNode">AbstractNode</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedClasses">
+        <div class="location">at line 119</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedTraits">
+        <div class="location">at line 127</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedClassesAndTraits">
+        <div class="location">at line 135</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedClassesAndTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedFunctions">
+        <div class="location">at line 143</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedMethods">
+        <div class="location">at line 151</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfTestedFunctionsAndMethods">
+        <div class="location">at line 159</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfTestedFunctionsAndMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfExecutedLines">
+        <div class="location">at line 167</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfExecutedLines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfExecutedBranches">
+        <div class="location">at line 175</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfExecutedBranches</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_percentageOfExecutedPaths">
+        <div class="location">at line 183</div>
+        <code>                    <a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a>
+    <strong>percentageOfExecutedPaths</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/CodeCoverage/Percentage.html"><abbr title="SebastianBergmann\CodeCoverage\Percentage">Percentage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfClassesAndTraits">
+        <div class="location">at line 191</div>
+        <code>                    int
+    <strong>numberOfClassesAndTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedClassesAndTraits">
+        <div class="location">at line 196</div>
+        <code>                    int
+    <strong>numberOfTestedClassesAndTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classesAndTraits">
+        <div class="location">at line 201</div>
+        <code>                    array
+    <strong>classesAndTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfFunctionsAndMethods">
+        <div class="location">at line 206</div>
+        <code>                    int
+    <strong>numberOfFunctionsAndMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedFunctionsAndMethods">
+        <div class="location">at line 211</div>
+        <code>                    int
+    <strong>numberOfTestedFunctionsAndMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_classes">
+        <div class="location">at line 216</div>
+        <code>    abstract                array
+    <strong>classes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_traits">
+        <div class="location">at line 218</div>
+        <code>    abstract                array
+    <strong>traits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_functions">
+        <div class="location">at line 220</div>
+        <code>    abstract                array
+    <strong>functions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_linesOfCode">
+        <div class="location">at line 222</div>
+        <code>    abstract                <a href="../../../SebastianBergmann/LinesOfCode/LinesOfCode.html"><abbr title="SebastianBergmann\LinesOfCode\LinesOfCode">LinesOfCode</abbr></a>
+    <strong>linesOfCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../SebastianBergmann/LinesOfCode/LinesOfCode.html"><abbr title="SebastianBergmann\LinesOfCode\LinesOfCode">LinesOfCode</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutableLines">
+        <div class="location">at line 224</div>
+        <code>    abstract                int
+    <strong>numberOfExecutableLines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutedLines">
+        <div class="location">at line 226</div>
+        <code>    abstract                int
+    <strong>numberOfExecutedLines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutableBranches">
+        <div class="location">at line 228</div>
+        <code>    abstract                int
+    <strong>numberOfExecutableBranches</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutedBranches">
+        <div class="location">at line 230</div>
+        <code>    abstract                int
+    <strong>numberOfExecutedBranches</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutablePaths">
+        <div class="location">at line 232</div>
+        <code>    abstract                int
+    <strong>numberOfExecutablePaths</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfExecutedPaths">
+        <div class="location">at line 234</div>
+        <code>    abstract                int
+    <strong>numberOfExecutedPaths</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfClasses">
+        <div class="location">at line 236</div>
+        <code>    abstract                int
+    <strong>numberOfClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedClasses">
+        <div class="location">at line 238</div>
+        <code>    abstract                int
+    <strong>numberOfTestedClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTraits">
+        <div class="location">at line 240</div>
+        <code>    abstract                int
+    <strong>numberOfTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedTraits">
+        <div class="location">at line 242</div>
+        <code>    abstract                int
+    <strong>numberOfTestedTraits</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfMethods">
+        <div class="location">at line 244</div>
+        <code>    abstract                int
+    <strong>numberOfMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedMethods">
+        <div class="location">at line 246</div>
+        <code>    abstract                int
+    <strong>numberOfTestedMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfFunctions">
+        <div class="location">at line 248</div>
+        <code>    abstract                int
+    <strong>numberOfFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_numberOfTestedFunctions">
+        <div class="location">at line 250</div>
+        <code>    abstract                int
+    <strong>numberOfTestedFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

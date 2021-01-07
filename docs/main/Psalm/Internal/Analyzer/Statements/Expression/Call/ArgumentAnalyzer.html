@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Internal\Analyzer\Statements\Expression\Call\ArgumentAnalyzer | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../../fonts/doctum-font.css">
+        <script src="../../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Internal_Analyzer_Statements_Expression_Call_ArgumentAnalyzer" data-root-path="../../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../../../../Psalm/Internal.html">Internal</a></li><li class="backslash">\</li><li><a href="../../../../../../Psalm/Internal/Analyzer.html">Analyzer</a></li><li class="backslash">\</li><li><a href="../../../../../../Psalm/Internal/Analyzer/Statements.html">Statements</a></li><li class="backslash">\</li><li><a href="../../../../../../Psalm/Internal/Analyzer/Statements/Expression.html">Expression</a></li><li class="backslash">\</li><li><a href="../../../../../../Psalm/Internal/Analyzer/Statements/Expression/Call.html">Call</a></li><li class="backslash">\</li><li>ArgumentAnalyzer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ArgumentAnalyzer
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>ArgumentAnalyzer</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkArgumentMatches">checkArgumentMatches</a>(<a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, string|null $cased_method_id, <a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $method_id, string|null $self_fq_class_name, string|null $static_fq_class_name, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $function_call_location, <a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a>|null $function_param, int $argument_offset, int $unpacked_argument_offset, bool $allow_named_args, <a href="../../../../../../PhpParser/Node/Arg.html"><abbr title="PhpParser\Node\Arg">Arg</abbr></a> $arg, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null $arg_value_type, <a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a> $context, array $class_generic_params, <a href="../../../../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a>|null $template_result, bool $specialize_taint, bool $in_call_map)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verifyType">verifyType</a>(<a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $param_type, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null $signature_param_type, string|null $cased_method_id, <a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $method_id, int $argument_offset, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $arg_location, <a href="../../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $input_expr, <a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a> $context, <a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a> $function_param, bool $unpack, <a href="../../../../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>|null $unpacked_atomic_array, bool $specialize_taint, bool $in_call_map, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $function_call_location)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_checkArgumentMatches">
+        <div class="location">at line 57</div>
+        <code>        static            bool|null
+    <strong>checkArgumentMatches</strong>(<a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, string|null $cased_method_id, <a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $method_id, string|null $self_fq_class_name, string|null $static_fq_class_name, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $function_call_location, <a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a>|null $function_param, int $argument_offset, int $unpacked_argument_offset, bool $allow_named_args, <a href="../../../../../../PhpParser/Node/Arg.html"><abbr title="PhpParser\Node\Arg">Arg</abbr></a> $arg, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null $arg_value_type, <a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a> $context, array $class_generic_params, <a href="../../../../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a>|null $template_result, bool $specialize_taint, bool $in_call_map)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a></td>
+                <td>$statements_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$cased_method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null</td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$self_fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$static_fq_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a></td>
+                <td>$function_call_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a>|null</td>
+                <td>$function_param</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$argument_offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$unpacked_argument_offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allow_named_args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../PhpParser/Node/Arg.html"><abbr title="PhpParser\Node\Arg">Arg</abbr></a></td>
+                <td>$arg</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null</td>
+                <td>$arg_value_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$class_generic_params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a>|null</td>
+                <td>$template_result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$specialize_taint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$in_call_map</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyType">
+        <div class="location">at line 521</div>
+        <code>        static            bool|null
+    <strong>verifyType</strong>(<a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $statements_analyzer, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $input_type, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a> $param_type, <a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null $signature_param_type, string|null $cased_method_id, <a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null $method_id, int $argument_offset, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $arg_location, <a href="../../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $input_expr, <a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a> $context, <a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a> $function_param, bool $unpack, <a href="../../../../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>|null $unpacked_atomic_array, bool $specialize_taint, bool $in_call_map, <a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a> $function_call_location)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a></td>
+                <td>$statements_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$input_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a></td>
+                <td>$param_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Type/Union.html"><abbr title="Psalm\Type\Union">Union</abbr></a>|null</td>
+                <td>$signature_param_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$cased_method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Internal/MethodIdentifier.html"><abbr title="Psalm\Internal\MethodIdentifier">MethodIdentifier</abbr></a>|null</td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$argument_offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a></td>
+                <td>$arg_location</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a></td>
+                <td>$input_expr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Context.html"><abbr title="Psalm\Context">Context</abbr></a></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Storage/FunctionLikeParameter.html"><abbr title="Psalm\Storage\FunctionLikeParameter">FunctionLikeParameter</abbr></a></td>
+                <td>$function_param</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$unpack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>|null</td>
+                <td>$unpacked_atomic_array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$specialize_taint</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$in_call_map</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../../Psalm/CodeLocation.html"><abbr title="Psalm\CodeLocation">CodeLocation</abbr></a></td>
+                <td>$function_call_location</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

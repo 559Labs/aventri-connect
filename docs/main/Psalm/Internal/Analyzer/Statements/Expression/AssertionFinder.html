@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Internal\Analyzer\Statements\Expression\AssertionFinder | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../fonts/doctum-font.css">
+        <script src="../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Internal_Analyzer_Statements_Expression_AssertionFinder" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../../../Psalm/Internal.html">Internal</a></li><li class="backslash">\</li><li><a href="../../../../../Psalm/Internal/Analyzer.html">Analyzer</a></li><li class="backslash">\</li><li><a href="../../../../../Psalm/Internal/Analyzer/Statements.html">Statements</a></li><li class="backslash">\</li><li><a href="../../../../../Psalm/Internal/Analyzer/Statements/Expression.html">Expression</a></li><li class="backslash">\</li><li>AssertionFinder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AssertionFinder
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>AssertionFinder</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ASSIGNMENT_TO_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ASSIGNMENT_TO_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_scrapeAssertions">scrapeAssertions</a>(<a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $conditional, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source, <a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, bool $inside_negation = false, bool $cache = true, bool $inside_conditional = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processFunctionCall">processFunctionCall</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $expr, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source, <a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, bool $negate = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processCustomAssertion">processCustomAssertion</a>(<a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $expr, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstanceOfTypes">getInstanceOfTypes</a>(<a href="../../../../../PhpParser/Node/Expr/Instanceof_.html"><abbr title="PhpParser\Node\Expr\Instanceof_">Instanceof_</abbr></a> $stmt, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNullVariable">hasNullVariable</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasFalseVariable">hasFalseVariable</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTrueVariable">hasTrueVariable</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasEmptyArrayVariable">hasEmptyArrayVariable</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasGetTypeCheck">hasGetTypeCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasGetDebugTypeCheck">hasGetDebugTypeCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasGetClassCheck">hasGetClassCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNonEmptyCountEqualityCheck">hasNonEmptyCountEqualityCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $min_count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLessThanCountEqualityCheck">hasLessThanCountEqualityCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $max_count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNotCountEqualityCheck">hasNotCountEqualityCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPositiveNumberCheck">hasPositiveNumberCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $min_count)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasReconcilableNonEmptyCountEqualityCheck">hasReconcilableNonEmptyCountEqualityCheck</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTypedValueComparison">hasTypedValueComparison</a>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNullCheck">hasNullCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIsACheck">hasIsACheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt, <a href="../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $source)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasArrayCheck">hasArrayCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasStringCheck">hasStringCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasBoolCheck">hasBoolCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasObjectCheck">hasObjectCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNumericCheck">hasNumericCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIterableCheck">hasIterableCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCountableCheck">hasCountableCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasClassExistsCheck">hasClassExistsCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTraitExistsCheck">hasTraitExistsCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasInterfaceExistsCheck">hasInterfaceExistsCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasFunctionExistsCheck">hasFunctionExistsCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIntCheck">hasIntCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasFloatCheck">hasFloatCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasResourceCheck">hasResourceCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasScalarCheck">hasScalarCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCallableCheck">hasCallableCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasInArrayCheck">hasInArrayCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNonEmptyCountCheck">hasNonEmptyCountCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasArrayKeyExistsCheck">hasArrayKeyExistsCheck</a>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_scrapeAssertions">
+        <div class="location">at line 42</div>
+        <code>        static            array
+    <strong>scrapeAssertions</strong>(<a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $conditional, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source, <a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, bool $inside_negation = false, bool $cache = true, bool $inside_conditional = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null</td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$inside_negation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$inside_conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processFunctionCall">
+        <div class="location">at line 855</div>
+        <code>        static            array
+    <strong>processFunctionCall</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $expr, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source, <a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, bool $negate = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$expr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null</td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$negate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processCustomAssertion">
+        <div class="location">at line 1179</div>
+        <code>        static    protected        array
+    <strong>processCustomAssertion</strong>(<a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $expr, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a></td>
+                <td>$expr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstanceOfTypes">
+        <div class="location">at line 1349</div>
+        <code>        static    protected        array
+    <strong>getInstanceOfTypes</strong>(<a href="../../../../../PhpParser/Node/Expr/Instanceof_.html"><abbr title="PhpParser\Node\Expr\Instanceof_">Instanceof_</abbr></a> $stmt, string|null $this_class_name, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/Instanceof_.html"><abbr title="PhpParser\Node\Expr\Instanceof_">Instanceof_</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNullVariable">
+        <div class="location">at line 1397</div>
+        <code>        static    protected        int|null
+    <strong>hasNullVariable</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasFalseVariable">
+        <div class="location">at line 1423</div>
+        <code>        static            int|null
+    <strong>hasFalseVariable</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTrueVariable">
+        <div class="location">at line 1441</div>
+        <code>        static            int|null
+    <strong>hasTrueVariable</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasEmptyArrayVariable">
+        <div class="location">at line 1459</div>
+        <code>        static    protected        int|null
+    <strong>hasEmptyArrayVariable</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasGetTypeCheck">
+        <div class="location">at line 1480</div>
+        <code>        static    protected        bool|int
+    <strong>hasGetTypeCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasGetDebugTypeCheck">
+        <div class="location">at line 1507</div>
+        <code>        static    protected        bool|int
+    <strong>hasGetDebugTypeCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasGetClassCheck">
+        <div class="location">at line 1536</div>
+        <code>        static    protected        bool|int
+    <strong>hasGetClassCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNonEmptyCountEqualityCheck">
+        <div class="location">at line 1614</div>
+        <code>        static    protected        bool|int
+    <strong>hasNonEmptyCountEqualityCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $min_count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$min_count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLessThanCountEqualityCheck">
+        <div class="location">at line 1674</div>
+        <code>        static    protected        bool|int
+    <strong>hasLessThanCountEqualityCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $max_count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$max_count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNotCountEqualityCheck">
+        <div class="location">at line 1724</div>
+        <code>        static    protected        bool|int
+    <strong>hasNotCountEqualityCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPositiveNumberCheck">
+        <div class="location">at line 1756</div>
+        <code>        static    protected        bool|int
+    <strong>hasPositiveNumberCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, int|null $min_count)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$min_count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasReconcilableNonEmptyCountEqualityCheck">
+        <div class="location">at line 1804</div>
+        <code>        static    protected        bool|int
+    <strong>hasReconcilableNonEmptyCountEqualityCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTypedValueComparison">
+        <div class="location">at line 1849</div>
+        <code>        static    protected        bool|int
+    <strong>hasTypedValueComparison</strong>(<a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a> $conditional, <a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/BinaryOp.html"><abbr title="PhpParser\Node\Expr\BinaryOp">BinaryOp</abbr></a></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/FileSource.html"><abbr title="Psalm\FileSource">FileSource</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNullCheck">
+        <div class="location">at line 1883</div>
+        <code>        static    protected        bool
+    <strong>hasNullCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIsACheck">
+        <div class="location">at line 1892</div>
+        <code>        static    protected        bool
+    <strong>hasIsACheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt, <a href="../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a> $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a></td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasArrayCheck">
+        <div class="location">at line 1920</div>
+        <code>        static    protected        bool
+    <strong>hasArrayCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasStringCheck">
+        <div class="location">at line 1929</div>
+        <code>        static    protected        bool
+    <strong>hasStringCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasBoolCheck">
+        <div class="location">at line 1938</div>
+        <code>        static    protected        bool
+    <strong>hasBoolCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasObjectCheck">
+        <div class="location">at line 1947</div>
+        <code>        static    protected        bool
+    <strong>hasObjectCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNumericCheck">
+        <div class="location">at line 1956</div>
+        <code>        static    protected        bool
+    <strong>hasNumericCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIterableCheck">
+        <div class="location">at line 1965</div>
+        <code>        static    protected        bool
+    <strong>hasIterableCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCountableCheck">
+        <div class="location">at line 1974</div>
+        <code>        static    protected        bool
+    <strong>hasCountableCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasClassExistsCheck">
+        <div class="location">at line 1986</div>
+        <code>        static    protected        int
+    <strong>hasClassExistsCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTraitExistsCheck">
+        <div class="location">at line 2012</div>
+        <code>        static    protected        int
+    <strong>hasTraitExistsCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasInterfaceExistsCheck">
+        <div class="location">at line 2035</div>
+        <code>        static    protected        bool
+    <strong>hasInterfaceExistsCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasFunctionExistsCheck">
+        <div class="location">at line 2046</div>
+        <code>        static    protected        bool
+    <strong>hasFunctionExistsCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIntCheck">
+        <div class="location">at line 2055</div>
+        <code>        static    protected        bool
+    <strong>hasIntCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasFloatCheck">
+        <div class="location">at line 2068</div>
+        <code>        static    protected        bool
+    <strong>hasFloatCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasResourceCheck">
+        <div class="location">at line 2081</div>
+        <code>        static    protected        bool
+    <strong>hasResourceCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasScalarCheck">
+        <div class="location">at line 2090</div>
+        <code>        static    protected        bool
+    <strong>hasScalarCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCallableCheck">
+        <div class="location">at line 2099</div>
+        <code>        static    protected        bool
+    <strong>hasCallableCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasInArrayCheck">
+        <div class="location">at line 2108</div>
+        <code>        static    protected        bool
+    <strong>hasInArrayCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNonEmptyCountCheck">
+        <div class="location">at line 2126</div>
+        <code>        static    protected        bool
+    <strong>hasNonEmptyCountCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasArrayKeyExistsCheck">
+        <div class="location">at line 2137</div>
+        <code>        static    protected        bool
+    <strong>hasArrayKeyExistsCheck</strong>(<a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a> $stmt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../PhpParser/Node/Expr/FuncCall.html"><abbr title="PhpParser\Node\Expr\FuncCall">FuncCall</abbr></a></td>
+                <td>$stmt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

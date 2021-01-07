@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Polyfill\Intl\Grapheme\Grapheme | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Symfony_Polyfill_Intl_Grapheme_Grapheme" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Polyfill.html">Polyfill</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Polyfill/Intl.html">Intl</a></li><li class="backslash">\</li><li><a href="../../../../Symfony/Polyfill/Intl/Grapheme.html">Grapheme</a></li><li class="backslash">\</li><li>Grapheme</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Grapheme
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Grapheme</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Partial intl implementation in pure PHP.</p>            <p>Implemented:
+- grapheme_extract  - Extract a sequence of grapheme clusters from a text buffer, which must be encoded in UTF-8
+- grapheme_stripos  - Find position (in grapheme units) of first occurrence of a case-insensitive string
+- grapheme_stristr  - Returns part of haystack string from the first occurrence of case-insensitive needle to the end of haystack
+- grapheme_strlen   - Get string length in grapheme units
+- grapheme_strpos   - Find position (in grapheme units) of first occurrence of a string
+- grapheme_strripos - Find position (in grapheme units) of last occurrence of a case-insensitive string
+- grapheme_strrpos  - Find position (in grapheme units) of last occurrence of a string
+- grapheme_strstr   - Returns part of haystack string from the first occurrence of needle to the end of haystack
+- grapheme_substr   - Return part of a string</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>GRAPHEME_CLUSTER_RX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_extract">grapheme_extract</a>($s, $size, $type = GRAPHEME_EXTR_COUNT, $start = 0, $next = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_strlen">grapheme_strlen</a>($s)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_substr">grapheme_substr</a>($s, $start, $len = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_strpos">grapheme_strpos</a>($s, $needle, $offset = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_stripos">grapheme_stripos</a>($s, $needle, $offset = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_strrpos">grapheme_strrpos</a>($s, $needle, $offset = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_strripos">grapheme_strripos</a>($s, $needle, $offset = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_stristr">grapheme_stristr</a>($s, $needle, $beforeNeedle = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_grapheme_strstr">grapheme_strstr</a>($s, $needle, $beforeNeedle = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_grapheme_extract">
+        <div class="location">at line 40</div>
+        <code>        static            
+    <strong>grapheme_extract</strong>($s, $size, $type = GRAPHEME_EXTR_COUNT, $start = 0, $next = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$next</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_strlen">
+        <div class="location">at line 101</div>
+        <code>        static            
+    <strong>grapheme_strlen</strong>($s)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_substr">
+        <div class="location">at line 108</div>
+        <code>        static            
+    <strong>grapheme_substr</strong>($s, $start, $len = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$start</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$len</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_strpos">
+        <div class="location">at line 151</div>
+        <code>        static            
+    <strong>grapheme_strpos</strong>($s, $needle, $offset = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_stripos">
+        <div class="location">at line 156</div>
+        <code>        static            
+    <strong>grapheme_stripos</strong>($s, $needle, $offset = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_strrpos">
+        <div class="location">at line 161</div>
+        <code>        static            
+    <strong>grapheme_strrpos</strong>($s, $needle, $offset = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_strripos">
+        <div class="location">at line 166</div>
+        <code>        static            
+    <strong>grapheme_strripos</strong>($s, $needle, $offset = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_stristr">
+        <div class="location">at line 171</div>
+        <code>        static            
+    <strong>grapheme_stristr</strong>($s, $needle, $beforeNeedle = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$beforeNeedle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_grapheme_strstr">
+        <div class="location">at line 176</div>
+        <code>        static            
+    <strong>grapheme_strstr</strong>($s, $needle, $beforeNeedle = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$s</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$beforeNeedle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

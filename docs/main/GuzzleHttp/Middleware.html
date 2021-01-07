@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Middleware | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Middleware" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li>Middleware</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Middleware
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Middleware</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Functions used to create and wrap handlers with handler middleware.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cookies">cookies</a>()
+        
+                                            <p>Middleware that adds cookies to requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_httpErrors">httpErrors</a>(<a href="../GuzzleHttp/BodySummarizerInterface.html"><abbr title="GuzzleHttp\BodySummarizerInterface">BodySummarizerInterface</abbr></a> $bodySummarizer = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_history">history</a>($container)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tap">tap</a>(callable $before = null, callable $after = null)
+        
+                                            <p>Middleware that invokes a callback before and after sending a request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>()
+        
+                                            <p>Middleware that handles request redirects.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_retry">retry</a>(callable $decider, callable $delay = null)
+        
+                                            <p>Middleware that retries requests based on the boolean result of
+invoking the provided "decider" function.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(<a href="../Psr/Log/LoggerInterface.html"><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></a> $logger, MessageFormatterInterface|<a target="_blank" rel="noopener" href="https://www.php.net/MessageFormatter">MessageFormatter</a> $formatter, string $logLevel = &#039;info&#039;)
+        
+                                            <p>Middleware that logs requests, responses, and errors using a message
+formatter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareBody">prepareBody</a>()
+        
+                                            <p>This middleware adds a default content-type if possible, a default
+content-length or transfer-encoding header, and the expect header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mapRequest">mapRequest</a>(callable $fn)
+        
+                                            <p>Middleware that applies a map function to the request before passing to
+the next handler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mapResponse">mapResponse</a>(callable $fn)
+        
+                                            <p>Middleware that applies a map function to the resolved promise's
+response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_cookies">
+        <div class="location">at line 26</div>
+        <code>        static            callable
+    <strong>cookies</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that adds cookies to requests.</p>                    <p>The options array must be set to a CookieJarInterface in order to use
+cookies. This is typically handled for you by a client.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_httpErrors">
+        <div class="location">at line 56</div>
+        <code>        static            callable
+    <strong>httpErrors</strong>(<a href="../GuzzleHttp/BodySummarizerInterface.html"><abbr title="GuzzleHttp\BodySummarizerInterface">BodySummarizerInterface</abbr></a> $bodySummarizer = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../GuzzleHttp/BodySummarizerInterface.html"><abbr title="GuzzleHttp\BodySummarizerInterface">BodySummarizerInterface</abbr></a></td>
+                <td>$bodySummarizer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_history">
+        <div class="location">at line 85</div>
+        <code>        static            callable
+    <strong>history</strong>($container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tap">
+        <div class="location">at line 130</div>
+        <code>        static            callable
+    <strong>tap</strong>(callable $before = null, callable $after = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that invokes a callback before and after sending a request.</p>                    <p>The provided listener cannot modify or alter the response. It simply
+"taps" into the chain to be notified before returning the promise. The
+before listener accepts a request and options array, and the after
+listener accepts a request, options array, and response promise.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$before</td>
+                <td>Function to invoke before forwarding the request.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$after</td>
+                <td>Function invoked after forwarding.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line 151</div>
+        <code>        static            callable
+    <strong>redirect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that handles request redirects.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retry">
+        <div class="location">at line 173</div>
+        <code>        static            callable
+    <strong>retry</strong>(callable $decider, callable $delay = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that retries requests based on the boolean result of
+invoking the provided "decider" function.</p>                    <p>If no delay function is provided, a simple implementation of exponential
+backoff will be utilized.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$decider</td>
+                <td>Function that accepts the number of retries,
+a request, [response], and [exception] and
+returns true if the request is to be retried.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$delay</td>
+                <td>Function that accepts the number of retries and
+returns the number of milliseconds to delay.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at line 192</div>
+        <code>        static            callable
+    <strong>log</strong>(<a href="../Psr/Log/LoggerInterface.html"><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></a> $logger, MessageFormatterInterface|<a target="_blank" rel="noopener" href="https://www.php.net/MessageFormatter">MessageFormatter</a> $formatter, string $logLevel = &#039;info&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that logs requests, responses, and errors using a message
+formatter.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psr/Log/LoggerInterface.html"><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></a></td>
+                <td>$logger</td>
+                <td>Logs messages.</td>
+            </tr>
+                    <tr>
+                <td>MessageFormatterInterface|<a target="_blank" rel="noopener" href="https://www.php.net/MessageFormatter">MessageFormatter</a></td>
+                <td>$formatter</td>
+                <td>Formatter used to create message strings.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$logLevel</td>
+                <td>Level at which to log requests.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareBody">
+        <div class="location">at line 222</div>
+        <code>        static            callable
+    <strong>prepareBody</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This middleware adds a default content-type if possible, a default
+content-length or transfer-encoding header, and the expect header.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mapRequest">
+        <div class="location">at line 236</div>
+        <code>        static            callable
+    <strong>mapRequest</strong>(callable $fn)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that applies a map function to the request before passing to
+the next handler.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$fn</td>
+                <td>Function that accepts a RequestInterface and returns
+a RequestInterface.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mapResponse">
+        <div class="location">at line 252</div>
+        <code>        static            callable
+    <strong>mapResponse</strong>(callable $fn)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware that applies a map function to the resolved promise's
+response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$fn</td>
+                <td>Function that accepts a ResponseInterface and
+returns a ResponseInterface.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

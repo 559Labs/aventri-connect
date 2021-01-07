@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpDocumentor\Reflection\DocBlock\StandardTagFactory | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:phpDocumentor_Reflection_DocBlock_StandardTagFactory" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../phpDocumentor.html">phpDocumentor</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection.html">Reflection</a></li><li class="backslash">\</li><li><a href="../../../phpDocumentor/Reflection/DocBlock.html">DocBlock</a></li><li class="backslash">\</li><li>StandardTagFactory</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            StandardTagFactory
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>StandardTagFactory</strong>        implements
+        <a href="../../../phpDocumentor/Reflection/DocBlock/TagFactory.html"><abbr title="phpDocumentor\Reflection\DocBlock\TagFactory">TagFactory</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Creates a Tag object given the contents of a tag.</p>            <p>This Factory is capable of determining the appropriate class for a tag and instantiate it using its <code>create</code>
+factory method. The <code>create</code> factory method of a Tag can have a variable number of arguments; this way you can
+pass the dependencies that you need to construct a tag object.</p>
+
+<blockquote>
+  <p>Important: each parameter in addition to the body variable for the <code>create</code> method must default to null, otherwise
+  it violates the constraint with the interface; it is recommended to use the {see \Assert::notNull()} method to
+  verify that a dependency is actually passed.</p>
+</blockquote>
+
+<p>This Factory also features a Service Locator component that is used to pass the right dependencies to the
+<code>create</code> method of a tag; each dependency should be registered as a service or as a parameter.</p>
+
+<p>When you want to use a Tag of your own with custom handling you need to call the <code>registerTagHandler</code> method, pass
+the name of the tag and a Fully Qualified Class Name pointing to a class that implements the Tag interface.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>REGEX_TAGNAME</td>
+                <td class="last">
+                    <p><em>PCRE regular expression matching a tag name.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../phpDocumentor/Reflection/FqsenResolver.html"><abbr title="phpDocumentor\Reflection\FqsenResolver">FqsenResolver</abbr></a> $fqsenResolver, array|null $tagHandlers = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $tagLine, <a href="../../../phpDocumentor/Reflection/Types/Context.html"><abbr title="phpDocumentor\Reflection\Types\Context">Context</abbr></a>|null $context = null)
+        
+                                            <p>Factory method responsible for instantiating the correct sub type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addParameter">addParameter</a>(string $name, mixed $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addService">addService</a>(object $service, string|null $alias = null)
+        
+                                            <p>Registers a service with the Service Locator using the FQCN of the class or the alias, if provided.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerTagHandler">registerTagHandler</a>(string $tagName, string $handler)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 130</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../phpDocumentor/Reflection/FqsenResolver.html"><abbr title="phpDocumentor\Reflection\FqsenResolver">FqsenResolver</abbr></a> $fqsenResolver, array|null $tagHandlers = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpDocumentor/Reflection/FqsenResolver.html"><abbr title="phpDocumentor\Reflection\FqsenResolver">FqsenResolver</abbr></a></td>
+                <td>$fqsenResolver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$tagHandlers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line 140</div>
+        <code>                    <a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a>
+    <strong>create</strong>(string $tagLine, <a href="../../../phpDocumentor/Reflection/Types/Context.html"><abbr title="phpDocumentor\Reflection\Types\Context">Context</abbr></a>|null $context = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Factory method responsible for instantiating the correct sub type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tagLine</td>
+                <td>The text for this tag, including description.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../phpDocumentor/Reflection/Types/Context.html"><abbr title="phpDocumentor\Reflection\Types\Context">Context</abbr></a>|null</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpDocumentor/Reflection/DocBlock/Tag.html"><abbr title="phpDocumentor\Reflection\DocBlock\Tag">Tag</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>If an invalid tag line was presented.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addParameter">
+        <div class="location">at line 154</div>
+        <code>                    void
+    <strong>addParameter</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addService">
+        <div class="location">at line 159</div>
+        <code>                    void
+    <strong>addService</strong>(object $service, string|null $alias = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Registers a service with the Service Locator using the FQCN of the class or the alias, if provided.</p>                    <p>When calling a tag's "create" method we always check the signature for dependencies to inject. If a parameter
+has a typehint then the ServiceLocator is queried to see if a Service is registered for that typehint.</p>
+
+<p>Because interfaces are regularly used as type-hints this method provides an alias parameter; if the FQCN of the
+interface is passed as alias then every time that interface is requested the provided service will be returned.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$service</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerTagHandler">
+        <div class="location">at line 164</div>
+        <code>                    void
+    <strong>registerTagHandler</strong>(string $tagName, string $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tagName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

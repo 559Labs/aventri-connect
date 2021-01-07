@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Amp\Loop\EvDriver | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Amp_Loop_EvDriver" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Amp.html">Amp</a></li><li class="backslash">\</li><li><a href="../../Amp/Loop.html">Loop</a></li><li class="backslash">\</li><li>EvDriver</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EvDriver
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>EvDriver</strong>        extends <a href="../../Amp/Loop/Driver.html"><abbr title="Amp\Loop\Driver">Driver</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MILLISEC_PER_SEC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MICROSEC_PER_SEC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_run">run</a>()
+        
+                                            <p>Run the event loop.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_activate">activate</a>(array $watchers)
+        
+                                            <p>Activates (enables) all the given watchers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dispatch">dispatch</a>(bool $blocking)
+        
+                                            <p>Dispatches any pending read/write, timer, and signal events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stop">stop</a>()
+        
+                                            <p>Stop the event loop.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defer">defer</a>(callable $callback, mixed $data = null)
+        
+                                            <p>Defer the execution of a callback.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_defer">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delay">delay</a>(int $delay, callable $callback, mixed $data = null)
+        
+                                            <p>Delay the execution of a callback.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_delay">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeat">repeat</a>(int $interval, callable $callback, mixed $data = null)
+        
+                                            <p>Repeatedly execute a callback.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_repeat">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onReadable">onReadable</a>(resource $stream, callable $callback, mixed $data = null)
+        
+                                            <p>Execute a callback when a stream resource becomes readable or is closed for reading.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_onReadable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onWritable">onWritable</a>(resource $stream, callable $callback, mixed $data = null)
+        
+                                            <p>Execute a callback when a stream resource becomes writable or is closed for writing.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_onWritable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onSignal">onSignal</a>(int $signo, callable $callback, mixed $data = null)
+        
+                                            <p>Execute a callback when a signal is received.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_onSignal">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enable">enable</a>(string $watcherId)
+        
+                                            <p>Enable a watcher to be active starting in the next tick.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_enable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cancel">cancel</a>(string $watcherId)
+        
+                                            <p>Cancel a watcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disable">disable</a>(string $watcherId)
+        
+                                            <p>Disable a watcher immediately.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_disable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deactivate">deactivate</a>(<a href="../../Amp/Loop/Watcher.html"><abbr title="Amp\Loop\Watcher">Watcher</abbr></a> $watcher)
+        
+                                            <p>Deactivates (disables) the given watcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reference">reference</a>(string $watcherId)
+        
+                                            <p>Reference a watcher.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_reference">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unreference">unreference</a>(string $watcherId)
+        
+                                            <p>Unreference a watcher.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_unreference">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setState">setState</a>(string $key, mixed $value)
+        
+                                            <p>Stores information in the loop bound registry.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_setState">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getState">getState</a>(string $key)
+        
+                                            <p>Gets information stored bound to the loop.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_getState">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrorHandler">setErrorHandler</a>(callable $callback = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_setErrorHandler">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a> $exception)
+        
+                                            <p>Invokes the error handler with the given exception.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_error">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_now">now</a>()
+        
+                                            <p>Returns the current loop time in millisecond increments. Note this value does not necessarily correlate to
+wall-clock time, rather the value returned is meant to be used in relative comparisons to prior values returned
+by this method (intervals, expiration calculations, etc.) and is only updated once per loop tick.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|object|resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandle">getHandle</a>()
+        
+                                            <p>Get the underlying loop handle.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___debugInfo">__debugInfo</a>()
+        
+                                            <p>Returns the same array of data as getInfo().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method___debugInfo">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInfo">getInfo</a>()
+        
+                                            <p>Retrieve an associative array of information about the event loop driver.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Amp/Loop/Driver.html#method_getInfo">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSupported">isSupported</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_run">
+        <div class="location">at line 169</div>
+        <code>                    void
+    <strong>run</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Run the event loop.</p>                    <p>One iteration of the loop is called one "tick". A tick covers the following steps:</p>
+
+<ol>
+<li>Activate watchers created / enabled in the last tick / before <code>run()</code>.</li>
+<li>Execute all enabled defer watchers.</li>
+<li>Execute all due timer, pending signal and actionable stream callbacks, each only once per tick.</li>
+</ol>
+
+<p>The loop MUST continue to run until it is either stopped explicitly, no referenced watchers exist anymore, or an
+exception is thrown that cannot be handled. Exceptions that cannot be handled are exceptions thrown from an
+error handler or exceptions that would be passed to an error handler but none exists to handle them.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location">at line 242</div>
+        <code>            protected        void
+    <strong>activate</strong>(array $watchers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Activates (enables) all the given watchers.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$watchers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">at line 232</div>
+        <code>            protected        void
+    <strong>dispatch</strong>(bool $blocking)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatches any pending read/write, timer, and signal events.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$blocking</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stop">
+        <div class="location">at line 203</div>
+        <code>                    void
+    <strong>stop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop the event loop.</p>                    <p>When an event loop is stopped, it continues with its current tick and exits the loop afterwards. Multiple calls
+to stop MUST be ignored and MUST NOT raise an exception.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defer">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_defer">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 187</div>
+        <code>                    string
+    <strong>defer</strong>(callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Defer the execution of a callback.</p>                    <p>The deferred callable MUST be executed before any other type of watcher in a tick. Order of enabling MUST be
+preserved when executing the callbacks.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the <code>$data</code> parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delay">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_delay">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 218</div>
+        <code>                    string
+    <strong>delay</strong>(int $delay, callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delay the execution of a callback.</p>                    <p>The delay is a minimum and approximate, accuracy is not guaranteed. Order of calls MUST be determined by which
+timers expire first, but timers with the same expiration time MAY be executed in any order.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$delay</td>
+                <td>The amount of time, in milliseconds, to delay the execution for.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the <code>$data</code> parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeat">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_repeat">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 255</div>
+        <code>                    string
+    <strong>repeat</strong>(int $interval, callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Repeatedly execute a callback.</p>                    <p>The interval between executions is a minimum and approximate, accuracy is not guaranteed. Order of calls MUST be
+determined by which timers expire first, but timers with the same expiration time MAY be executed in any order.
+The first execution is scheduled after the first interval period.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$interval</td>
+                <td>The time interval, in milliseconds, to wait between executions.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the <code>$data</code> parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onReadable">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_onReadable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 295</div>
+        <code>                    string
+    <strong>onReadable</strong>(resource $stream, callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a callback when a stream resource becomes readable or is closed for reading.</p>                    <p>Warning: Closing resources locally, e.g. with <code>fclose</code>, might not invoke the callback. Be sure to <code>cancel</code> the
+watcher when closing the resource locally. Drivers MAY choose to notify the user if there are watchers on invalid
+resources, but are not required to, due to the high performance impact. Watchers on closed resources are
+therefore undefined behavior.</p>
+
+<p>Multiple watchers on the same stream MAY be executed in any order.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$stream</td>
+                <td>The stream to monitor.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the <code>$data</code> parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onWritable">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_onWritable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 330</div>
+        <code>                    string
+    <strong>onWritable</strong>(resource $stream, callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a callback when a stream resource becomes writable or is closed for writing.</p>                    <p>Warning: Closing resources locally, e.g. with <code>fclose</code>, might not invoke the callback. Be sure to <code>cancel</code> the
+watcher when closing the resource locally. Drivers MAY choose to notify the user if there are watchers on invalid
+resources, but are not required to, due to the high performance impact. Watchers on closed resources are
+therefore undefined behavior.</p>
+
+<p>Multiple watchers on the same stream MAY be executed in any order.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$stream</td>
+                <td>The stream to monitor.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the <code>$data</code> parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onSignal">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_onSignal">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 366</div>
+        <code>                    string
+    <strong>onSignal</strong>(int $signo, callable $callback, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a callback when a signal is received.</p>                    <p>Warning: Installing the same signal on different instances of this interface is deemed undefined behavior.
+Implementations MAY try to detect this, if possible, but are not required to. This is due to technical
+limitations of the signals being registered globally per process.</p>
+
+<p>Multiple watchers on the same signal MAY be executed in any order.</p>
+
+<p>The created watcher MUST immediately be marked as enabled, but only be activated (i.e. callback can be called)
+right before the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$signo</td>
+                <td>The signal number to monitor.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Arbitrary data given to the callback function as the $data parameter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UnsupportedFeatureException</td>
+                <td>If signal handling is not supported.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_enable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 394</div>
+        <code>                    void
+    <strong>enable</strong>(string $watcherId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enable a watcher to be active starting in the next tick.</p>                    <p>Watchers MUST immediately be marked as enabled, but only be activated (i.e. callbacks can be called) right before
+the next tick. Callbacks of watchers MUST NOT be called in the tick they were enabled.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$watcherId</td>
+                <td>The watcher identifier.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidWatcherError</td>
+                <td>If the watcher identifier is invalid.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cancel">
+        <div class="location">at line 146</div>
+        <code>                    void
+    <strong>cancel</strong>(string $watcherId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cancel a watcher.</p>                    <p>This will detach the event loop from all resources that are associated to the watcher. After this operation the
+watcher is permanently invalid. Calling this function MUST NOT fail, even if passed an invalid watcher.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$watcherId</td>
+                <td>The watcher identifier.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_disable">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 456</div>
+        <code>                    void
+    <strong>disable</strong>(string $watcherId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disable a watcher immediately.</p>                    <p>A watcher MUST be disabled immediately, e.g. if a defer watcher disables a later defer watcher, the second defer
+watcher isn't executed in this tick.</p>
+
+<p>Disabling a watcher MUST NOT invalidate the watcher. Calling this function MUST NOT fail, even if passed an
+invalid watcher.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$watcherId</td>
+                <td>The watcher identifier.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deactivate">
+        <div class="location">at line 307</div>
+        <code>            protected        void
+    <strong>deactivate</strong>(<a href="../../Amp/Loop/Watcher.html"><abbr title="Amp\Loop\Watcher">Watcher</abbr></a> $watcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deactivates (disables) the given watcher.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Amp/Loop/Watcher.html"><abbr title="Amp\Loop\Watcher">Watcher</abbr></a></td>
+                <td>$watcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reference">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_reference">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 513</div>
+        <code>                    void
+    <strong>reference</strong>(string $watcherId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reference a watcher.</p>                    <p>This will keep the event loop alive whilst the watcher is still being monitored. Watchers have this state by
+default.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$watcherId</td>
+                <td>The watcher identifier.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>InvalidWatcherError</td>
+                <td>If the watcher identifier is invalid.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unreference">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_unreference">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 532</div>
+        <code>                    void
+    <strong>unreference</strong>(string $watcherId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unreference a watcher.</p>                    <p>The event loop should exit the run method when only unreferenced watchers are still being monitored. Watchers
+are all referenced by default.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$watcherId</td>
+                <td>The watcher identifier.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_setState">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 555</div>
+        <code>final                    void
+    <strong>setState</strong>(string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stores information in the loop bound registry.</p>                    <p>Stored information is package private. Packages MUST NOT retrieve the stored state of other packages. Packages
+MUST use their namespace as prefix for keys. They may do so by using <code>SomeClass::class</code> as key.</p>
+
+<p>If packages want to expose loop bound state to consumers other than the package, they SHOULD provide a dedicated
+interface for that purpose instead of sharing the storage key.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The namespaced storage key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to be stored.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_getState">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 577</div>
+        <code>final                    mixed
+    <strong>getState</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets information stored bound to the loop.</p>                    <p>Stored information is package private. Packages MUST NOT retrieve the stored state of other packages. Packages
+MUST use their namespace as prefix for keys. They may do so by using <code>SomeClass::class</code> as key.</p>
+
+<p>If packages want to expose loop bound state to consumers other than the package, they SHOULD provide a dedicated
+interface for that purpose instead of sharing the storage key.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The namespaced storage key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrorHandler">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_setErrorHandler">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 596</div>
+        <code>                    
+    <strong>setErrorHandler</strong>(callable $callback = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_error">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 611</div>
+        <code>            protected        void
+    <strong>error</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Invokes the error handler with the given exception.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a></td>
+                <td>$exception</td>
+                <td>The exception thrown from a watcher callback.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Throwable">Throwable</a></td>
+                <td>If no error handler has been set.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_now">
+        <div class="location">at line 212</div>
+        <code>                    int
+    <strong>now</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current loop time in millisecond increments. Note this value does not necessarily correlate to
+wall-clock time, rather the value returned is meant to be used in relative comparisons to prior values returned
+by this method (intervals, expiration calculations, etc.) and is only updated once per loop tick.</p>                    <p>Extending classes should override this function to return a value cached once per loop tick.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandle">
+        <div class="location">at line 222</div>
+        <code>                    null|object|resource
+    <strong>getHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the underlying loop handle.</p>                    <p>Example: the <code>uv_loop</code> resource for <code>libuv</code> or the <code>EvLoop</code> object for <code>libev</code> or <code>null</code> for a native driver.</p>
+
+<p>Note: This function is <em>not</em> exposed in the <code>Loop</code> class. Users shall access it directly on the respective loop
+instance.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|object|resource</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___debugInfo">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method___debugInfo">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 651</div>
+        <code>                    array
+    <strong>__debugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the same array of data as getInfo().</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInfo">
+        <div class="location">in <a href="../../Amp/Loop/Driver.html#method_getInfo">
+<abbr title="Amp\Loop\Driver">Driver</abbr></a> at line 679</div>
+        <code>                    array
+    <strong>getInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an associative array of information about the event loop driver.</p>                    <p>The returned array MUST contain the following data describing the driver's currently registered watchers:</p>
+
+<pre><code>[
+    "defer"            =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "delay"            =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "repeat"           =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "on_readable"      =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "on_writable"      =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "on_signal"        =&gt; ["enabled" =&gt; int, "disabled" =&gt; int],
+    "enabled_watchers" =&gt; ["referenced" =&gt; int, "unreferenced" =&gt; int],
+    "running"          =&gt; bool
+];
+</code></pre>
+
+<p>Implementations MAY optionally add more information in the array but at minimum the above <code>key =&gt; value</code> format
+MUST always be provided.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSupported">
+        <div class="location">at line 16</div>
+        <code>        static            bool
+    <strong>isSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 38</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at line 152</div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

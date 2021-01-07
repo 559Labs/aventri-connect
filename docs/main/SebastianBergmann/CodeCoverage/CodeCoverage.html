@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>SebastianBergmann\CodeCoverage\CodeCoverage | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:SebastianBergmann_CodeCoverage_CodeCoverage" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../SebastianBergmann.html">SebastianBergmann</a></li><li class="backslash">\</li><li><a href="../../SebastianBergmann/CodeCoverage.html">CodeCoverage</a></li><li class="backslash">\</li><li>CodeCoverage</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CodeCoverage
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>CodeCoverage</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Provides collection functionality for PHP code coverage information.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>UNCOVERED_FILES</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a> $driver, <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a> $filter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReport">getReport</a>()
+        
+                                            <p>Returns the code coverage information as a graph of node objects.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Clears collected code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>()
+        
+                                            <p>Returns the filter object used.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(bool $raw = false)
+        
+                                            <p>Returns the collected code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(<a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a> $data)
+        
+                                            <p>Sets the coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTests">getTests</a>()
+        
+                                            <p>Returns the test data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTests">setTests</a>(array $tests)
+        
+                                            <p>Sets the test data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_start">start</a>(PhptTestCase|string|TestCase $id, bool $clear = false)
+        
+                                            <p>Start collection of code coverage information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stop">stop</a>(bool $append = true, array|bool $linesToBeCovered = [], array $linesToBeUsed = [])
+        
+                                            <p>Stop collection of code coverage information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(<a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a> $rawData, PhptTestCase|string|TestCase $id = null, bool $append = true, array|bool $linesToBeCovered = [], array $linesToBeUsed = [])
+        
+                                            <p>Appends code coverage data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>(<a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a> $that)
+        
+                                            <p>Merges the data from another instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableCheckForUnintentionallyCoveredCode">enableCheckForUnintentionallyCoveredCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableCheckForUnintentionallyCoveredCode">disableCheckForUnintentionallyCoveredCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_includeUncoveredFiles">includeUncoveredFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_excludeUncoveredFiles">excludeUncoveredFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processUncoveredFiles">processUncoveredFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doNotProcessUncoveredFiles">doNotProcessUncoveredFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableAnnotationsForIgnoringCode">enableAnnotationsForIgnoringCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableAnnotationsForIgnoringCode">disableAnnotationsForIgnoringCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ignoreDeprecatedCode">ignoreDeprecatedCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doNotIgnoreDeprecatedCode">doNotIgnoreDeprecatedCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cachesStaticAnalysis">cachesStaticAnalysis</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheStaticAnalysis">cacheStaticAnalysis</a>(string $directory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doNotCacheStaticAnalysis">doNotCacheStaticAnalysis</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cacheDirectory">cacheDirectory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck">excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck</a>(string $className)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableBranchAndPathCoverage">enableBranchAndPathCoverage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableBranchAndPathCoverage">disableBranchAndPathCoverage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collectsBranchAndPathCoverage">collectsBranchAndPathCoverage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_detectsDeadCode">detectsDeadCode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 126</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a> $driver, <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a> $filter)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/Driver/Driver.html"><abbr title="SebastianBergmann\CodeCoverage\Driver\Driver">Driver</abbr></a></td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a></td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReport">
+        <div class="location">at line 137</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a>
+    <strong>getReport</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the code coverage information as a graph of node objects.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/Node/Directory.html"><abbr title="SebastianBergmann\CodeCoverage\Node\Directory">Directory</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line 145</div>
+        <code>                    void
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears collected code coverage data.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at line 155</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a>
+    <strong>filter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the filter object used.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/Filter.html"><abbr title="SebastianBergmann\CodeCoverage\Filter">Filter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at line 163</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a>
+    <strong>getData</strong>(bool $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the collected code coverage data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">at line 179</div>
+        <code>                    void
+    <strong>setData</strong>(<a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the coverage data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/ProcessedCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\ProcessedCodeCoverageData">ProcessedCodeCoverageData</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTests">
+        <div class="location">at line 187</div>
+        <code>                    array
+    <strong>getTests</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the test data.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTests">
+        <div class="location">at line 195</div>
+        <code>                    void
+    <strong>setTests</strong>(array $tests)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the test data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tests</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location">at line 205</div>
+        <code>                    void
+    <strong>start</strong>(PhptTestCase|string|TestCase $id, bool $clear = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start collection of code coverage information.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>PhptTestCase|string|TestCase</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$clear</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stop">
+        <div class="location">at line 221</div>
+        <code>                    <a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a>
+    <strong>stop</strong>(bool $append = true, array|bool $linesToBeCovered = [], array $linesToBeUsed = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop collection of code coverage information.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|bool</td>
+                <td>$linesToBeCovered</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$linesToBeUsed</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">at line 247</div>
+        <code>                    void
+    <strong>append</strong>(<a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a> $rawData, PhptTestCase|string|TestCase $id = null, bool $append = true, array|bool $linesToBeCovered = [], array $linesToBeUsed = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Appends code coverage data.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/RawCodeCoverageData.html"><abbr title="SebastianBergmann\CodeCoverage\RawCodeCoverageData">RawCodeCoverageData</abbr></a></td>
+                <td>$rawData</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>PhptTestCase|string|TestCase</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|bool</td>
+                <td>$linesToBeCovered</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$linesToBeUsed</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UnintentionallyCoveredCodeException</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>TestIdMissingException</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at line 313</div>
+        <code>                    void
+    <strong>merge</strong>(<a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a> $that)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges the data from another instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SebastianBergmann/CodeCoverage/CodeCoverage.html"><abbr title="SebastianBergmann\CodeCoverage\CodeCoverage">CodeCoverage</abbr></a></td>
+                <td>$that</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableCheckForUnintentionallyCoveredCode">
+        <div class="location">at line 324</div>
+        <code>                    void
+    <strong>enableCheckForUnintentionallyCoveredCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableCheckForUnintentionallyCoveredCode">
+        <div class="location">at line 329</div>
+        <code>                    void
+    <strong>disableCheckForUnintentionallyCoveredCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_includeUncoveredFiles">
+        <div class="location">at line 334</div>
+        <code>                    void
+    <strong>includeUncoveredFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_excludeUncoveredFiles">
+        <div class="location">at line 339</div>
+        <code>                    void
+    <strong>excludeUncoveredFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processUncoveredFiles">
+        <div class="location">at line 344</div>
+        <code>                    void
+    <strong>processUncoveredFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doNotProcessUncoveredFiles">
+        <div class="location">at line 349</div>
+        <code>                    void
+    <strong>doNotProcessUncoveredFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableAnnotationsForIgnoringCode">
+        <div class="location">at line 354</div>
+        <code>                    void
+    <strong>enableAnnotationsForIgnoringCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableAnnotationsForIgnoringCode">
+        <div class="location">at line 359</div>
+        <code>                    void
+    <strong>disableAnnotationsForIgnoringCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreDeprecatedCode">
+        <div class="location">at line 364</div>
+        <code>                    void
+    <strong>ignoreDeprecatedCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doNotIgnoreDeprecatedCode">
+        <div class="location">at line 369</div>
+        <code>                    void
+    <strong>doNotIgnoreDeprecatedCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cachesStaticAnalysis">
+        <div class="location">at line 377</div>
+        <code>                    bool
+    <strong>cachesStaticAnalysis</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheStaticAnalysis">
+        <div class="location">at line 382</div>
+        <code>                    void
+    <strong>cacheStaticAnalysis</strong>(string $directory)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$directory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doNotCacheStaticAnalysis">
+        <div class="location">at line 387</div>
+        <code>                    void
+    <strong>doNotCacheStaticAnalysis</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cacheDirectory">
+        <div class="location">at line 395</div>
+        <code>                    string
+    <strong>cacheDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>StaticAnalysisCacheNotConfiguredException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck">
+        <div class="location">at line 409</div>
+        <code>                    void
+    <strong>excludeSubclassesOfThisClassFromUnintentionallyCoveredCodeCheck</strong>(string $className)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$className</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableBranchAndPathCoverage">
+        <div class="location">at line 414</div>
+        <code>                    void
+    <strong>enableBranchAndPathCoverage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableBranchAndPathCoverage">
+        <div class="location">at line 419</div>
+        <code>                    void
+    <strong>disableBranchAndPathCoverage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collectsBranchAndPathCoverage">
+        <div class="location">at line 424</div>
+        <code>                    bool
+    <strong>collectsBranchAndPathCoverage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_detectsDeadCode">
+        <div class="location">at line 429</div>
+        <code>                    bool
+    <strong>detectsDeadCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

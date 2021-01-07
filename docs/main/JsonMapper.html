@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>JsonMapper | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="fonts/doctum-font.css">
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:JsonMapper" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="namespaces.html">Namespaces</a></li>
+                    <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            JsonMapper
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>JsonMapper</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Automatically map JSON structures into objects.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_logger">
+                                        protected                                        object
+                </td>
+                <td>$logger</td>
+                <td class="last">PSR-3 compatible logger object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bExceptionOnUndefinedProperty">
+                                                                                bool
+                </td>
+                <td>$bExceptionOnUndefinedProperty</td>
+                <td class="last">Throw an exception when JSON data contain a property
+that is not defined in the PHP class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bExceptionOnMissingData">
+                                                                                bool
+                </td>
+                <td>$bExceptionOnMissingData</td>
+                <td class="last">Throw an exception if the JSON data miss a property
+that is marked with @required in the PHP class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bEnforceMapType">
+                                                                                bool
+                </td>
+                <td>$bEnforceMapType</td>
+                <td class="last">If the types of map() parameters shall be checked.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bStrictObjectTypeChecking">
+                                                                                bool
+                </td>
+                <td>$bStrictObjectTypeChecking</td>
+                <td class="last">Throw an exception when an object is expected but the JSON contains
+a non-object type.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bStrictNullTypes">
+                                                                                bool
+                </td>
+                <td>$bStrictNullTypes</td>
+                <td class="last">Throw an exception, if null value is found
+but the type of attribute does not allow nulls.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bIgnoreVisibility">
+                                                                                bool
+                </td>
+                <td>$bIgnoreVisibility</td>
+                <td class="last">Allow mapping of private and proteted properties.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bRemoveUndefinedAttributes">
+                                                                                bool
+                </td>
+                <td>$bRemoveUndefinedAttributes</td>
+                <td class="last">Remove attributes that were not passed in JSON,
+to avoid confusion between them and NULL values.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_classMap">
+                                                                                array
+                </td>
+                <td>$classMap</td>
+                <td class="last">Override class names that JsonMapper uses to create objects.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_undefinedPropertyHandler">
+                                                                                callable
+                </td>
+                <td>$undefinedPropertyHandler</td>
+                <td class="last">Callback used when an undefined property is found.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_arInspectedClasses">
+                                        protected                                        array
+                </td>
+                <td>$arInspectedClasses</td>
+                <td class="last">Runtime cache for inspected classes. This is particularly effective if
+mapArray() is called with a large number of objects</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postMappingMethod">
+                                                                                string|null
+                </td>
+                <td>$postMappingMethod</td>
+                <td class="last">Method to call on each object after deserialization is done.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(object $json, object $object)
+        
+                                            <p>Map data all data in $json into the given $object instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullNamespace">getFullNamespace</a>(string $type, string $strNs)
+        
+                                            <p>Convert a type name to a fully namespaced type name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkMissingData">checkMissingData</a>(array $providedProperties, <a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a> $rc)
+        
+                                            <p>Check required properties exist in json</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeUndefinedAttributes">removeUndefinedAttributes</a>(object $object, array $providedProperties)
+        
+                                            <p>Remove attributes from object that were not passed in JSON data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mapArray">mapArray</a>(array $json, mixed $array, string $class = null, string $parent_key = &#039;&#039;)
+        
+                                            <p>Map an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inspectProperty">inspectProperty</a>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a> $rc, string $name)
+        
+                                            <p>Try to find out if a property exists in a given class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCamelCaseName">getCamelCaseName</a>(string $name)
+        
+                                            <p>Removes - and _ and makes the next letter uppercase</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSafeName">getSafeName</a>(string $name)
+        
+                                            <p>Since hyphens cannot be used in variables we have to uppercase them.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProperty">setProperty</a>(object $object, object $accessor, mixed $value)
+        
+                                            <p>Set a property on a given object to a given value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createInstance">createInstance</a>(string $class, bool $useParameter = false, mixed $jvalue = null)
+        
+                                            <p>Create a new object of the given type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMappedType">getMappedType</a>(string $type, mixed $jvalue = null)
+        
+                                            <p>Get the mapped class/type name for this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSimpleType">isSimpleType</a>(string $type)
+        
+                                            <p>Checks if the given type is a "simple type"</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isObjectOfSameType">isObjectOfSameType</a>(string $type, mixed $value)
+        
+                                            <p>Checks if the object is of this type or has this type as one of its parents</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFlatType">isFlatType</a>(string $type)
+        
+                                            <p>Checks if the given type is a type that is not nested
+(simple type except array and object)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isArrayOfType">isArrayOfType</a>(string $strType)
+        
+                                            <p>Returns true if type is an array of elements
+(bracket notation)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNullable">isNullable</a>(string $type)
+        
+                                            <p>Checks if the given type is nullable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeNullable">removeNullable</a>(string $type)
+        
+                                            <p>Remove the 'null' section of a type</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseAnnotations">parseAnnotations</a>(string $docblock)
+        
+                                            <p>Copied from PHPUnit 3.7.29, Util/Test.php</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(string $level, string $message, array $context = array())
+        
+                                            <p>Log a message to the $logger object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogger">setLogger</a>(LoggerInterface $logger)
+        
+                                            <p>Sets a logger instance on the object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">at line 140</div>
+        <code>                    mixed
+    <strong>map</strong>(object $json, object $object)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Map data all data in $json into the given $object instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$json</td>
+                <td>JSON object structure from json_decode()</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td>Object to map $json data into</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            mapArray()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullNamespace">
+        <div class="location">at line 329</div>
+        <code>            protected        string
+    <strong>getFullNamespace</strong>(string $type, string $strNs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert a type name to a fully namespaced type name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>Type name (simple type or class name)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$strNs</td>
+                <td>Base namespace that gets prepended to the type name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkMissingData">
+        <div class="location">at line 355</div>
+        <code>            protected        void
+    <strong>checkMissingData</strong>(array $providedProperties, <a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a> $rc)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check required properties exist in json</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$providedProperties</td>
+                <td>array with json properties</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$rc</td>
+                <td>Reflection class to check</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="JsonMapper_Exception.html">JsonMapper_Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeUndefinedAttributes">
+        <div class="location">at line 384</div>
+        <code>            protected        void
+    <strong>removeUndefinedAttributes</strong>(object $object, array $providedProperties)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove attributes from object that were not passed in JSON data.</p>                    <p>This is to avoid confusion between those that were actually passed
+as NULL, and those that weren't provided at all.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td>Object to remove properties from</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$providedProperties</td>
+                <td>Array with JSON properties</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mapArray">
+        <div class="location">at line 409</div>
+        <code>                    mixed
+    <strong>mapArray</strong>(array $json, mixed $array, string $class = null, string $parent_key = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Map an array</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$json</td>
+                <td>JSON array structure from json_decode()</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$array</td>
+                <td>Array or ArrayObject that gets filled with
+data from $json</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Class name for children objects.
+All children will get mapped onto this type.
+Supports class names and simple types
+like "string" and nullability "string|null".
+Pass "null" to not convert any values</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$parent_key</td>
+                <td>Defines the key this array belongs to
+in order to aid debugging.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inspectProperty">
+        <div class="location">at line 470</div>
+        <code>            protected        array
+    <strong>inspectProperty</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a> $rc, string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Try to find out if a property exists in a given class.</p>                    <p>Checks property first, falls back to setter method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionClass">ReflectionClass</a></td>
+                <td>$rc</td>
+                <td>Reflection class to check</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Property name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCamelCaseName">
+        <div class="location">at line 567</div>
+        <code>            protected        string
+    <strong>getCamelCaseName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes - and _ and makes the next letter uppercase</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Property name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSafeName">
+        <div class="location">at line 583</div>
+        <code>            protected        string
+    <strong>getSafeName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Since hyphens cannot be used in variables we have to uppercase them.</p>                    <p>Technically you may use them, but they are awkward to access.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Property name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProperty">
+        <div class="location">at line 604</div>
+        <code>            protected        void
+    <strong>setProperty</strong>(object $object, object $accessor, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a property on a given object to a given value.</p>                    <p>Checks if the setter or the property are public are made before
+calling this method.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td>Object to set property on</td>
+            </tr>
+                    <tr>
+                <td>object</td>
+                <td>$accessor</td>
+                <td>ReflectionMethod or ReflectionProperty</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value of property</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createInstance">
+        <div class="location">at line 630</div>
+        <code>            protected        object
+    <strong>createInstance</strong>(string $class, bool $useParameter = false, mixed $jvalue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new object of the given type.</p>                    <p>This method exists to be overwritten in child classes,
+so you can do dependency injection or so.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Class name to instantiate</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$useParameter</td>
+                <td>Pass $parameter to the constructor or not</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$jvalue</td>
+                <td>Constructor parameter (the json value)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMappedType">
+        <div class="location">at line 656</div>
+        <code>            protected        string
+    <strong>getMappedType</strong>(string $type, mixed $jvalue = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the mapped class/type name for this class.</p>                    <p>Returns the incoming classname if not mapped.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>Type name to map</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$jvalue</td>
+                <td>Constructor parameter (the json value)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSimpleType">
+        <div class="location">at line 687</div>
+        <code>            protected        bool
+    <strong>isSimpleType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the given type is a "simple type"</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>type name from gettype()</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            isFlatType()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isObjectOfSameType">
+        <div class="location">at line 704</div>
+        <code>            protected        bool
+    <strong>isObjectOfSameType</strong>(string $type, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the object is of this type or has this type as one of its parents</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>class name of type being required</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Some PHP value to be tested</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFlatType">
+        <div class="location">at line 723</div>
+        <code>            protected        bool
+    <strong>isFlatType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the given type is a type that is not nested
+(simple type except array and object)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>type name from gettype()</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            isSimpleType()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isArrayOfType">
+        <div class="location">at line 740</div>
+        <code>            protected        bool
+    <strong>isArrayOfType</strong>(string $strType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns true if type is an array of elements
+(bracket notation)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$strType</td>
+                <td>type to be matched</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNullable">
+        <div class="location">at line 752</div>
+        <code>            protected        bool
+    <strong>isNullable</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the given type is nullable</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>type name from the phpdoc param</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeNullable">
+        <div class="location">at line 764</div>
+        <code>            protected        string
+    <strong>removeNullable</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove the 'null' section of a type</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>type name from the phpdoc param</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAnnotations">
+        <div class="location">at line 782</div>
+        <code>        static    protected        array
+    <strong>parseAnnotations</strong>(string $docblock)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Copied from PHPUnit 3.7.29, Util/Test.php</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$docblock</td>
+                <td>Full method docblock</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at line 810</div>
+        <code>            protected        null
+    <strong>log</strong>(string $level, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Log a message to the $logger object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$level</td>
+                <td>Logging level</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>Text to log</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td>Additional information</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogger">
+        <div class="location">at line 824</div>
+        <code>                    null
+    <strong>setLogger</strong>(LoggerInterface $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a logger instance on the object</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>LoggerInterface</td>
+                <td>$logger</td>
+                <td>PSR-3 compatible logger object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Type\Atomic\TNumeric | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Type_Atomic_TNumeric" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Type.html">Type</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Type/Atomic.html">Atomic</a></li><li class="backslash">\</li><li>TNumeric</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TNumeric
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>TNumeric</strong>        extends <a href="../../../Psalm/Type/Atomic/Scalar.html"><abbr title="Psalm\Type\Atomic\Scalar">Scalar</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Denotes the <code>numeric</code> type (which can also result from an <code>is_numeric</code> check).</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>KEY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_checked">
+                                                                                bool
+                </td>
+                <td>$checked</td>
+                <td class="last">Whether or not the type has been checked yet</td>
+                <td><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#property_checked">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_from_docblock">
+                                                                                bool
+                </td>
+                <td>$from_docblock</td>
+                <td class="last">Whether or not the type comes from a docblock</td>
+                <td><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#property_from_docblock">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offset_start">
+                                                                                <abbr title="Psalm\Type\?int">?int</abbr>
+                </td>
+                <td>$offset_start</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#property_offset_start">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offset_end">
+                                                                                <abbr title="Psalm\Type\?int">?int</abbr>
+                </td>
+                <td>$offset_end</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#property_offset_end">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_text">
+                                                                                <abbr title="Psalm\Type\?string">?string</abbr>
+                </td>
+                <td>$text</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#property_text">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $value, array|null $php_version = null, array $template_type_map = [], array $type_aliases = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_create">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKey">getKey</a>(bool $include_extra = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNumericType">isNumericType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isNumericType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isObjectType">isObjectType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isObjectType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNamedObjectType">isNamedObjectType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isNamedObjectType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCallableType">isCallableType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isCallableType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isIterable">isIterable</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isIterable">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCountable">isCountable</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isCountable">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTraversableInterface">hasTraversableInterface</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_hasTraversableInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCountableInterface">hasCountableInterface</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_hasCountableInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isArrayAccessibleWithStringKey">isArrayAccessibleWithStringKey</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isArrayAccessibleWithStringKey">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isArrayAccessibleWithIntOrStringKey">isArrayAccessibleWithIntOrStringKey</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_isArrayAccessibleWithIntOrStringKey">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasArrayAccessInterface">hasArrayAccessInterface</a>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_hasArrayAccessInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChildNodes">getChildNodes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_getChildNodes">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceClassLike">replaceClassLike</a>(string $old, string $new)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_replaceClassLike">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method___clone">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>(bool $nested = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_getId">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAssertionString">getAssertionString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_getAssertionString">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toNamespacedString">toNamespacedString</a>(string|null $namespace, array $aliased_classes, string|null $this_class, bool $use_phpdoc_format)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_toNamespacedString">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toPhpString">toPhpString</a>(string|null $namespace, array $aliased_classes, string|null $this_class, int $php_major_version, int $php_minor_version)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_canBeFullyExpressedInPhp">canBeFullyExpressedInPhp</a>(int $php_major_version, int $php_minor_version)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceTemplateTypesWithStandins">replaceTemplateTypesWithStandins</a>(<a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a> $template_result, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, <a href="../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a>|null $statements_analyzer = null, <a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $input_type = null, int|null $input_arg_offset = null, string|null $calling_class = null, string|null $calling_function = null, bool $replace = true, bool $add_upper_bound = false, int $depth = 0)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_replaceTemplateTypesWithStandins">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceTemplateTypesWithArgTypes">replaceTemplateTypesWithArgTypes</a>(<a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a> $template_result, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_replaceTemplateTypesWithArgTypes">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_equals">equals</a>(<a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $other_type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Type/Atomic.html#method_equals">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_create">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 95</div>
+        <code>        static            <a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>
+    <strong>create</strong>(string $value, array|null $php_version = null, array $template_type_map = [], array $type_aliases = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$php_version</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$template_type_map</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$type_aliases</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKey">
+        <div class="location">at line 14</div>
+        <code>                    string
+    <strong>getKey</strong>(bool $include_extra = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$include_extra</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNumericType">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isNumericType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 288</div>
+        <code>                    bool
+    <strong>isNumericType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isObjectType">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isObjectType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 297</div>
+        <code>                    bool
+    <strong>isObjectType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNamedObjectType">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isNamedObjectType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 305</div>
+        <code>                    bool
+    <strong>isNamedObjectType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCallableType">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isCallableType">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 320</div>
+        <code>                    bool
+    <strong>isCallableType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isIterable">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isIterable">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 330</div>
+        <code>                    bool
+    <strong>isIterable</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCountable">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isCountable">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 339</div>
+        <code>                    bool
+    <strong>isCountable</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTraversableInterface">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_hasTraversableInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 347</div>
+        <code>                    bool
+    <strong>hasTraversableInterface</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCountableInterface">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_hasCountableInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 372</div>
+        <code>                    bool
+    <strong>hasCountableInterface</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isArrayAccessibleWithStringKey">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isArrayAccessibleWithStringKey">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 397</div>
+        <code>                    bool
+    <strong>isArrayAccessibleWithStringKey</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isArrayAccessibleWithIntOrStringKey">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_isArrayAccessibleWithIntOrStringKey">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 407</div>
+        <code>                    bool
+    <strong>isArrayAccessibleWithIntOrStringKey</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasArrayAccessInterface">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_hasArrayAccessInterface">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 413</div>
+        <code>                    bool
+    <strong>hasArrayAccessInterface</strong>(<a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChildNodes">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_getChildNodes">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 438</div>
+        <code>                    array
+    <strong>getChildNodes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceClassLike">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_replaceClassLike">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 443</div>
+        <code>                    void
+    <strong>replaceClassLike</strong>(string $old, string $new)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$old</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$new</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 9</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method___clone">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 521</div>
+        <code>                    
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_getId">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 540</div>
+        <code>                    string
+    <strong>getId</strong>(bool $nested = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$nested</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAssertionString">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_getAssertionString">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 545</div>
+        <code>                    string
+    <strong>getAssertionString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toNamespacedString">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_toNamespacedString">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 553</div>
+        <code>                    string
+    <strong>toNamespacedString</strong>(string|null $namespace, array $aliased_classes, string|null $this_class, bool $use_phpdoc_format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$aliased_classes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$use_phpdoc_format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toPhpString">
+        <div class="location">at line 22</div>
+        <code>                    string|null
+    <strong>toPhpString</strong>(string|null $namespace, array $aliased_classes, string|null $this_class, int $php_major_version, int $php_minor_version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$aliased_classes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$this_class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$php_major_version</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$php_minor_version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canBeFullyExpressedInPhp">
+        <div class="location">at line 32</div>
+        <code>                    bool
+    <strong>canBeFullyExpressedInPhp</strong>(int $php_major_version, int $php_minor_version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$php_major_version</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$php_minor_version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceTemplateTypesWithStandins">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_replaceTemplateTypesWithStandins">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 575</div>
+        <code>                    <a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a>
+    <strong>replaceTemplateTypesWithStandins</strong>(<a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a> $template_result, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase = null, <a href="../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a>|null $statements_analyzer = null, <a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $input_type = null, int|null $input_arg_offset = null, string|null $calling_class = null, string|null $calling_function = null, bool $replace = true, bool $add_upper_bound = false, int $depth = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a></td>
+                <td>$template_result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null</td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Internal/Analyzer/StatementsAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\StatementsAnalyzer">StatementsAnalyzer</abbr></a>|null</td>
+                <td>$statements_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a></td>
+                <td>$input_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$input_arg_offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$calling_function</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$add_upper_bound</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$depth</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceTemplateTypesWithArgTypes">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_replaceTemplateTypesWithArgTypes">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 590</div>
+        <code>                    void
+    <strong>replaceTemplateTypesWithArgTypes</strong>(<a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a> $template_result, <a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null $codebase)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Internal/Type/TemplateResult.html"><abbr title="Psalm\Internal\Type\TemplateResult">TemplateResult</abbr></a></td>
+                <td>$template_result</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a>|null</td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_equals">
+        <div class="location">in <a href="../../../Psalm/Type/Atomic.html#method_equals">
+<abbr title="Psalm\Type\Atomic">Atomic</abbr></a> at line 597</div>
+        <code>                    bool
+    <strong>equals</strong>(<a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a> $other_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Psalm/Type/Atomic.html"><abbr title="Psalm\Type\Atomic">Atomic</abbr></a></td>
+                <td>$other_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

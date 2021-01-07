@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Composer\Semver\Intervals | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Composer_Semver_Intervals" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Composer.html">Composer</a></li><li class="backslash">\</li><li><a href="../../Composer/Semver.html">Semver</a></li><li class="backslash">\</li><li>Intervals</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Intervals
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>Intervals</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Helper class generating intervals from constraints</p>            <p>This contains utilities for:</p>
+
+<ul>
+<li><p>compacting an existing constraint which can be used to combine several into one
+by creating a MultiConstraint out of the many constraints you have.</p></li>
+<li><p>checking whether one subset is a subset of another.</p></li>
+</ul>
+
+<p>Note: You should call clear to free memoization memory  usage when you are done using this class</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Clears the memoization cache once you are done</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSubsetOf">isSubsetOf</a>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $candidate, <a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        
+                                            <p>Checks whether $candidate is a subset of $constraint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_haveIntersections">haveIntersections</a>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $a, <a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $b)
+        
+                                            <p>Checks whether $a and $b have any intersection, equivalent to $a->matches($b)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;ConstraintInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compactConstraint">compactConstraint</a>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        
+                                            <p>Attempts to optimize a MultiConstraint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        
+                                            <p>Creates an array of numeric intervals and branch constraints representing a given constraint</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line 54</div>
+        <code>        static            void
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears the memoization cache once you are done</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSubsetOf">
+        <div class="location">at line 64</div>
+        <code>        static            bool
+    <strong>isSubsetOf</strong>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $candidate, <a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether $candidate is a subset of $constraint</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$candidate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_haveIntersections">
+        <div class="location">at line 114</div>
+        <code>        static            bool
+    <strong>haveIntersections</strong>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $a, <a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether $a and $b have any intersection, equivalent to $a->matches($b)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$a</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$b</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compactConstraint">
+        <div class="location">at line 139</div>
+        <code>        static            ConstraintInterface
+    <strong>compactConstraint</strong>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Attempts to optimize a MultiConstraint</p>                    <p>When merging MultiConstraints together they can get very large, this will
+compact it by looking at the real intervals covered by all the constraints
+and then creates a new constraint containing only the smallest amount of rules
+to match the same intervals.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>ConstraintInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 272</div>
+        <code>        static            array
+    <strong>get</strong>(<a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a> $constraint)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates an array of numeric intervals and branch constraints representing a given constraint</p>                    <p>if the returned numeric array is empty it means the constraint matches nothing in the numeric range (0 - +inf)
+if the returned branches array is empty it means no dev-* versions are matched
+if a constraint matches all possible dev-* versions, branches will contain Interval::anyDev()</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Composer/Semver/Constraint/ConstraintInterface.html"><abbr title="Composer\Semver\Constraint\ConstraintInterface">ConstraintInterface</abbr></a></td>
+                <td>$constraint</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpParser\PrettyPrinterAbstract | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:PhpParser_PrettyPrinterAbstract" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../PhpParser.html">PhpParser</a></li><li class="backslash">\</li><li>PrettyPrinterAbstract</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PrettyPrinterAbstract
+                
+        </h1>
+    </div>
+
+    <p>    abstract     class
+    <strong>PrettyPrinterAbstract</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>FIXUP_PREC_LEFT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_PREC_RIGHT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_CALL_LHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_DEREF_LHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_BRACED_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_VAR_BRACED_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FIXUP_ENCAPSED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_precedenceMap">
+                                        protected                                        
+                </td>
+                <td>$precedenceMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indentLevel">
+                                        protected                                        int
+                </td>
+                <td>$indentLevel</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nl">
+                                        protected                                        string
+                </td>
+                <td>$nl</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_docStringEndToken">
+                                        protected                                        string
+                </td>
+                <td>$docStringEndToken</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_canUseSemicolonNamespaces">
+                                        protected                                        bool
+                </td>
+                <td>$canUseSemicolonNamespaces</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_origTokens">
+                                        protected                                        TokenStream
+                </td>
+                <td>$origTokens</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nodeListDiffer">
+                                        protected                                        <abbr title="Internal\Differ">Differ</abbr>
+                </td>
+                <td>$nodeListDiffer</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_labelCharMap">
+                                        protected                                        bool[]
+                </td>
+                <td>$labelCharMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fixupMap">
+                                        protected                                        <abbr title="PhpParser\int[]">int[]</abbr>[]
+                </td>
+                <td>$fixupMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_removalMap">
+                                        protected                                        <abbr title="PhpParser\int[]">int[]</abbr>[]
+                </td>
+                <td>$removalMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_insertionMap">
+                                        protected                                        array
+                </td>
+                <td>$insertionMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_listInsertionMap">
+                                        protected                                        string[]
+                </td>
+                <td>$listInsertionMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_emptyListInsertionMap">
+                                        protected                                        
+                </td>
+                <td>$emptyListInsertionMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modifierChangeMap">
+                                        protected                                        int[]
+                </td>
+                <td>$modifierChangeMap</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $options = [])
+        
+                                            <p>Creates a pretty printer instance using the given options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetState">resetState</a>()
+        
+                                            <p>Reset pretty printing state.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndentLevel">setIndentLevel</a>(int $level)
+        
+                                            <p>Set indentation level</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_indent">indent</a>()
+        
+                                            <p>Increase indentation level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_outdent">outdent</a>()
+        
+                                            <p>Decrease indentation level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prettyPrint">prettyPrint</a>(array $stmts)
+        
+                                            <p>Pretty prints an array of statements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prettyPrintExpr">prettyPrintExpr</a>(<a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $node)
+        
+                                            <p>Pretty prints an expression.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prettyPrintFile">prettyPrintFile</a>(array $stmts)
+        
+                                            <p>Pretty prints a file of statements (includes the opening &lt;?php tag if it is required).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preprocessNodes">preprocessNodes</a>(array $nodes)
+        
+                                            <p>Preprocesses the top-level nodes to initialize pretty printer state.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handleMagicTokens">handleMagicTokens</a>(string $str)
+        
+                                            <p>Handles (and removes) no-indent and doc-string-end tokens.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pStmts">pStmts</a>(array $nodes, bool $indent = true)
+        
+                                            <p>Pretty prints an array of nodes (statements) and indents them optionally.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pInfixOp">pInfixOp</a>(string $class, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $leftNode, string $operatorString, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $rightNode)
+        
+                                            <p>Pretty-print an infix operation while taking precedence into account.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pPrefixOp">pPrefixOp</a>(string $class, string $operatorString, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        
+                                            <p>Pretty-print a prefix operation while taking precedence into account.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pPostfixOp">pPostfixOp</a>(string $class, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, string $operatorString)
+        
+                                            <p>Pretty-print a postfix operation while taking precedence into account.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pPrec">pPrec</a>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, int $parentPrecedence, int $parentAssociativity, int $childPosition)
+        
+                                            <p>Prints an expression node with the least amount of parentheses necessary to preserve the meaning.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pImplode">pImplode</a>(array $nodes, string $glue = &#039;&#039;)
+        
+                                            <p>Pretty prints an array of nodes and implodes the printed values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pCommaSeparated">pCommaSeparated</a>(array $nodes)
+        
+                                            <p>Pretty prints an array of nodes and implodes the printed values with commas.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pCommaSeparatedMultiline">pCommaSeparatedMultiline</a>(array $nodes, bool $trailingComma)
+        
+                                            <p>Pretty prints a comma-separated list of nodes in multiline style, including comments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pComments">pComments</a>(array $comments)
+        
+                                            <p>Prints reformatted text of the passed comments.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_printFormatPreserving">printFormatPreserving</a>(array $stmts, array $origStmts, array $origTokens)
+        
+                                            <p>Perform a format-preserving pretty print of an AST.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pFallback">pFallback</a>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_p">p</a>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, bool $parentFormatPreserved = false)
+        
+                                            <p>Pretty prints a node.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pArray">pArray</a>(array $nodes, array $origNodes, int $pos, int $indentAdjustment, string $parentNodeType, string $subNodeName, null|int $fixup)
+        
+                                            <p>Perform a format-preserving pretty print of an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pFixup">pFixup</a>(int $fixup, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $subNode, string|null $parentClass, int $subStartPos, int $subEndPos)
+        
+                                            <p>Print node with fixups.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_safeAppend">safeAppend</a>(string $str, string $append)
+        
+                                            <p>Appends to a string, ensuring whitespace between label characters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callLhsRequiresParens">callLhsRequiresParens</a>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        
+                                            <p>Determines whether the LHS of a call must be wrapped in parenthesis.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dereferenceLhsRequiresParens">dereferenceLhsRequiresParens</a>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        
+                                            <p>Determines whether the LHS of a dereferencing operation must be wrapped in parenthesis.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pModifiers">pModifiers</a>(int $modifiers)
+        
+                                            <p>Print modifiers, including trailing whitespace.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMultiline">isMultiline</a>(array $nodes)
+        
+                                            <p>Determine whether a list of nodes uses multiline formatting.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeLabelCharMap">initializeLabelCharMap</a>()
+        
+                                            <p>Lazily initializes label char map.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeNodeListDiffer">initializeNodeListDiffer</a>()
+        
+                                            <p>Lazily initializes node list differ.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeFixupMap">initializeFixupMap</a>()
+        
+                                            <p>Lazily initializes fixup map.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeRemovalMap">initializeRemovalMap</a>()
+        
+                                            <p>Lazily initializes the removal map.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeInsertionMap">initializeInsertionMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeListInsertionMap">initializeListInsertionMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeEmptyListInsertionMap">initializeEmptyListInsertionMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializeModifierChangeMap">initializeModifierChangeMap</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 147</div>
+        <code>                    
+    <strong>__construct</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a pretty printer instance using the given options.</p>                    <p>Supported options:
+* bool $shortArraySyntax = false: Whether to use [] instead of array() as the default array
+                                  syntax, if the node does not specify a format.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Dictionary of formatting options</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetState">
+        <div class="location">at line 157</div>
+        <code>            protected        
+    <strong>resetState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reset pretty printing state.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndentLevel">
+        <div class="location">at line 168</div>
+        <code>            protected        
+    <strong>setIndentLevel</strong>(int $level)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set indentation level</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>Level in number of spaces</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_indent">
+        <div class="location">at line 176</div>
+        <code>            protected        
+    <strong>indent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Increase indentation level.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_outdent">
+        <div class="location">at line 184</div>
+        <code>            protected        
+    <strong>outdent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Decrease indentation level.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prettyPrint">
+        <div class="location">at line 197</div>
+        <code>                    string
+    <strong>prettyPrint</strong>(array $stmts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints an array of statements.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$stmts</td>
+                <td>Array of statements</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prettyPrintExpr">
+        <div class="location">at line 211</div>
+        <code>                    string
+    <strong>prettyPrintExpr</strong>(<a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints an expression.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a></td>
+                <td>$node</td>
+                <td>Expression node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prettyPrintFile">
+        <div class="location">at line 223</div>
+        <code>                    string
+    <strong>prettyPrintFile</strong>(array $stmts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints a file of statements (includes the opening &lt;?php tag if it is required).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$stmts</td>
+                <td>Array of statements</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preprocessNodes">
+        <div class="location">at line 245</div>
+        <code>            protected        
+    <strong>preprocessNodes</strong>(array $nodes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Preprocesses the top-level nodes to initialize pretty printer state.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Array of nodes</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handleMagicTokens">
+        <div class="location">at line 262</div>
+        <code>            protected        string
+    <strong>handleMagicTokens</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handles (and removes) no-indent and doc-string-end tokens.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pStmts">
+        <div class="location">at line 278</div>
+        <code>            protected        string
+    <strong>pStmts</strong>(array $nodes, bool $indent = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints an array of nodes (statements) and indents them optionally.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Array of nodes</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$indent</td>
+                <td>Whether to indent the printed nodes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pInfixOp">
+        <div class="location">at line 313</div>
+        <code>            protected        string
+    <strong>pInfixOp</strong>(string $class, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $leftNode, string $operatorString, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $rightNode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty-print an infix operation while taking precedence into account.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Node class of operator</td>
+            </tr>
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$leftNode</td>
+                <td>Left-hand side node</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operatorString</td>
+                <td>String representation of the operator</td>
+            </tr>
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$rightNode</td>
+                <td>Right-hand side node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pPrefixOp">
+        <div class="location">at line 330</div>
+        <code>            protected        string
+    <strong>pPrefixOp</strong>(string $class, string $operatorString, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty-print a prefix operation while taking precedence into account.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Node class of operator</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operatorString</td>
+                <td>String representation of the operator</td>
+            </tr>
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>Node</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pPostfixOp">
+        <div class="location">at line 344</div>
+        <code>            protected        string
+    <strong>pPostfixOp</strong>(string $class, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, string $operatorString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty-print a postfix operation while taking precedence into account.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Node class of operator</td>
+            </tr>
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>Node</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operatorString</td>
+                <td>String representation of the operator</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pPrec">
+        <div class="location">at line 361</div>
+        <code>            protected        string
+    <strong>pPrec</strong>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, int $parentPrecedence, int $parentAssociativity, int $childPosition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prints an expression node with the least amount of parentheses necessary to preserve the meaning.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>Node to pretty print</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$parentPrecedence</td>
+                <td>Precedence of the parent operator</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$parentAssociativity</td>
+                <td>Associativity of parent operator
+(-1 is left, 0 is nonassoc, 1 is right)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$childPosition</td>
+                <td>Position of the node relative to the operator
+(-1 is left, 1 is right)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pImplode">
+        <div class="location">at line 383</div>
+        <code>            protected        string
+    <strong>pImplode</strong>(array $nodes, string $glue = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints an array of nodes and implodes the printed values.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Array of Nodes to be printed</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td>Character to implode with</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pCommaSeparated">
+        <div class="location">at line 403</div>
+        <code>            protected        string
+    <strong>pCommaSeparated</strong>(array $nodes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints an array of nodes and implodes the printed values with commas.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Array of Nodes to be printed</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pCommaSeparatedMultiline">
+        <div class="location">at line 417</div>
+        <code>            protected        string
+    <strong>pCommaSeparatedMultiline</strong>(array $nodes, bool $trailingComma)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints a comma-separated list of nodes in multiline style, including comments.</p>                    <p>The result includes a leading newline and one level of indentation (same as pStmts).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Array of Nodes to be printed</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$trailingComma</td>
+                <td>Whether to use a trailing comma</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pComments">
+        <div class="location">at line 449</div>
+        <code>            protected        string
+    <strong>pComments</strong>(array $comments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prints reformatted text of the passed comments.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$comments</td>
+                <td>List of comments</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_printFormatPreserving">
+        <div class="location">at line 476</div>
+        <code>                    string
+    <strong>printFormatPreserving</strong>(array $stmts, array $origStmts, array $origTokens)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform a format-preserving pretty print of an AST.</p>                    <p>The format preservation is best effort. For some changes to the AST the formatting will not
+be preserved (at least not locally).</p>
+
+<p>In order to use this method a number of prerequisites must be satisfied:
+ * The startTokenPos and endTokenPos attributes in the lexer must be enabled.
+ * The CloningVisitor must be run on the AST prior to modification.
+ * The original tokens must be provided, using the getTokens() method on the lexer.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$stmts</td>
+                <td>Modified AST with links to original AST</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$origStmts</td>
+                <td>Original AST with token offset information</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$origTokens</td>
+                <td>Tokens of the original code</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pFallback">
+        <div class="location">at line 504</div>
+        <code>            protected        
+    <strong>pFallback</strong>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_p">
+        <div class="location">at line 518</div>
+        <code>            protected        string
+    <strong>p</strong>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node, bool $parentFormatPreserved = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pretty prints a node.</p>                    <p>This method also handles formatting preservation for nodes.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>Node to be pretty printed</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$parentFormatPreserved</td>
+                <td>Whether parent node has preserved formatting</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pArray">
+        <div class="location">at line 699</div>
+        <code>            protected        null|string
+    <strong>pArray</strong>(array $nodes, array $origNodes, int $pos, int $indentAdjustment, string $parentNodeType, string $subNodeName, null|int $fixup)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform a format-preserving pretty print of an array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>New nodes</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$origNodes</td>
+                <td>Original nodes</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pos</td>
+                <td>Current token position (updated by reference)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$indentAdjustment</td>
+                <td>Adjustment for indentation</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$parentNodeType</td>
+                <td>Type of the containing node.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$subNodeName</td>
+                <td>Name of array subnode.</td>
+            </tr>
+                    <tr>
+                <td>null|int</td>
+                <td>$fixup</td>
+                <td>Fixup information for array item nodes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pFixup">
+        <div class="location">at line 947</div>
+        <code>            protected        string
+    <strong>pFixup</strong>(int $fixup, <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $subNode, string|null $parentClass, int $subStartPos, int $subEndPos)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Print node with fixups.</p>                    <p>Fixups here refer to the addition of extra parentheses, braces or other characters, that
+are required to preserve program semantics in a certain context (e.g. to maintain precedence
+or because only certain expressions are allowed in certain places).</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$fixup</td>
+                <td>Fixup type</td>
+            </tr>
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$subNode</td>
+                <td>Subnode to print</td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$parentClass</td>
+                <td>Class of parent node</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$subStartPos</td>
+                <td>Original start pos of subnode</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$subEndPos</td>
+                <td>Original end pos of subnode</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_safeAppend">
+        <div class="location">at line 1004</div>
+        <code>            protected        
+    <strong>safeAppend</strong>(string $str, string $append)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Appends to a string, ensuring whitespace between label characters.</p>                    <p>Example: "echo" and "$x" result in "echo$x", but "echo" and "x" result in "echo x".
+Without safeAppend the result would be "echox", which does not preserve semantics.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$append</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callLhsRequiresParens">
+        <div class="location">at line 1029</div>
+        <code>            protected        bool
+    <strong>callLhsRequiresParens</strong>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the LHS of a call must be wrapped in parenthesis.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>LHS of a call</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dereferenceLhsRequiresParens">
+        <div class="location">at line 1047</div>
+        <code>            protected        bool
+    <strong>dereferenceLhsRequiresParens</strong>(<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a> $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determines whether the LHS of a dereferencing operation must be wrapped in parenthesis.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+                <td>$node</td>
+                <td>LHS of dereferencing operation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pModifiers">
+        <div class="location">at line 1071</div>
+        <code>            protected        string
+    <strong>pModifiers</strong>(int $modifiers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Print modifiers, including trailing whitespace.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$modifiers</td>
+                <td>Modifier mask to print</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMultiline">
+        <div class="location">at line 1087</div>
+        <code>            protected        bool
+    <strong>isMultiline</strong>(array $nodes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Determine whether a list of nodes uses multiline formatting.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nodes</td>
+                <td>Node list</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeLabelCharMap">
+        <div class="location">at line 1119</div>
+        <code>            protected        
+    <strong>initializeLabelCharMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lazily initializes label char map.</p>                    <p>The label char map determines whether a certain character may occur in a label.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeNodeListDiffer">
+        <div class="location">at line 1135</div>
+        <code>            protected        
+    <strong>initializeNodeListDiffer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lazily initializes node list differ.</p>                    <p>The node list differ is used to determine differences between two array subnodes.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeFixupMap">
+        <div class="location">at line 1153</div>
+        <code>            protected        
+    <strong>initializeFixupMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lazily initializes fixup map.</p>                    <p>The fixup map is used to determine whether a certain subnode of a certain node may require
+some kind of "fixup" operation, e.g. the addition of parenthesis or braces.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeRemovalMap">
+        <div class="location">at line 1248</div>
+        <code>            protected        
+    <strong>initializeRemovalMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lazily initializes the removal map.</p>                    <p>The removal map is used to determine which additional tokens should be returned when a
+certain node is replaced by null.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeInsertionMap">
+        <div class="location">at line 1291</div>
+        <code>            protected        
+    <strong>initializeInsertionMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeListInsertionMap">
+        <div class="location">at line 1331</div>
+        <code>            protected        
+    <strong>initializeListInsertionMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeEmptyListInsertionMap">
+        <div class="location">at line 1420</div>
+        <code>            protected        
+    <strong>initializeEmptyListInsertionMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializeModifierChangeMap">
+        <div class="location">at line 1472</div>
+        <code>            protected        
+    <strong>initializeModifierChangeMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

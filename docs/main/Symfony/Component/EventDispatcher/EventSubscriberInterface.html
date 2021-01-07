@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\EventDispatcher\EventSubscriberInterface | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_EventDispatcher_EventSubscriberInterface" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component/EventDispatcher.html">EventDispatcher</a></li><li class="backslash">\</li><li>EventSubscriberInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EventSubscriberInterface
+                
+        </h1>
+    </div>
+
+    <p>        interface
+    <strong>EventSubscriberInterface</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>An EventSubscriber knows itself what events it is interested in.</p>            <p>If an EventSubscriber is added to an EventDispatcherInterface, the manager invokes
+{@link getSubscribedEvents} and registers the subscriber as a listener for all
+returned events.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSubscribedEvents">getSubscribedEvents</a>()
+        
+                                            <p>Returns an array of event names this subscriber wants to listen to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getSubscribedEvents">
+        <div class="location">at line 48</div>
+        <code>        static            array
+    <strong>getSubscribedEvents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of event names this subscriber wants to listen to.</p>                    <p>The array keys are event names and the value can be:</p>
+
+<ul>
+<li>The method name to call (priority defaults to 0)</li>
+<li>An array composed of the method name to call and the priority</li>
+<li>An array of arrays composed of the method names to call and respective
+priorities, or 0 if unset</li>
+</ul>
+
+<p>For instance:</p>
+
+<ul>
+<li>['eventName' => 'methodName']</li>
+<li>['eventName' => ['methodName', $priority]]</li>
+<li>['eventName' => [['methodName1', $priority], ['methodName2']]]</li>
+</ul>
+
+<p>The code must not depend on runtime state as it will only be called at compile time.
+All logic depending on runtime state must be put into the individual methods handling the events.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

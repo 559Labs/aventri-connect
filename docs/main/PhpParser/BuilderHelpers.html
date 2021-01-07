@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PhpParser\BuilderHelpers | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:PhpParser_BuilderHelpers" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../PhpParser.html">PhpParser</a></li><li class="backslash">\</li><li>BuilderHelpers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BuilderHelpers
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>BuilderHelpers</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>This class defines helpers used in the implementation of builders. Don't use it directly.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeNode">normalizeNode</a>(Node|Builder $node)
+        
+                                            <p>Normalizes a node: Converts builder objects to nodes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Node/Stmt.html"><abbr title="PhpParser\Node\Stmt">Stmt</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeStmt">normalizeStmt</a>(Node|Builder $node)
+        
+                                            <p>Normalizes a node to a statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Node/Identifier.html"><abbr title="PhpParser\Node\Identifier">Identifier</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeIdentifier">normalizeIdentifier</a>(string|Identifier $name)
+        
+                                            <p>Normalizes strings to Identifier.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Identifier|Expr
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeIdentifierOrExpr">normalizeIdentifierOrExpr</a>(string|Identifier|Expr $name)
+        
+                                            <p>Normalizes strings to Identifier, also allowing expressions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Node/Name.html"><abbr title="PhpParser\Node\Name">Name</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeName">normalizeName</a>(Name|string $name)
+        
+                                            <p>Normalizes a name: Converts string names to Name nodes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Name|Expr
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeNameOrExpr">normalizeNameOrExpr</a>(Expr|Name|string $name)
+        
+                                            <p>Normalizes a name: Converts string names to Name nodes, while also allowing expressions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;Name|Identifier|NullableType|UnionType
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeType">normalizeType</a>(string|Name|Identifier|NullableType|UnionType $type)
+        
+                                            <p>Normalizes a type: Converts plain-text type names into proper AST representation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeValue">normalizeValue</a>(<abbr title="Node\Expr">Expr</abbr>|bool|null|int|float|string|array $value)
+        
+                                            <p>Normalizes a value: Converts nulls, booleans, integers,
+floats, strings and arrays into their respective nodes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../PhpParser/Comment/Doc.html"><abbr title="PhpParser\Comment\Doc">Doc</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeDocComment">normalizeDocComment</a>(<abbr title="Comment\Doc">Doc</abbr>|string $docComment)
+        
+                                            <p>Normalizes a doc comment: Converts plain strings to PhpParser\Comment\Doc.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addModifier">addModifier</a>(int $modifiers, int $modifier)
+        
+                                            <p>Adds a modifier and returns new modifier bitmask.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_normalizeNode">
+        <div class="location">at line 27</div>
+        <code>        static            <a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a>
+    <strong>normalizeNode</strong>(Node|Builder $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a node: Converts builder objects to nodes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Node|Builder</td>
+                <td>$node</td>
+                <td>The node to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Node.html"><abbr title="PhpParser\Node">Node</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeStmt">
+        <div class="location">at line 46</div>
+        <code>        static            <a href="../PhpParser/Node/Stmt.html"><abbr title="PhpParser\Node\Stmt">Stmt</abbr></a>
+    <strong>normalizeStmt</strong>(Node|Builder $node)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a node to a statement.</p>                    <p>Expressions are wrapped in a Stmt\Expression node.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Node|Builder</td>
+                <td>$node</td>
+                <td>The node to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Node/Stmt.html"><abbr title="PhpParser\Node\Stmt">Stmt</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeIdentifier">
+        <div class="location">at line 66</div>
+        <code>        static            <a href="../PhpParser/Node/Identifier.html"><abbr title="PhpParser\Node\Identifier">Identifier</abbr></a>
+    <strong>normalizeIdentifier</strong>(string|Identifier $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes strings to Identifier.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|Identifier</td>
+                <td>$name</td>
+                <td>The identifier to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Node/Identifier.html"><abbr title="PhpParser\Node\Identifier">Identifier</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeIdentifierOrExpr">
+        <div class="location">at line 85</div>
+        <code>        static            Identifier|Expr
+    <strong>normalizeIdentifierOrExpr</strong>(string|Identifier|Expr $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes strings to Identifier, also allowing expressions.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|Identifier|Expr</td>
+                <td>$name</td>
+                <td>The identifier to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Identifier|Expr</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeName">
+        <div class="location">at line 104</div>
+        <code>        static            <a href="../PhpParser/Node/Name.html"><abbr title="PhpParser\Node\Name">Name</abbr></a>
+    <strong>normalizeName</strong>(Name|string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a name: Converts string names to Name nodes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Name|string</td>
+                <td>$name</td>
+                <td>The name to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Node/Name.html"><abbr title="PhpParser\Node\Name">Name</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeNameOrExpr">
+        <div class="location">at line 115</div>
+        <code>        static            Name|Expr
+    <strong>normalizeNameOrExpr</strong>(Expr|Name|string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a name: Converts string names to Name nodes, while also allowing expressions.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Expr|Name|string</td>
+                <td>$name</td>
+                <td>The name to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Name|Expr</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeType">
+        <div class="location">at line 166</div>
+        <code>        static            Name|Identifier|NullableType|UnionType
+    <strong>normalizeType</strong>(string|Name|Identifier|NullableType|UnionType $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a type: Converts plain-text type names into proper AST representation.</p>                    <p>In particular, builtin types become Identifiers, custom types become Names and nullables
+are wrapped in NullableType nodes.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|Name|Identifier|NullableType|UnionType</td>
+                <td>$type</td>
+                <td>The type to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Name|Identifier|NullableType|UnionType</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeValue">
+        <div class="location">at line 215</div>
+        <code>        static            <a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a>
+    <strong>normalizeValue</strong>(<abbr title="Node\Expr">Expr</abbr>|bool|null|int|float|string|array $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a value: Converts nulls, booleans, integers,
+floats, strings and arrays into their respective nodes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Node\Expr">Expr</abbr>|bool|null|int|float|string|array</td>
+                <td>$value</td>
+                <td>The value to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Node/Expr.html"><abbr title="PhpParser\Node\Expr">Expr</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeDocComment">
+        <div class="location">at line 263</div>
+        <code>        static            <a href="../PhpParser/Comment/Doc.html"><abbr title="PhpParser\Comment\Doc">Doc</abbr></a>
+    <strong>normalizeDocComment</strong>(<abbr title="Comment\Doc">Doc</abbr>|string $docComment)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalizes a doc comment: Converts plain strings to PhpParser\Comment\Doc.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Comment\Doc">Doc</abbr>|string</td>
+                <td>$docComment</td>
+                <td>The doc comment to normalize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../PhpParser/Comment/Doc.html"><abbr title="PhpParser\Comment\Doc">Doc</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addModifier">
+        <div class="location">at line 281</div>
+        <code>        static            int
+    <strong>addModifier</strong>(int $modifiers, int $modifier)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a modifier and returns new modifier bitmask.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$modifiers</td>
+                <td>Existing modifiers</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$modifier</td>
+                <td>Modifier to set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

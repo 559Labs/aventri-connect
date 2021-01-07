@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Psr7\Utils | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Psr7_Utils" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Psr7.html">Psr7</a></li><li class="backslash">\</li><li>Utils</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Utils
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Utils</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_caselessRemove">caselessRemove</a>($keys, array $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copyToStream">copyToStream</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $source, <a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $dest, int $maxLen = -1)
+        
+                                            <p>Copy the contents of a stream into another stream until the given number
+of bytes have been read.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copyToString">copyToString</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, int $maxLen = -1)
+        
+                                            <p>Copy the contents of a stream into a string until the given number of
+bytes have been read.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hash">hash</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, string $algo, bool $rawOutput = false)
+        
+                                            <p>Calculate a hash of a stream.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;RequestInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyRequest">modifyRequest</a>(<a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $changes)
+        
+                                            <p>Clone and modify a request with the given changes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readLine">readLine</a>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, int|null $maxLength = null)
+        
+                                            <p>Read a line from the stream up to the maximum allowed buffer length.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;StreamInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_streamFor">streamFor</a>(resource|string|null|int|float|bool|StreamInterface|callable|<a target="_blank" rel="noopener" href="https://www.php.net/Iterator">Iterator</a> $resource = &#039;&#039;, array $options = [])
+        
+                                            <p>Create a new stream based on the input type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tryFopen">tryFopen</a>(string $filename, string $mode)
+        
+                                            <p>Safely opens a PHP stream resource using a filename.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;UriInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uriFor">uriFor</a>(string|UriInterface $uri)
+        
+                                            <p>Returns a UriInterface for the given value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_caselessRemove">
+        <div class="location">at line 19</div>
+        <code>        static            
+    <strong>caselessRemove</strong>($keys, array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copyToStream">
+        <div class="location">at line 47</div>
+        <code>        static            
+    <strong>copyToStream</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $source, <a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $dest, int $maxLen = -1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Copy the contents of a stream into another stream until the given number
+of bytes have been read.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$source</td>
+                <td>Stream to read from</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$dest</td>
+                <td>Stream to write to</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$maxLen</td>
+                <td>Maximum number of bytes to read. Pass -1
+to read the entire stream.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td>on error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copyToString">
+        <div class="location">at line 82</div>
+        <code>        static            string
+    <strong>copyToString</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, int $maxLen = -1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Copy the contents of a stream into a string until the given number of
+bytes have been read.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$stream</td>
+                <td>Stream to read</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$maxLen</td>
+                <td>Maximum number of bytes to read. Pass -1
+to read the entire stream.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td>on error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hash">
+        <div class="location">at line 126</div>
+        <code>        static            string
+    <strong>hash</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, string $algo, bool $rawOutput = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate a hash of a stream.</p>                    <p>This method reads the entire stream to calculate a rolling hash, based
+on PHP's <code>hash_init</code> functions.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$stream</td>
+                <td>Stream to calculate the hash for</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$algo</td>
+                <td>Hash algorithm (e.g. md5, crc32, etc)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$rawOutput</td>
+                <td>Whether or not to use raw output</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td>on error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyRequest">
+        <div class="location">at line 165</div>
+        <code>        static            RequestInterface
+    <strong>modifyRequest</strong>(<a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a> $request, array $changes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clone and modify a request with the given changes.</p>                    <p>This method is useful for reducing the number of clones needed to mutate
+a message.</p>
+
+<p>The changes can be one of:
+- method: (string) Changes the HTTP method.
+- set_headers: (array) Sets the given headers.
+- remove_headers: (array) Remove the given headers.
+- body: (mixed) Sets the given body.
+- uri: (UriInterface) Set the URI.
+- query: (string) Set the query string value of the URI.
+- version: (string) Set the protocol version.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/RequestInterface.html"><abbr title="Psr\Http\Message\RequestInterface">RequestInterface</abbr></a></td>
+                <td>$request</td>
+                <td>Request to clone and modify.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$changes</td>
+                <td>Changes to apply.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>RequestInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readLine">
+        <div class="location">at line 240</div>
+        <code>        static            string
+    <strong>readLine</strong>(<a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a> $stream, int|null $maxLength = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read a line from the stream up to the maximum allowed buffer length.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Psr/Http/Message/StreamInterface.html"><abbr title="Psr\Http\Message\StreamInterface">StreamInterface</abbr></a></td>
+                <td>$stream</td>
+                <td>Stream to read from</td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$maxLength</td>
+                <td>Maximum buffer length</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_streamFor">
+        <div class="location">at line 296</div>
+        <code>        static            StreamInterface
+    <strong>streamFor</strong>(resource|string|null|int|float|bool|StreamInterface|callable|<a target="_blank" rel="noopener" href="https://www.php.net/Iterator">Iterator</a> $resource = &#039;&#039;, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new stream based on the input type.</p>                    <p>Options is an associative array that can contain the following keys:
+- metadata: Array of custom metadata.
+- size: Size of the stream.</p>
+
+<p>This method accepts the following <code>$resource</code> types:
+- <code>Psr\Http\Message\StreamInterface</code>: Returns the value as-is.
+- <code>string</code>: Creates a stream object that uses the given string as the contents.
+- <code>resource</code>: Creates a stream object that wraps the given PHP stream resource.
+- <code>Iterator</code>: If the provided value implements <code>Iterator</code>, then a read-only
+  stream object will be created that wraps the given iterable. Each time the
+  stream is read from, data from the iterator will fill a buffer and will be
+  continuously called until the buffer is equal to the requested read size.
+  Subsequent read calls will first read from the buffer and then call <code>next</code>
+  on the underlying iterator until it is exhausted.
+- <code>object</code> with <code>__toString()</code>: If the object has the <code>__toString()</code> method,
+  the object will be cast to a string and then a stream will be returned that
+  uses the string value.
+- <code>NULL</code>: When <code>null</code> is passed, an empty stream object is returned.
+- <code>callable</code> When a callable is passed, a read-only stream object will be
+  created that invokes the given callable. The callable is invoked with the
+  number of suggested bytes to read. The callable can return any number of
+  bytes, but MUST return <code>false</code> when there is no more data to return. The
+  stream object that wraps the callable will invoke the callable until the
+  number of requested bytes are available. Any additional bytes will be
+  buffered and used in subsequent reads.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource|string|null|int|float|bool|StreamInterface|callable|<a target="_blank" rel="noopener" href="https://www.php.net/Iterator">Iterator</a></td>
+                <td>$resource</td>
+                <td>Entity body data</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Additional options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>StreamInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>if the $resource arg is not valid.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tryFopen">
+        <div class="location">at line 350</div>
+        <code>        static            resource
+    <strong>tryFopen</strong>(string $filename, string $mode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Safely opens a PHP stream resource using a filename.</p>                    <p>When fopen fails, PHP normally raises a warning. This function adds an
+error handler that checks for errors and throws an exception instead.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>File to open</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$mode</td>
+                <td>Mode used to open the file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>resource</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td>if the file cannot be opened</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uriFor">
+        <div class="location">at line 386</div>
+        <code>        static            UriInterface
+    <strong>uriFor</strong>(string|UriInterface $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a UriInterface for the given value.</p>                    <p>This function accepts a string or UriInterface and returns a
+UriInterface for the given value. If the value is already a
+UriInterface, it is returned as-is.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|UriInterface</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>UriInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

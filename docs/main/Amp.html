@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Amp | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="fonts/doctum-font.css">
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="namespace" data-name="namespace:Amp" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="namespaces.html">Namespaces</a></li>
+                    <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="namespace-breadcrumbs">
+        <ol class="breadcrumb">
+            <li><span class="label label-default">Namespace</span></li>
+                    <li><a href="Amp.html">Amp</a></li><li class="backslash">\</li>
+        </ol>
+    </div>
+            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Amp</h1>
+    </div>
+
+            <h2>Namespaces</h2>
+        <div class="namespace-list">
+            <a href="Amp/ByteStream.html">Amp\ByteStream</a><a href="Amp/Internal.html">Amp\Internal</a><a href="Amp/Loop.html">Amp\Loop</a>        </div>
+    
+            <h2>Classes</h2>
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/CallableMaker.html"><abbr title="Amp\CallableMaker">CallableMaker</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/CancellationTokenSource.html"><abbr title="Amp\CancellationTokenSource">CancellationTokenSource</abbr></a>    </div>
+                <div class="col-md-6">A cancellation token source provides a mechanism to cancel operations.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/CombinedCancellationToken.html"><abbr title="Amp\CombinedCancellationToken">CombinedCancellationToken</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Coroutine.html"><abbr title="Amp\Coroutine">Coroutine</abbr></a>    </div>
+                <div class="col-md-6">Creates a promise from a generator function yielding promises.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Deferred.html"><abbr title="Amp\Deferred">Deferred</abbr></a>    </div>
+                <div class="col-md-6">Deferred is a container for a promise that is resolved using the resolve() and fail() methods of this object.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Delayed.html"><abbr title="Amp\Delayed">Delayed</abbr></a>    </div>
+                <div class="col-md-6">Creates a promise that resolves itself with a given value after a number of milliseconds.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Emitter.html"><abbr title="Amp\Emitter">Emitter</abbr></a>    </div>
+                <div class="col-md-6">Emitter is a container for an iterator that can emit values using the emit() method and completed using the
+complete() and fail() methods of this object. The contained iterator may be accessed using the iterate()
+method. This object should not be part of a public API, but used internally to create and emit values to an
+iterator.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Failure.html"><abbr title="Amp\Failure">Failure</abbr></a>    </div>
+                <div class="col-md-6">Creates a failed promise using the given exception.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/InvalidYieldError.html"><abbr title="Amp\InvalidYieldError">InvalidYieldError</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/LazyPromise.html"><abbr title="Amp\LazyPromise">LazyPromise</abbr></a>    </div>
+                <div class="col-md-6">Creates a promise that calls $promisor only when the result of the promise is requested (i.e. onResolve() is called
+on the promise). $promisor can return a promise or any value. If $promisor throws an exception, the promise fails
+with that exception. If $promisor returns a Generator, it will be run as a coroutine.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Loop.html"><abbr title="Amp\Loop">Loop</abbr></a>    </div>
+                <div class="col-md-6">Accessor to allow global access to the event loop.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/NullCancellationToken.html"><abbr title="Amp\NullCancellationToken">NullCancellationToken</abbr></a>    </div>
+                <div class="col-md-6">A NullCancellationToken can be used to avoid conditionals to check whether a token has been provided.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Producer.html"><abbr title="Amp\Producer">Producer</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Struct.html"><abbr title="Amp\Struct">Struct</abbr></a>    </div>
+                <div class="col-md-6">A "safe" struct trait for public property aggregators.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/Success.html"><abbr title="Amp\Success">Success</abbr></a>    </div>
+                <div class="col-md-6">Creates a successful promise using the given value (which can be any value except an object implementing
+<code>Amp\Promise</code> or <code>React\Promise\PromiseInterface</code>).</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/TimeoutCancellationToken.html"><abbr title="Amp\TimeoutCancellationToken">TimeoutCancellationToken</abbr></a>    </div>
+                <div class="col-md-6">A TimeoutCancellationToken automatically requests cancellation after the timeout has elapsed.</div>
+            </div>
+            </div>
+            <h2>Interfaces</h2>
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Amp/CancellationToken.html"><abbr title="Amp\CancellationToken">CancellationToken</abbr></a></em>
+                        </div>
+                <div class="col-md-6">Cancellation tokens are simple objects that allow registering handlers to subscribe to cancellation requests.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Amp/Iterator.html"><abbr title="Amp\Iterator">Iterator</abbr></a></em>
+                        </div>
+                <div class="col-md-6">Defines an asynchronous iterator over a set of values that is designed to be used within a coroutine.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <em><a href="Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a></em>
+                        </div>
+                <div class="col-md-6">Representation of the future value of an asynchronous operation.</div>
+            </div>
+            </div>
+            <h2>Functions</h2>
+
+        <div class="container-fluid underlined">
+                            <div class="row" id="function_asyncCall">
+                    <div class="col-md-2 type">
+                        
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_asyncCall">asyncCall</a>(callable $callback, ...$args)
+        
+                                                    <p class="no-description">No description</p>
+                                            </div>
+                    <div class="col-md-2"></div>
+                </div>
+                            <div class="row" id="function_asyncCoroutine">
+                    <div class="col-md-2 type">
+                        callable
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_asyncCoroutine">asyncCoroutine</a>(callable $callback)
+        
+                                                    <p class="no-description">No description</p>
+                                            </div>
+                    <div class="col-md-2"></div>
+                </div>
+                            <div class="row" id="function_call">
+                    <div class="col-md-2 type">
+                        <a href="Amp/Promise.html"><abbr title="Amp\Promise">Promise</abbr></a>
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_call">call</a>(callable $callback, ...$args)
+        
+                                                    <p class="no-description">No description</p>
+                                            </div>
+                    <div class="col-md-2"></div>
+                </div>
+                            <div class="row" id="function_coroutine">
+                    <div class="col-md-2 type">
+                        callable
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_coroutine">coroutine</a>(callable $callback)
+        
+                                                    <p class="no-description">No description</p>
+                                            </div>
+                    <div class="col-md-2"></div>
+                </div>
+                            <div class="row" id="function_delay">
+                    <div class="col-md-2 type">
+                        <a href="Amp/Delayed.html"><abbr title="Amp\Delayed">Delayed</abbr></a>
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_delay">delay</a>(int $milliseconds)
+        
+                                                    <p>Sleeps for the specified number of milliseconds.</p>                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                            <div class="row" id="function_getCurrentTime">
+                    <div class="col-md-2 type">
+                        int
+                    </div>
+                    <div class="col-md-8 type">
+                        <a href="#function_getCurrentTime">getCurrentTime</a>()
+        
+                                                    <p>Returns the current time relative to an arbitrary point in time.</p>                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                    </div>
+    
+            <h2>Exceptions</h2>
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/CancelledException.html"><abbr title="Amp\CancelledException">CancelledException</abbr></a>    </div>
+                <div class="col-md-6">Will be thrown in case an operation is cancelled.</div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/MultiReasonException.html"><abbr title="Amp\MultiReasonException">MultiReasonException</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="Amp/TimeoutException.html"><abbr title="Amp\TimeoutException">TimeoutException</abbr></a>    </div>
+                <div class="col-md-6">Thrown if a promise doesn't resolve within a specified timeout.</div>
+            </div>
+            </div>
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

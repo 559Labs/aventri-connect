@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\OptionsResolver\OptionsResolver | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_OptionsResolver_OptionsResolver" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component/OptionsResolver.html">OptionsResolver</a></li><li class="backslash">\</li><li>OptionsResolver</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            OptionsResolver
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>OptionsResolver</strong>        implements
+        <a href="../../../Symfony/Component/OptionsResolver/Options.html"><abbr title="Symfony\Component\OptionsResolver\Options">Options</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>VALIDATION_FUNCTIONS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefault">setDefault</a>(string $option, mixed $value)
+        
+                                            <p>Sets the default value of a given option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaults">setDefaults</a>(array $defaults)
+        
+                                            <p>Sets a list of default values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasDefault">hasDefault</a>(string $option)
+        
+                                            <p>Returns whether a default value is set for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequired">setRequired</a>(string|string[] $optionNames)
+        
+                                            <p>Marks one or more options as required.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isRequired">isRequired</a>(string $option)
+        
+                                            <p>Returns whether an option is required.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequiredOptions">getRequiredOptions</a>()
+        
+                                            <p>Returns the names of all required options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMissing">isMissing</a>(string $option)
+        
+                                            <p>Returns whether an option is missing a default value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMissingOptions">getMissingOptions</a>()
+        
+                                            <p>Returns the names of all options missing a default value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefined">setDefined</a>(string|string[] $optionNames)
+        
+                                            <p>Defines a valid option name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDefined">isDefined</a>(string $option)
+        
+                                            <p>Returns whether an option is defined.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefinedOptions">getDefinedOptions</a>()
+        
+                                            <p>Returns the names of all defined options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNested">isNested</a>(string $option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDeprecated">setDeprecated</a>(string $option)
+        
+                                            <p>Deprecates an option, allowed types or values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDeprecated">isDeprecated</a>(string $option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNormalizer">setNormalizer</a>(string $option, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $normalizer)
+        
+                                            <p>Sets the normalizer for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addNormalizer">addNormalizer</a>(string $option, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $normalizer, bool $forcePrepend = false)
+        
+                                            <p>Adds a normalizer for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowedValues">setAllowedValues</a>(string $option, mixed $allowedValues)
+        
+                                            <p>Sets allowed values for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAllowedValues">addAllowedValues</a>(string $option, mixed $allowedValues)
+        
+                                            <p>Adds allowed values for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowedTypes">setAllowedTypes</a>(string $option, string|string[] $allowedTypes)
+        
+                                            <p>Sets allowed types for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAllowedTypes">addAllowedTypes</a>(string $option, string|string[] $allowedTypes)
+        
+                                            <p>Adds allowed types for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/OptionsResolver/OptionConfigurator.html"><abbr title="Symfony\Component\OptionsResolver\OptionConfigurator">OptionConfigurator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_define">define</a>(string $option)
+        
+                                            <p>Defines an option configurator with the given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInfo">setInfo</a>(string $option, string $info)
+        
+                                            <p>Sets an info message for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInfo">getInfo</a>(string $option)
+        
+                                            <p>Gets the info message for an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(string|string[] $optionNames)
+        
+                                            <p>Removes the option with the given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Removes all options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>(array $options = [])
+        
+                                            <p>Merges options with the default values stored in the container and
+validates them.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(string $option, bool $triggerDeprecation = true)
+        
+                                            <p>Returns the resolved value of an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(string $option)
+        
+                                            <p>Returns whether a resolved option with the given name exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>($option, $value)
+        
+                                            <p>Not supported.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>($option)
+        
+                                            <p>Not supported.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Returns the number of set options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location">at line 187</div>
+        <code>                    $this
+    <strong>setDefault</strong>(string $option, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the default value of a given option.</p>                    <p>If the default value should be set based on other options, you can pass
+a closure with the following signature:</p>
+
+<pre><code>function (Options $options) {
+    // ...
+}
+</code></pre>
+
+<p>The closure will be evaluated when {@link resolve()} is called. The
+closure has access to the resolved values of other options through the
+passed {@link Options} instance:</p>
+
+<pre><code>function (Options $options) {
+    if (isset($options['port'])) {
+        // ...
+    }
+}
+</code></pre>
+
+<p>If you want to access the previously set default value, add a second
+argument to the closure's signature:</p>
+
+<pre><code>$options-&gt;setDefault('name', 'Default Name');
+
+$options-&gt;setDefault('name', function (Options $options, $previousValue) {
+    // 'Default Name' === $previousValue
+});
+</code></pre>
+
+<p>This is mostly useful if the configuration of the {@link Options} object
+is spread across different locations of your code, such as base and
+sub-classes.</p>
+
+<p>If you want to define nested options, you can pass a closure with the
+following signature:</p>
+
+<pre><code>$options-&gt;setDefault('database', function (OptionsResolver $resolver) {
+    $resolver-&gt;setDefined(['dbname', 'host', 'port', 'user', 'pass']);
+}
+</code></pre>
+
+<p>To get access to the parent options, add a second argument to the closure's
+signature:</p>
+
+<pre><code>function (OptionsResolver $resolver, Options $parent) {
+    // 'default' === $parent['connection']
+}
+</code></pre>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The name of the option</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The default value of the option</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaults">
+        <div class="location">at line 262</div>
+        <code>                    $this
+    <strong>setDefaults</strong>(array $defaults)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a list of default values.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td>The default values to set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasDefault">
+        <div class="location">at line 281</div>
+        <code>                    bool
+    <strong>hasDefault</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether a default value is set for an option.</p>                    <p>Returns true if {@link setDefault()} was called for this option.
+An option is also considered set if it was set to null.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequired">
+        <div class="location">at line 295</div>
+        <code>                    $this
+    <strong>setRequired</strong>(string|string[] $optionNames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marks one or more options as required.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$optionNames</td>
+                <td>One or more option names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isRequired">
+        <div class="location">at line 318</div>
+        <code>                    bool
+    <strong>isRequired</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether an option is required.</p>                    <p>An option is required if it was passed to {@link setRequired()}.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The name of the option</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequiredOptions">
+        <div class="location">at line 330</div>
+        <code>                    string[]
+    <strong>getRequiredOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the names of all required options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            isRequired()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMissing">
+        <div class="location">at line 346</div>
+        <code>                    bool
+    <strong>isMissing</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether an option is missing a default value.</p>                    <p>An option is missing if it was passed to {@link setRequired()}, but not
+to {@link setDefault()}. This option must be passed explicitly to
+{@link resolve()}, otherwise an exception will be thrown.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The name of the option</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMissingOptions">
+        <div class="location">at line 358</div>
+        <code>                    string[]
+    <strong>getMissingOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the names of all options missing a default value.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            isMissing()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefined">
+        <div class="location">at line 376</div>
+        <code>                    $this
+    <strong>setDefined</strong>(string|string[] $optionNames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Defines a valid option name.</p>                    <p>Defines an option name without setting a default value. The option will
+be accepted when passed to {@link resolve()}. When not passed, the
+option will not be included in the resolved options.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$optionNames</td>
+                <td>One or more option names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDefined">
+        <div class="location">at line 399</div>
+        <code>                    bool
+    <strong>isDefined</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether an option is defined.</p>                    <p>Returns true for any option passed to {@link setDefault()},
+{@link setRequired()} or {@link setDefined()}.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefinedOptions">
+        <div class="location">at line 411</div>
+        <code>                    string[]
+    <strong>getDefinedOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the names of all defined options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            isDefined()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNested">
+        <div class="location">at line 416</div>
+        <code>                    bool
+    <strong>isNested</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDeprecated">
+        <div class="location">at line 442</div>
+        <code>                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+    <strong>setDeprecated</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deprecates an option, allowed types or values.</p>                    <p>Instead of passing the message, you may also pass a closure with the
+following signature:</p>
+
+<pre><code>function (Options $options, $value): string {
+    // ...
+}
+</code></pre>
+
+<p>The closure receives the value as argument and should return a string.
+Return an empty string to ignore the option deprecation.</p>
+
+<p>The closure is invoked when {@link resolve()} is called. The parameter
+passed to the closure is the value of the option after validating it
+and before normalizing it.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDeprecated">
+        <div class="location">at line 486</div>
+        <code>                    bool
+    <strong>isDeprecated</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNormalizer">
+        <div class="location">at line 517</div>
+        <code>                    $this
+    <strong>setNormalizer</strong>(string $option, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $normalizer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the normalizer for an option.</p>                    <p>The normalizer should be a closure with the following signature:</p>
+
+<pre><code>function (Options $options, $value) {
+    // ...
+}
+</code></pre>
+
+<p>The closure is invoked when {@link resolve()} is called. The closure
+has access to the resolved values of other options through the passed
+{@link Options} instance.</p>
+
+<p>The second parameter passed to the closure is the value of
+the option.</p>
+
+<p>The resolved option value is set to the return value of the closure.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$normalizer</td>
+                <td>The normalizer</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNormalizer">
+        <div class="location">at line 562</div>
+        <code>                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+    <strong>addNormalizer</strong>(string $option, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $normalizer, bool $forcePrepend = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a normalizer for an option.</p>                    <p>The normalizer should be a closure with the following signature:</p>
+
+<pre><code>function (Options $options, $value): mixed {
+    // ...
+}
+</code></pre>
+
+<p>The closure is invoked when {@link resolve()} is called. The closure
+has access to the resolved values of other options through the passed
+{@link Options} instance.</p>
+
+<p>The second parameter passed to the closure is the value of
+the option.</p>
+
+<p>The resolved option value is set to the return value of the closure.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$normalizer</td>
+                <td>The normalizer</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$forcePrepend</td>
+                <td>If set to true, prepend instead of appending</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowedValues">
+        <div class="location">at line 606</div>
+        <code>                    $this
+    <strong>setAllowedValues</strong>(string $option, mixed $allowedValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets allowed values for an option.</p>                    <p>Instead of passing values, you may also pass a closures with the
+following signature:</p>
+
+<pre><code>function ($value) {
+    // return true or false
+}
+</code></pre>
+
+<p>The closure receives the value as argument and should return true to
+accept the value and false to reject the value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$allowedValues</td>
+                <td>One or more acceptable values/closures</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAllowedValues">
+        <div class="location">at line 647</div>
+        <code>                    $this
+    <strong>addAllowedValues</strong>(string $option, mixed $allowedValues)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds allowed values for an option.</p>                    <p>The values are merged with the allowed values defined previously.</p>
+
+<p>Instead of passing values, you may also pass a closures with the
+following signature:</p>
+
+<pre><code>function ($value) {
+    // return true or false
+}
+</code></pre>
+
+<p>The closure receives the value as argument and should return true to
+accept the value and false to reject the value.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$allowedValues</td>
+                <td>One or more acceptable values/closures</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowedTypes">
+        <div class="location">at line 688</div>
+        <code>                    $this
+    <strong>setAllowedTypes</strong>(string $option, string|string[] $allowedTypes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets allowed types for an option.</p>                    <p>Any type for which a corresponding is_<type>() function exists is
+acceptable. Additionally, fully-qualified class or interface names may
+be passed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>string|string[]</td>
+                <td>$allowedTypes</td>
+                <td>One or more accepted types</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAllowedTypes">
+        <div class="location">at line 723</div>
+        <code>                    $this
+    <strong>addAllowedTypes</strong>(string $option, string|string[] $allowedTypes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds allowed types for an option.</p>                    <p>The types are merged with the allowed types defined previously.</p>
+
+<p>Any type for which a corresponding is_<type>() function exists is
+acceptable. Additionally, fully-qualified class or interface names may
+be passed.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>string|string[]</td>
+                <td>$allowedTypes</td>
+                <td>One or more accepted types</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_define">
+        <div class="location">at line 748</div>
+        <code>                    <a href="../../../Symfony/Component/OptionsResolver/OptionConfigurator.html"><abbr title="Symfony\Component\OptionsResolver\OptionConfigurator">OptionConfigurator</abbr></a>
+    <strong>define</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Defines an option configurator with the given name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/OptionsResolver/OptionConfigurator.html"><abbr title="Symfony\Component\OptionsResolver\OptionConfigurator">OptionConfigurator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInfo">
+        <div class="location">at line 765</div>
+        <code>                    <a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a>
+    <strong>setInfo</strong>(string $option, string $info)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets an info message for an option.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$info</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/OptionsResolver/OptionsResolver.html"><abbr title="Symfony\Component\OptionsResolver\OptionsResolver">OptionsResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If the option is undefined</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInfo">
+        <div class="location">at line 783</div>
+        <code>                    string|null
+    <strong>getInfo</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the info message for an option.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at line 803</div>
+        <code>                    $this
+    <strong>remove</strong>(string|string[] $optionNames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes the option with the given name.</p>                    <p>Undefined options are ignored.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|string[]</td>
+                <td>$optionNames</td>
+                <td>One or more option names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line 824</div>
+        <code>                    $this
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes all options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">at line 869</div>
+        <code>                    array
+    <strong>resolve</strong>(array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges options with the default values stored in the container and
+validates them.</p>                    <p>Exceptions are thrown if:</p>
+
+<ul>
+<li>Undefined options are passed;</li>
+<li>Required options are missing;</li>
+<li>Options have invalid types;</li>
+<li>Options have invalid values.</li>
+</ul>
+</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>A map of option names to values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>UndefinedOptionsException</td>
+                <td>If an option name is undefined</td>
+            </tr>
+                    <tr>
+                <td>InvalidOptionsException</td>
+                <td>If an option doesn't fulfill the
+specified validation rules</td>
+            </tr>
+                    <tr>
+                <td>MissingOptionsException</td>
+                <td>If a required option is missing</td>
+            </tr>
+                    <tr>
+                <td>OptionDefinitionException</td>
+                <td>If there is a cyclic dependency between
+lazy options and/or normalizers</td>
+            </tr>
+                    <tr>
+                <td>NoSuchOptionException</td>
+                <td>If a lazy option reads an unavailable option</td>
+            </tr>
+                    <tr>
+                <td>AccessException</td>
+                <td>If called from a lazy option or normalizer</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line 932</div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(string $option, bool $triggerDeprecation = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the resolved value of an option.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$triggerDeprecation</td>
+                <td>Whether to trigger the deprecation or not (true by default)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If accessing this method outside of
+{@link resolve()}</td>
+            </tr>
+                    <tr>
+                <td>NoSuchOptionException</td>
+                <td>If the option is not set</td>
+            </tr>
+                    <tr>
+                <td>InvalidOptionsException</td>
+                <td>If the option doesn't fulfill the
+specified validation rules</td>
+            </tr>
+                    <tr>
+                <td>OptionDefinitionException</td>
+                <td>If there is a cyclic dependency between
+lazy options and/or normalizers</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line 1173</div>
+        <code>                    bool
+    <strong>offsetExists</strong>(string $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether a resolved option with the given name exists.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td>The option name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If accessing this method outside of {@link resolve()}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \ArrayAccess::offsetExists()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line 1187</div>
+        <code>                    
+    <strong>offsetSet</strong>($option, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Not supported.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line 1197</div>
+        <code>                    
+    <strong>offsetUnset</strong>($option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Not supported.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line 1213</div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the number of set options.</p>                    <p>This may be only a subset of the defined options.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>AccessException</td>
+                <td>If accessing this method outside of {@link resolve()}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \Countable::count()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

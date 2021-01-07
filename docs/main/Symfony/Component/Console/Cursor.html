@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Symfony\Component\Console\Cursor | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Symfony_Component_Console_Cursor" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Symfony.html">Symfony</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component.html">Component</a></li><li class="backslash">\</li><li><a href="../../../Symfony/Component/Console.html">Console</a></li><li class="backslash">\</li><li>Cursor</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Cursor
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Cursor</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output, $input = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveUp">moveUp</a>(int $lines = 1)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveDown">moveDown</a>(int $lines = 1)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveRight">moveRight</a>(int $columns = 1)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveLeft">moveLeft</a>(int $columns = 1)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveToColumn">moveToColumn</a>(int $column)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveToPosition">moveToPosition</a>(int $column, int $row)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_savePosition">savePosition</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restorePosition">restorePosition</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hide">hide</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_show">show</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearLine">clearLine</a>()
+        
+                                            <p>Clears all the output from the current line.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearLineAfter">clearLineAfter</a>()
+        
+                                            <p>Clears all the output from the current line after the current position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearOutput">clearOutput</a>()
+        
+                                            <p>Clears all the output from the cursors' current position to the end of the screen.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearScreen">clearScreen</a>()
+        
+                                            <p>Clears the entire screen.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentPosition">getCurrentPosition</a>()
+        
+                                            <p>Returns the current cursor position as x,y coordinates.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 24</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a> $output, $input = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Symfony/Component/Console/Output/OutputInterface.html"><abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveUp">
+        <div class="location">at line 30</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveUp</strong>(int $lines = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$lines</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveDown">
+        <div class="location">at line 37</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveDown</strong>(int $lines = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$lines</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveRight">
+        <div class="location">at line 44</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveRight</strong>(int $columns = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveLeft">
+        <div class="location">at line 51</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveLeft</strong>(int $columns = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveToColumn">
+        <div class="location">at line 58</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveToColumn</strong>(int $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveToPosition">
+        <div class="location">at line 65</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>moveToPosition</strong>(int $column, int $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$row</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_savePosition">
+        <div class="location">at line 72</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>savePosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restorePosition">
+        <div class="location">at line 79</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>restorePosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hide">
+        <div class="location">at line 86</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>hide</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_show">
+        <div class="location">at line 93</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>show</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearLine">
+        <div class="location">at line 103</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>clearLine</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears all the output from the current line.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearLineAfter">
+        <div class="location">at line 113</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>clearLineAfter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears all the output from the current line after the current position.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearOutput">
+        <div class="location">at line 123</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>clearOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears all the output from the cursors' current position to the end of the screen.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearScreen">
+        <div class="location">at line 133</div>
+        <code>                    <a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a>
+    <strong>clearScreen</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears the entire screen.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Symfony/Component/Console/Cursor.html"><abbr title="Symfony\Component\Console\Cursor">Cursor</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentPosition">
+        <div class="location">at line 143</div>
+        <code>                    array
+    <strong>getCurrentPosition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the current cursor position as x,y coordinates.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

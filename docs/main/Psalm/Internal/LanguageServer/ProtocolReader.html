@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Internal\LanguageServer\ProtocolReader | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Internal_LanguageServer_ProtocolReader" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                        <li><a href="../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Internal.html">Internal</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Internal/LanguageServer.html">LanguageServer</a></li><li class="backslash">\</li><li>ProtocolReader</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ProtocolReader
+                
+        </h1>
+    </div>
+
+    <p>        interface
+    <strong>ProtocolReader</strong>        implements
+        <a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html"><abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Must emit a "message" event with a Message object as parameter
+when a message comes in</p>            <p>Must emit a "close" event when the stream closes</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_on">on</a>(string $eventName, callable $callBack, int $priority = 100)
+        
+                                            <p>Subscribe to an event.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_on">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_emit">emit</a>(string $eventName, array $arguments = [], callable|null $continueCallBack = null)
+        
+                                            <p>Emits an event.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_emit">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listeners">listeners</a>(string $eventName)
+        
+                                            <p>Returns the list of listeners for an event.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_listeners">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeListener">removeListener</a>(string $eventName, callable $listener)
+        
+                                            <p>Removes a specific listener from an event.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_removeListener">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_on">
+        <div class="location">in <a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_on">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a> at line 20</div>
+        <code>                    void
+    <strong>on</strong>(string $eventName, callable $callBack, int $priority = 100)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Subscribe to an event.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callBack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emit">
+        <div class="location">in <a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_emit">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a> at line 45</div>
+        <code>                    bool
+    <strong>emit</strong>(string $eventName, array $arguments = [], callable|null $continueCallBack = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Emits an event.</p>                    <p>This method will return true if 0 or more listeners were successfully
+handled. false is returned if one of the events broke the event chain.</p>
+
+<p>If the continueCallBack is specified, this callback will be called every
+time before the next event handler is called.</p>
+
+<p>If the continueCallback returns false, event propagation stops. This
+allows you to use the eventEmitter as a means for listeners to implement
+functionality in your application, and break the event loop as soon as
+some condition is fulfilled.</p>
+
+<p>Note that returning false from an event subscriber breaks propagation
+and returns false, but if the continue-callback stops propagation, this
+is still considered a 'successful' operation and returns true.</p>
+
+<p>Lastly, if there are 5 event handlers for an event. The continueCallback
+will be called at most 4 times.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable|null</td>
+                <td>$continueCallBack</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listeners">
+        <div class="location">in <a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_listeners">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a> at line 59</div>
+        <code>                    array
+    <strong>listeners</strong>(string $eventName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of listeners for an event.</p>                    <p>The list is returned as an array, and the list of events are sorted by
+their priority.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeListener">
+        <div class="location">in <a href="../../../Psalm/Internal/LanguageServer/EmitterInterface.html#method_removeListener">
+<abbr title="Psalm\Internal\LanguageServer\EmitterInterface">EmitterInterface</abbr></a> at line 67</div>
+        <code>                    bool
+    <strong>removeListener</strong>(string $eventName, callable $listener)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes a specific listener from an event.</p>                    <p>If the listener could not be found, this method will return false. If it
+was removed it will return true.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$listener</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

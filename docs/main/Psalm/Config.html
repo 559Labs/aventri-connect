@@ -1,0 +1,3467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Config | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/doctum-font.css">
+        <script src="../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Config" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                    <li><a href="../namespaces.html">Namespaces</a></li>
+                    <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../Psalm.html">Psalm</a></li><li class="backslash">\</li><li>Config</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Config
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>Config</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_FILE_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REPORT_INFO</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REPORT_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REPORT_SUPPRESS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MIXED_ISSUES</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_ERROR_LEVELS">
+                    static                                                            string[]
+                </td>
+                <td>$ERROR_LEVELS</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_universal_object_crates">
+                                        protected                                        
+                </td>
+                <td>$universal_object_crates</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_docblock_types">
+                                                                                bool
+                </td>
+                <td>$use_docblock_types</td>
+                <td class="last">Whether or not to use types as defined in docblocks</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_docblock_property_types">
+                                                                                bool
+                </td>
+                <td>$use_docblock_property_types</td>
+                <td class="last">Whether or not to use types as defined in property docblocks.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_throw_exception">
+                                                                                bool
+                </td>
+                <td>$throw_exception</td>
+                <td class="last">Whether or not to throw an exception on first error</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_load_xdebug_stub">
+                                                                                bool|null
+                </td>
+                <td>$load_xdebug_stub</td>
+                <td class="last">Whether or not to load Xdebug stub</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache_directory">
+                                                                                string|null
+                </td>
+                <td>$cache_directory</td>
+                <td class="last">The directory to store PHP Parser (and other) caches</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_global_cache_directory">
+                                                                                string|null
+                </td>
+                <td>$global_cache_directory</td>
+                <td class="last">The directory to store all Psalm project caches</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_autoloader">
+                                                                                string|null
+                </td>
+                <td>$autoloader</td>
+                <td class="last">Path to the autoader</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_project_files">
+                                        protected                                        ProjectFileFilter|null
+                </td>
+                <td>$project_files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_extra_files">
+                                        protected                                        ProjectFileFilter|null
+                </td>
+                <td>$extra_files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_base_dir">
+                                                                                string
+                </td>
+                <td>$base_dir</td>
+                <td class="last">The base directory of this config file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hide_external_errors">
+                                                                                bool
+                </td>
+                <td>$hide_external_errors</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_includes">
+                                                                                bool
+                </td>
+                <td>$allow_includes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_level">
+                                                                                
+                </td>
+                <td>$level</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_show_mixed_issues">
+                                                                                <abbr title="Psalm\?bool">?bool</abbr>
+                </td>
+                <td>$show_mixed_issues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_strict_binary_operands">
+                                                                                bool
+                </td>
+                <td>$strict_binary_operands</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_remember_property_assignments_after_call">
+                                                                                bool
+                </td>
+                <td>$remember_property_assignments_after_call</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_igbinary">
+                                                                                bool
+                </td>
+                <td>$use_igbinary</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_phpstorm_generics">
+                                                                                bool
+                </td>
+                <td>$allow_phpstorm_generics</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_string_standin_for_class">
+                                                                                bool
+                </td>
+                <td>$allow_string_standin_for_class</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_phpdoc_method_without_magic_or_parent">
+                                                                                bool
+                </td>
+                <td>$use_phpdoc_method_without_magic_or_parent</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_phpdoc_property_without_magic_or_parent">
+                                                                                bool
+                </td>
+                <td>$use_phpdoc_property_without_magic_or_parent</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_skip_checks_on_unresolvable_includes">
+                                                                                bool
+                </td>
+                <td>$skip_checks_on_unresolvable_includes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_seal_all_methods">
+                                                                                bool
+                </td>
+                <td>$seal_all_methods</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_memoize_method_calls">
+                                                                                bool
+                </td>
+                <td>$memoize_method_calls</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hoist_constants">
+                                                                                bool
+                </td>
+                <td>$hoist_constants</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_add_param_default_to_docblock_type">
+                                                                                bool
+                </td>
+                <td>$add_param_default_to_docblock_type</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_check_for_throws_docblock">
+                                                                                bool
+                </td>
+                <td>$check_for_throws_docblock</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_check_for_throws_in_global_scope">
+                                                                                bool
+                </td>
+                <td>$check_for_throws_in_global_scope</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignore_internal_falsable_issues">
+                                                                                bool
+                </td>
+                <td>$ignore_internal_falsable_issues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignore_internal_nullable_issues">
+                                                                                bool
+                </td>
+                <td>$ignore_internal_nullable_issues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignored_exceptions">
+                                                                                <abbr title="Psalm\array&lt;string,bool&gt;">array&lt;string,bool&gt;</abbr>
+                </td>
+                <td>$ignored_exceptions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignored_exceptions_in_global_scope">
+                                                                                <abbr title="Psalm\array&lt;string,bool&gt;">array&lt;string,bool&gt;</abbr>
+                </td>
+                <td>$ignored_exceptions_in_global_scope</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignored_exceptions_and_descendants">
+                                                                                <abbr title="Psalm\array&lt;string,bool&gt;">array&lt;string,bool&gt;</abbr>
+                </td>
+                <td>$ignored_exceptions_and_descendants</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignored_exceptions_and_descendants_in_global_scope">
+                                                                                <abbr title="Psalm\array&lt;string,bool&gt;">array&lt;string,bool&gt;</abbr>
+                </td>
+                <td>$ignored_exceptions_and_descendants_in_global_scope</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_infer_property_types_from_constructor">
+                                                                                bool
+                </td>
+                <td>$infer_property_types_from_constructor</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ensure_array_string_offsets_exist">
+                                                                                bool
+                </td>
+                <td>$ensure_array_string_offsets_exist</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ensure_array_int_offsets_exist">
+                                                                                bool
+                </td>
+                <td>$ensure_array_int_offsets_exist</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_forbidden_functions">
+                                                                                
+                </td>
+                <td>$forbidden_functions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_forbid_echo">
+                                                                                bool
+                </td>
+                <td>$forbid_echo</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_find_unused_code">
+                                                                                bool
+                </td>
+                <td>$find_unused_code</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_find_unused_variables">
+                                                                                bool
+                </td>
+                <td>$find_unused_variables</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_find_unused_psalm_suppress">
+                                                                                bool
+                </td>
+                <td>$find_unused_psalm_suppress</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_run_taint_analysis">
+                                                                                bool
+                </td>
+                <td>$run_taint_analysis</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_use_phpstorm_meta_path">
+                                                                                bool
+                </td>
+                <td>$use_phpstorm_meta_path</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resolve_from_config_file">
+                                                                                bool
+                </td>
+                <td>$resolve_from_config_file</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_restrict_return_types">
+                                                                                bool
+                </td>
+                <td>$restrict_return_types</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit_method_complexity">
+                                                                                bool
+                </td>
+                <td>$limit_method_complexity</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max_graph_size">
+                                                                                int
+                </td>
+                <td>$max_graph_size</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max_avg_path_length">
+                                                                                int
+                </td>
+                <td>$max_avg_path_length</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_plugin_paths">
+                                                                                string[]
+                </td>
+                <td>$plugin_paths</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_method_checks">
+                                                                                
+                </td>
+                <td>$after_method_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_function_checks">
+                                                                                
+                </td>
+                <td>$after_function_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_every_function_checks">
+                                                                                
+                </td>
+                <td>$after_every_function_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_expression_checks">
+                                                                                
+                </td>
+                <td>$after_expression_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_statement_checks">
+                                                                                
+                </td>
+                <td>$after_statement_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_string_interpreters">
+                                                                                
+                </td>
+                <td>$string_interpreters</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_classlike_exists_checks">
+                                                                                
+                </td>
+                <td>$after_classlike_exists_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_classlike_checks">
+                                                                                
+                </td>
+                <td>$after_classlike_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_visit_classlikes">
+                                                                                
+                </td>
+                <td>$after_visit_classlikes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_codebase_populated">
+                                                                                
+                </td>
+                <td>$after_codebase_populated</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_analysis">
+                                                                                
+                </td>
+                <td>$after_analysis</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_file_checks">
+                                                                                
+                </td>
+                <td>$after_file_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_before_file_checks">
+                                                                                
+                </td>
+                <td>$before_file_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_internal_named_arg_calls">
+                                                                                bool
+                </td>
+                <td>$allow_internal_named_arg_calls</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_allow_named_arg_calls">
+                                                                                bool
+                </td>
+                <td>$allow_named_arg_calls</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_after_functionlike_checks">
+                                                                                
+                </td>
+                <td>$after_functionlike_checks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_exit_functions">
+                                                                                
+                </td>
+                <td>$exit_functions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hash">
+                                                                                string
+                </td>
+                <td>$hash</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error_baseline">
+                                                                                string|null
+                </td>
+                <td>$error_baseline</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_include_php_versions_in_error_baseline">
+                                                                                bool
+                </td>
+                <td>$include_php_versions_in_error_baseline</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_shepherd_host">
+                                                                                string
+                </td>
+                <td>$shepherd_host</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_globals">
+                                                                                <abbr title="Psalm\array&lt;string,string&gt;">array&lt;string,string&gt;</abbr>
+                </td>
+                <td>$globals</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_max_string_length">
+                                                                                int
+                </td>
+                <td>$max_string_length</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_taint_analysis_ignored_files">
+                                        protected                                        TaintAnalysisFileFilter|null
+                </td>
+                <td>$taint_analysis_ignored_files</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_debug_emitted_issues">
+                                                                                bool
+                </td>
+                <td>$debug_emitted_issues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfigForPath">getConfigForPath</a>(string $path, string $current_dir)
+        
+                                            <p>Gets a Config object from an XML file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_locateConfigFile">locateConfigFile</a>(string $path)
+        
+                                            <p>Searches up a folder hierarchy for the most immediate config.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFromXMLFile">loadFromXMLFile</a>(string $file_path, string $current_dir)
+        
+                                            <p>Creates a new config object from the file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFromXML">loadFromXML</a>(string $base_dir, string $file_contents, string|null $current_dir = null)
+        
+                                            <p>Creates a new config object from an XML string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setComposerClassLoader">setComposerClassLoader</a>(<a href="../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a>|null $loader = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCustomErrorLevel">setCustomErrorLevel</a>(string $issue_key, string $error_level)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPluginPath">addPluginPath</a>(string $path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPluginClass">addPluginClass</a>(string $class_name, <a target="_blank" rel="noopener" href="https://www.php.net/SimpleXMLElement">SimpleXMLElement</a>|null $plugin_config = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPluginClasses">getPluginClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initializePlugins">initializePlugins</a>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer)
+        
+                                            <p>Initialises all the plugins (done once the config is fully loaded)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shortenFileName">shortenFileName</a>(string $to)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reportIssueInFile">reportIssueInFile</a>(string $issue_type, string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInProjectDirs">isInProjectDirs</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isInExtraDirs">isInExtraDirs</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mustBeIgnored">mustBeIgnored</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_trackTaintsInPath">trackTaintsInPath</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForIssue">getReportingLevelForIssue</a>(<a href="../Psalm/Issue/CodeIssue.html"><abbr title="Psalm\Issue\CodeIssue">CodeIssue</abbr></a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParentIssueType">getParentIssueType</a>(string $issue_type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForFile">getReportingLevelForFile</a>(string $issue_type, string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForClass">getReportingLevelForClass</a>(string $issue_type, string $fq_classlike_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForMethod">getReportingLevelForMethod</a>(string $issue_type, string $method_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForFunction">getReportingLevelForFunction</a>(string $issue_type, string $function_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForArgument">getReportingLevelForArgument</a>(string $issue_type, string $function_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForProperty">getReportingLevelForProperty</a>(string $issue_type, string $property_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReportingLevelForVariable">getReportingLevelForVariable</a>(string $issue_type, string $var_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProjectDirectories">getProjectDirectories</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProjectFiles">getProjectFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtraDirectories">getExtraDirectories</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reportTypeStatsForFile">reportTypeStatsForFile</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useStrictTypesForFile">useStrictTypesForFile</a>(string $file_path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFileExtensions">getFileExtensions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiletypeScanners">getFiletypeScanners</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiletypeAnalyzers">getFiletypeAnalyzers</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMockClasses">getMockClasses</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_visitPreloadedStubFiles">visitPreloadedStubFiles</a>(<a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_visitStubFiles">visitStubFiles</a>(<a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheDirectory">getCacheDirectory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobalCacheDirectory">getGlobalCacheDirectory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPredefinedConstants">getPredefinedConstants</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collectPredefinedConstants">collectPredefinedConstants</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPredefinedFunctions">getPredefinedFunctions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collectPredefinedFunctions">collectPredefinedFunctions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIncludeCollector">setIncludeCollector</a>(<a href="../Psalm/Internal/IncludeCollector.html"><abbr title="Psalm\Internal\IncludeCollector">IncludeCollector</abbr></a> $include_collector)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_visitComposerAutoloadFiles">visitComposerAutoloadFiles</a>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComposerFilePathForClassLike">getComposerFilePathForClassLike</a>(string $fq_classlike_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPotentialComposerFilePathForClassLike">getPotentialComposerFilePathForClassLike</a>(string $class)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeCacheDirectory">removeCacheDirectory</a>(string $dir)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServerMode">setServerMode</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addStubFile">addStubFile</a>(string $stub_file)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasStubFile">hasStubFile</a>(string $stub_file)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStubFiles">getStubFiles</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPreloadedStubFile">addPreloadedStubFile</a>(string $stub_file)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPhpVersion">getPhpVersion</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addUniversalObjectCrate">addUniversalObjectCrate</a>(string $class)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUniversalObjectCrates">getUniversalObjectCrates</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 642</div>
+        <code>            protected        
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfigForPath">
+        <div class="location">at line 655</div>
+        <code>        static            <a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+    <strong>getConfigForPath</strong>(string $path, string $current_dir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a Config object from an XML file.</p>                    <p>Searches up a folder hierarchy for the most immediate config.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$current_dir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ConfigException</td>
+                <td>if a config path is not found</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_locateConfigFile">
+        <div class="location">at line 672</div>
+        <code>        static            string|null
+    <strong>locateConfigFile</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Searches up a folder hierarchy for the most immediate config.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ConfigException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFromXMLFile">
+        <div class="location">at line 700</div>
+        <code>        static            <a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+    <strong>loadFromXMLFile</strong>(string $file_path, string $current_dir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new config object from the file</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$current_dir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFromXML">
+        <div class="location">at line 728</div>
+        <code>        static            <a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+    <strong>loadFromXML</strong>(string $base_dir, string $file_contents, string|null $current_dir = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new config object from an XML string</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$base_dir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_contents</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$current_dir</td>
+                <td>Current working directory, if different to $base_dir</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>ConfigException</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at line 1130</div>
+        <code>        static            <a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a>
+    <strong>getInstance</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Psalm/Config.html"><abbr title="Psalm\Config">Config</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setComposerClassLoader">
+        <div class="location">at line 1139</div>
+        <code>                    void
+    <strong>setComposerClassLoader</strong>(<a href="../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a>|null $loader = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Composer/Autoload/ClassLoader.html"><abbr title="Composer\Autoload\ClassLoader">ClassLoader</abbr></a>|null</td>
+                <td>$loader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCustomErrorLevel">
+        <div class="location">at line 1144</div>
+        <code>                    void
+    <strong>setCustomErrorLevel</strong>(string $issue_key, string $error_level)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$error_level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPluginPath">
+        <div class="location">at line 1182</div>
+        <code>                    void
+    <strong>addPluginPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPluginClass">
+        <div class="location">at line 1191</div>
+        <code>                    void
+    <strong>addPluginClass</strong>(string $class_name, <a target="_blank" rel="noopener" href="https://www.php.net/SimpleXMLElement">SimpleXMLElement</a>|null $plugin_config = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/SimpleXMLElement">SimpleXMLElement</a>|null</td>
+                <td>$plugin_config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPluginClasses">
+        <div class="location">at line 1197</div>
+        <code>                    array
+    <strong>getPluginClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initializePlugins">
+        <div class="location">at line 1207</div>
+        <code>                    void
+    <strong>initializePlugins</strong>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialises all the plugins (done once the config is fully loaded)</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a></td>
+                <td>$project_analyzer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shortenFileName">
+        <div class="location">at line 1336</div>
+        <code>                    string
+    <strong>shortenFileName</strong>(string $to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reportIssueInFile">
+        <div class="location">at line 1374</div>
+        <code>                    bool
+    <strong>reportIssueInFile</strong>(string $issue_type, string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInProjectDirs">
+        <div class="location">at line 1424</div>
+        <code>                    bool
+    <strong>isInProjectDirs</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isInExtraDirs">
+        <div class="location">at line 1429</div>
+        <code>                    bool
+    <strong>isInExtraDirs</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mustBeIgnored">
+        <div class="location">at line 1434</div>
+        <code>                    bool
+    <strong>mustBeIgnored</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_trackTaintsInPath">
+        <div class="location">at line 1439</div>
+        <code>                    bool
+    <strong>trackTaintsInPath</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForIssue">
+        <div class="location">at line 1445</div>
+        <code>                    string
+    <strong>getReportingLevelForIssue</strong>(<a href="../Psalm/Issue/CodeIssue.html"><abbr title="Psalm\Issue\CodeIssue">CodeIssue</abbr></a> $e)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Issue/CodeIssue.html"><abbr title="Psalm\Issue\CodeIssue">CodeIssue</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParentIssueType">
+        <div class="location">at line 1490</div>
+        <code>        static            string|null
+    <strong>getParentIssueType</strong>(string $issue_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForFile">
+        <div class="location">at line 1595</div>
+        <code>                    string
+    <strong>getReportingLevelForFile</strong>(string $issue_type, string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForClass">
+        <div class="location">at line 1618</div>
+        <code>                    string|null
+    <strong>getReportingLevelForClass</strong>(string $issue_type, string $fq_classlike_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fq_classlike_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForMethod">
+        <div class="location">at line 1627</div>
+        <code>                    string|null
+    <strong>getReportingLevelForMethod</strong>(string $issue_type, string $method_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForFunction">
+        <div class="location">at line 1636</div>
+        <code>                    string|null
+    <strong>getReportingLevelForFunction</strong>(string $issue_type, string $function_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$function_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForArgument">
+        <div class="location">at line 1645</div>
+        <code>                    string|null
+    <strong>getReportingLevelForArgument</strong>(string $issue_type, string $function_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$function_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForProperty">
+        <div class="location">at line 1654</div>
+        <code>                    string|null
+    <strong>getReportingLevelForProperty</strong>(string $issue_type, string $property_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$property_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReportingLevelForVariable">
+        <div class="location">at line 1663</div>
+        <code>                    string|null
+    <strong>getReportingLevelForVariable</strong>(string $issue_type, string $var_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$issue_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$var_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProjectDirectories">
+        <div class="location">at line 1675</div>
+        <code>                    array
+    <strong>getProjectDirectories</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProjectFiles">
+        <div class="location">at line 1687</div>
+        <code>                    array
+    <strong>getProjectFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtraDirectories">
+        <div class="location">at line 1699</div>
+        <code>                    array
+    <strong>getExtraDirectories</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reportTypeStatsForFile">
+        <div class="location">at line 1708</div>
+        <code>                    bool
+    <strong>reportTypeStatsForFile</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useStrictTypesForFile">
+        <div class="location">at line 1715</div>
+        <code>                    bool
+    <strong>useStrictTypesForFile</strong>(string $file_path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file_path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFileExtensions">
+        <div class="location">at line 1723</div>
+        <code>                    array
+    <strong>getFileExtensions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiletypeScanners">
+        <div class="location">at line 1731</div>
+        <code>                    array
+    <strong>getFiletypeScanners</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiletypeAnalyzers">
+        <div class="location">at line 1739</div>
+        <code>                    array
+    <strong>getFiletypeAnalyzers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMockClasses">
+        <div class="location">at line 1747</div>
+        <code>                    array
+    <strong>getMockClasses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_visitPreloadedStubFiles">
+        <div class="location">at line 1752</div>
+        <code>                    void
+    <strong>visitPreloadedStubFiles</strong>(<a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null</td>
+                <td>$progress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_visitStubFiles">
+        <div class="location">at line 1792</div>
+        <code>                    void
+    <strong>visitStubFiles</strong>(<a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a> $codebase, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Codebase.html"><abbr title="Psalm\Codebase">Codebase</abbr></a></td>
+                <td>$codebase</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null</td>
+                <td>$progress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheDirectory">
+        <div class="location">at line 1905</div>
+        <code>                    string|null
+    <strong>getCacheDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobalCacheDirectory">
+        <div class="location">at line 1910</div>
+        <code>                    string|null
+    <strong>getGlobalCacheDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPredefinedConstants">
+        <div class="location">at line 1918</div>
+        <code>                    array
+    <strong>getPredefinedConstants</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collectPredefinedConstants">
+        <div class="location">at line 1923</div>
+        <code>                    void
+    <strong>collectPredefinedConstants</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPredefinedFunctions">
+        <div class="location">at line 1931</div>
+        <code>                    array
+    <strong>getPredefinedFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collectPredefinedFunctions">
+        <div class="location">at line 1936</div>
+        <code>                    void
+    <strong>collectPredefinedFunctions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIncludeCollector">
+        <div class="location">at line 1953</div>
+        <code>                    void
+    <strong>setIncludeCollector</strong>(<a href="../Psalm/Internal/IncludeCollector.html"><abbr title="Psalm\Internal\IncludeCollector">IncludeCollector</abbr></a> $include_collector)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Internal/IncludeCollector.html"><abbr title="Psalm\Internal\IncludeCollector">IncludeCollector</abbr></a></td>
+                <td>$include_collector</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_visitComposerAutoloadFiles">
+        <div class="location">at line 1962</div>
+        <code>                    void
+    <strong>visitComposerAutoloadFiles</strong>(<a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a> $project_analyzer, <a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null $progress = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Psalm/Internal/Analyzer/ProjectAnalyzer.html"><abbr title="Psalm\Internal\Analyzer\ProjectAnalyzer">ProjectAnalyzer</abbr></a></td>
+                <td>$project_analyzer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../Psalm/Progress/Progress.html"><abbr title="Psalm\Progress\Progress">Progress</abbr></a>|null</td>
+                <td>$progress</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComposerFilePathForClassLike">
+        <div class="location">at line 2031</div>
+        <code>                    string|bool
+    <strong>getComposerFilePathForClassLike</strong>(string $fq_classlike_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fq_classlike_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPotentialComposerFilePathForClassLike">
+        <div class="location">at line 2040</div>
+        <code>                    string|null
+    <strong>getPotentialComposerFilePathForClassLike</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeCacheDirectory">
+        <div class="location">at line 2081</div>
+        <code>        static            void
+    <strong>removeCacheDirectory</strong>(string $dir)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServerMode">
+        <div class="location">at line 2105</div>
+        <code>                    void
+    <strong>setServerMode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addStubFile">
+        <div class="location">at line 2110</div>
+        <code>                    void
+    <strong>addStubFile</strong>(string $stub_file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$stub_file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasStubFile">
+        <div class="location">at line 2115</div>
+        <code>                    bool
+    <strong>hasStubFile</strong>(string $stub_file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$stub_file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStubFiles">
+        <div class="location">at line 2123</div>
+        <code>                    array
+    <strong>getStubFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPreloadedStubFile">
+        <div class="location">at line 2128</div>
+        <code>                    void
+    <strong>addPreloadedStubFile</strong>(string $stub_file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$stub_file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPhpVersion">
+        <div class="location">at line 2133</div>
+        <code>                    string|null
+    <strong>getPhpVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addUniversalObjectCrate">
+        <div class="location">at line 2172</div>
+        <code>                    void
+    <strong>addUniversalObjectCrate</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUniversalObjectCrates">
+        <div class="location">at line 2183</div>
+        <code>                    array
+    <strong>getUniversalObjectCrates</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

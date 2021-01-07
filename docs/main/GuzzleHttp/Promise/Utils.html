@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>GuzzleHttp\Promise\Utils | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:GuzzleHttp_Promise_Utils" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../GuzzleHttp.html">GuzzleHttp</a></li><li class="backslash">\</li><li><a href="../../GuzzleHttp/Promise.html">Promise</a></li><li class="backslash">\</li><li>Utils</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Utils
+                
+        </h1>
+    </div>
+
+    <p>final         class
+    <strong>Utils</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;TaskQueueInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_queue">queue</a>(<a href="../../GuzzleHttp/Promise/TaskQueueInterface.html"><abbr title="GuzzleHttp\Promise\TaskQueueInterface">TaskQueueInterface</abbr></a> $assign = null)
+        
+                                            <p>Get the global task queue used for promise resolution.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PromiseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_task">task</a>(callable $task)
+        
+                                            <p>Adds a function to run in the task queue when it is next <code>run()</code> and
+returns a promise that is fulfilled or rejected with the result.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inspect">inspect</a>(<a href="../../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a> $promise)
+        
+                                            <p>Synchronously waits on a promise to resolve and returns an inspection
+state array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inspectAll">inspectAll</a>(PromiseInterface[] $promises)
+        
+                                            <p>Waits on all of the provided promises, but does not unwrap rejected
+promises as thrown exception.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unwrap">unwrap</a>($promises)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PromiseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>(mixed $promises, bool $recursive = false)
+        
+                                            <p>Given an array of promises, return a promise that is fulfilled when all
+the items in the array are fulfilled.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PromiseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_some">some</a>(int $count, mixed $promises)
+        
+                                            <p>Initiate a competitive race between multiple promises or values (values
+will become immediately fulfilled promises).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PromiseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_any">any</a>(mixed $promises)
+        
+                                            <p>Like some(), with 1 as count. However, if the promise fulfills, the
+fulfillment value is not an array of 1 but the value directly.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;PromiseInterface
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settle">settle</a>(mixed $promises)
+        
+                                            <p>Returns a promise that is fulfilled when all of the provided promises have
+been fulfilled or rejected.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_queue">
+        <div class="location">at line 24</div>
+        <code>        static            TaskQueueInterface
+    <strong>queue</strong>(<a href="../../GuzzleHttp/Promise/TaskQueueInterface.html"><abbr title="GuzzleHttp\Promise\TaskQueueInterface">TaskQueueInterface</abbr></a> $assign = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the global task queue used for promise resolution.</p>                    <p>This task queue MUST be run in an event loop in order for promises to be
+settled asynchronously. It will be automatically run when synchronously
+waiting on a promise.</p>
+
+<p><code>
+while ($eventLoop->isRunning()) {
+    GuzzleHttp\Promise\Utils::queue()->run();
+}
+</code></p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../GuzzleHttp/Promise/TaskQueueInterface.html"><abbr title="GuzzleHttp\Promise\TaskQueueInterface">TaskQueueInterface</abbr></a></td>
+                <td>$assign</td>
+                <td>Optionally specify a new queue instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>TaskQueueInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_task">
+        <div class="location">at line 45</div>
+        <code>        static            PromiseInterface
+    <strong>task</strong>(callable $task)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a function to run in the task queue when it is next <code>run()</code> and
+returns a promise that is fulfilled or rejected with the result.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$task</td>
+                <td>Task function to run.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PromiseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inspect">
+        <div class="location">at line 76</div>
+        <code>        static            array
+    <strong>inspect</strong>(<a href="../../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a> $promise)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Synchronously waits on a promise to resolve and returns an inspection
+state array.</p>                    <p>Returns a state associative array containing a "state" key mapping to a
+valid promise state. If the state of the promise is "fulfilled", the
+array will contain a "value" key mapping to the fulfilled value of the
+promise. If the promise is rejected, the array will contain a "reason"
+key mapping to the rejection reason of the promise.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../GuzzleHttp/Promise/PromiseInterface.html"><abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></a></td>
+                <td>$promise</td>
+                <td>Promise or value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inspectAll">
+        <div class="location">at line 104</div>
+        <code>        static            array
+    <strong>inspectAll</strong>(PromiseInterface[] $promises)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Waits on all of the provided promises, but does not unwrap rejected
+promises as thrown exception.</p>                    <p>Returns an array of inspection state arrays.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>PromiseInterface[]</td>
+                <td>$promises</td>
+                <td>Traversable of promises to wait upon.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            inspect
+                                    </td>
+                <td>for the inspection state array format.</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unwrap">
+        <div class="location">at line 128</div>
+        <code>        static            
+    <strong>unwrap</strong>($promises)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$promises</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">at line 151</div>
+        <code>        static            PromiseInterface
+    <strong>all</strong>(mixed $promises, bool $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Given an array of promises, return a promise that is fulfilled when all
+the items in the array are fulfilled.</p>                    <p>The promise's fulfillment value is an array with fulfillment values at
+respective positions to the original array. If any promise in the array
+rejects, the returned promise is rejected with the rejection reason.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$promises</td>
+                <td>Promises or values.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td>If true, resolves new promises that might have been added to the stack during its own resolution.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PromiseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_some">
+        <div class="location">at line 197</div>
+        <code>        static            PromiseInterface
+    <strong>some</strong>(int $count, mixed $promises)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initiate a competitive race between multiple promises or values (values
+will become immediately fulfilled promises).</p>                    <p>When count amount of promises have been fulfilled, the returned promise
+is fulfilled with an array that contains the fulfillment values of the
+winners in order of resolution.</p>
+
+<p>This promise is rejected with a {see \AggregateException} if the number
+of fulfilled promises is less than the desired $count.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td>Total number of promises.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$promises</td>
+                <td>Promises or values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PromiseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_any">
+        <div class="location">at line 238</div>
+        <code>        static            PromiseInterface
+    <strong>any</strong>(mixed $promises)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Like some(), with 1 as count. However, if the promise fulfills, the
+fulfillment value is not an array of 1 but the value directly.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$promises</td>
+                <td>Promises or values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PromiseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settle">
+        <div class="location">at line 257</div>
+        <code>        static            PromiseInterface
+    <strong>settle</strong>(mixed $promises)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a promise that is fulfilled when all of the provided promises have
+been fulfilled or rejected.</p>                    <p>The returned promise is fulfilled with an array of inspection state arrays.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$promises</td>
+                <td>Promises or values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>PromiseInterface</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            inspect
+                                    </td>
+                <td>for the inspection state array format.</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

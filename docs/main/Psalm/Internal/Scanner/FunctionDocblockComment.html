@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Psalm\Internal\Scanner\FunctionDocblockComment | Aventri Connect API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+
+    <body id="class" data-name="class:Psalm_Internal_Scanner_FunctionDocblockComment" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Aventri Connect API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Psalm.html">Psalm</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Internal.html">Internal</a></li><li class="backslash">\</li><li><a href="../../../Psalm/Internal/Scanner.html">Scanner</a></li><li class="backslash">\</li><li>FunctionDocblockComment</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            FunctionDocblockComment
+                
+        </h1>
+    </div>
+
+    <p>        class
+    <strong>FunctionDocblockComment</strong>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_return_type">
+                                                                                string|null
+                </td>
+                <td>$return_type</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_return_type_description">
+                                                                                string|null
+                </td>
+                <td>$return_type_description</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_return_type_start">
+                                                                                int|null
+                </td>
+                <td>$return_type_start</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_return_type_end">
+                                                                                int|null
+                </td>
+                <td>$return_type_end</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_return_type_line_number">
+                                                                                int|null
+                </td>
+                <td>$return_type_line_number</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params">
+                                                                                
+                </td>
+                <td>$params</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_params_out">
+                                                                                
+                </td>
+                <td>$params_out</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_self_out">
+                                                                                
+                </td>
+                <td>$self_out</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_globals">
+                                                                                
+                </td>
+                <td>$globals</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deprecated">
+                                                                                bool
+                </td>
+                <td>$deprecated</td>
+                <td class="last">Whether or not the function is deprecated</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_psalm_internal">
+                                                                                null|string
+                </td>
+                <td>$psalm_internal</td>
+                <td class="last">If set, the function is internal to the given namespace.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_internal">
+                                                                                bool
+                </td>
+                <td>$internal</td>
+                <td class="last">Whether or not the function is internal</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_variadic">
+                                                                                bool
+                </td>
+                <td>$variadic</td>
+                <td class="last">Whether or not the function uses get_args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pure">
+                                                                                bool
+                </td>
+                <td>$pure</td>
+                <td class="last">Whether or not the function is pure</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_specialize_call">
+                                                                                bool
+                </td>
+                <td>$specialize_call</td>
+                <td class="last">Whether or not to specialize a given call (useful for taint analysis)</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_flows">
+                                                                                string[]
+                </td>
+                <td>$flows</td>
+                <td class="last">Represents the flow from function params to return type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_added_taints">
+                                                                                string[]
+                </td>
+                <td>$added_taints</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_removed_taints">
+                                                                                string[]
+                </td>
+                <td>$removed_taints</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_taint_sink_params">
+                                                                                
+                </td>
+                <td>$taint_sink_params</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_taint_source_types">
+                                                                                string[]
+                </td>
+                <td>$taint_source_types</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_assert_untainted_params">
+                                                                                
+                </td>
+                <td>$assert_untainted_params</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignore_nullable_return">
+                                                                                bool
+                </td>
+                <td>$ignore_nullable_return</td>
+                <td class="last">Whether or not to ignore the nullability of this function's return type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignore_falsable_return">
+                                                                                bool
+                </td>
+                <td>$ignore_falsable_return</td>
+                <td class="last">Whether or not to ignore the nullability of this function's return type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_suppressed_issues">
+                                                                                <abbr title="Psalm\Internal\Scanner\array&lt;int,string&gt;">array&lt;int,string&gt;</abbr>
+                </td>
+                <td>$suppressed_issues</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_throws">
+                                                                                
+                </td>
+                <td>$throws</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_templates">
+                                                                                
+                </td>
+                <td>$templates</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_assertions">
+                                                                                
+                </td>
+                <td>$assertions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_if_true_assertions">
+                                                                                
+                </td>
+                <td>$if_true_assertions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_if_false_assertions">
+                                                                                
+                </td>
+                <td>$if_false_assertions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inheritdoc">
+                                                                                bool
+                </td>
+                <td>$inheritdoc</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mutation_free">
+                                                                                bool
+                </td>
+                <td>$mutation_free</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_external_mutation_free">
+                                                                                bool
+                </td>
+                <td>$external_mutation_free</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_no_named_args">
+                                                                                bool
+                </td>
+                <td>$no_named_args</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stub_override">
+                                                                                bool
+                </td>
+                <td>$stub_override</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_since_php_major_version">
+                                                                                int
+                </td>
+                <td>$since_php_major_version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_since_php_minor_version">
+                                                                                int
+                </td>
+                <td>$since_php_minor_version</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+    
+            </div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
