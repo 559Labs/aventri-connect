@@ -4,7 +4,6 @@ namespace FFNLabs\AventriConnect\Concerns;
 
 trait HasGlobalConcern
 {
-
     public function resetSession($params = [])
     {
     }
