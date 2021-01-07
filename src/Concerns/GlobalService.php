@@ -2,23 +2,15 @@
 
 namespace FFNLabs\AventriConnect\Concerns;
 
-trait HasGlobalConcern
-{
-    public function resetSession($params = [])
-    {
-    }
+use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
-    /**
-     * Returns a list of available functions within the Aventri API. Details include which module
-     * the function belongs to and what HTTP method is required to call it.
-     */
-    public function listAvailableFunctions($params = [])
-    {
-    }
+trait GlobalService
+{
 
     // Contacts
     public function listContacts($params = [])
     {
+        throw new NotImplementedException();
     }
 
     /**
@@ -26,10 +18,12 @@ trait HasGlobalConcern
      */
     public function getContact($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function addContact($email = "", $other_id = "", $params = [])
     {
+        throw new NotImplementedException();
     }
 
     /**
@@ -37,10 +31,12 @@ trait HasGlobalConcern
      */
     public function deleteContact($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function updateContact($params = [])
     {
+        throw new NotImplementedException();
     }
 
     /**
@@ -48,15 +44,18 @@ trait HasGlobalConcern
      */
     public function getContactQuestion($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listContactQuestions($params = [])
     {
+        throw new NotImplementedException();
     }
 
     // Speakers
     public function listSpeakers($params = [])
     {
+        throw new NotImplementedException();
     }
 
     /**
@@ -64,7 +63,7 @@ trait HasGlobalConcern
      */
     public function getSpeaker($params = [])
     {
-        $path = "global/getSpeaker.json";
+        throw new NotImplementedException();
     }
 
     /**
@@ -72,19 +71,23 @@ trait HasGlobalConcern
      */
     public function createSpeaker($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function updateSpeaker($params = [])
     {
+        throw new NotImplementedException();
     }
 
     // Events
     public function listEvents($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function searchEvents($params = [])
     {
+        throw new NotImplementedException();
     }
 
     /**
@@ -92,34 +95,46 @@ trait HasGlobalConcern
      */
     public function cloneEvent($params = [])
     {
+        throw new NotImplementedException();
     }
 
     // Other Lists
     public function listFolders($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listLanguages($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listSessions($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listTaxRegimes($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listTracks($params = [])
     {
+        throw new NotImplementedException();
     }
 
     public function listTransactionTypes($params = [])
     {
+        throw new NotImplementedException();
     }
 
+    /**
+     * Use this function to return a list of all supported currencies and the corresponding ISO 4217 a 3 character code.
+     */
     public function listCurrencies($params = [])
     {
+        $uri = $this->getUri("global/listCurrencies");
+        return $this->get($uri);
     }
 }

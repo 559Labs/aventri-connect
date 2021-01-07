@@ -2,17 +2,25 @@
 
 namespace FFNLabs\AventriConnect;
 
-use FFNLabs\AventriConnect\Exceptions\AuthenticationException;
+use FFNLabs\AventriConnect\Concerns\BaseService;
+use FFNLabs\AventriConnect\Concerns\GlobalService;
+use FFNLabs\AventriConnect\Concerns\HasSystemMethodConcern;
+// use FFNLabs\AventriConnect\Exceptions\AuthenticationException;
+// use FFNLabs\AventriConnect\Exceptions\BadRequestException;
+// use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 use GuzzleHttp\Client as GuzzleClient;
 
 class AventriClient
 {
 
+    use HasSystemMethodConcern, BaseService,
+        GlobalService;
+
     /**
      * Stateful data container
      */
     public array $data = [
-        "accesstoken" => "",
+        "last_request" => "",
     ];
 
     /**
@@ -25,23 +33,30 @@ class AventriClient
      * @param int    $token_duration Usually set to 10 minutes in Aventri. This can be overwritten if different.
      * @param string $format Either 'json' or 'xml'. Should generally be 'json' unless you know what you're doing.
      */
-    public function __construct(
-        string $endpoint = Enums::ENDPOINT_NA,
-        string $api_version = Enums::APIVERSION_CURRENT,
-        string $account_id = "",
-        string $account_key = "",
-        int   $token_duration = 10,
-        string $format = "json"
-    ) {
-        $this->data['endpoint'] = $endpoint;
-        $this->data['apiversion'] = $api_version;
-        $this->data['format'] = $format;
+    public function __construct($args=[])
+    {
+        $opts = array_merge(
+            [
+                'endpoint' => Enums::ENDPOINT_NA,
+                'api_version' => Enums::APIVERSION_CURRENT,
+                'account_id' => "",
+                "account_key" => "",
+                "token_duration" => 10,
+                "format" => "json",
+            ],
+            $args
+        );
+
+
+        $this->data['endpoint'] = $opts['endpoint'];
+        $this->data['apiversion'] = $opts['api_version'];
+        $this->data['format'] = $opts['format'];
         $this->data['auth'] = [
-            'account_id' => $account_id,
-            'account_key' => $account_key,
+            'account_id' => $opts['account_id'],
+            'account_key' => $opts['account_key'],
             'token' => [
                 "value" => "",
-                "duration" => $token_duration,
+                "duration" => $opts['token_duration'],
                 "expires" => "",
             ],
         ];
@@ -75,6 +90,11 @@ class AventriClient
         return $uri;
     }
 
+    /**
+     * Is the current access token valid (according to the specfied timeout)?
+     *
+     * @return bool
+     */
     public function accessTokenIsValid()
     {
         if ($this->data['auth']['token']['value'] == "") {
@@ -91,40 +111,14 @@ class AventriClient
         return true; // Otherwise it's probably good.
     }
 
+    /**
+     * More for dev and debugging, but this returns the client object from GuzzleHttp\Client.
+     *
+     * @return \GuzzleHttp\Client
+     */
     public function getClient()
     {
         return $this->data['client'];
     }
 
-    public function authorize()
-    {
-        if ($this->accessTokenIsValid()) {
-            return 0;
-        }
-
-        $uri = $this->getUri("global/authorize");
-        $payload = [
-            'accountid' => $this->data['auth']['account_id'],
-            'key' => $this->data['auth']['account_key'],
-        ];
-        $request = $this->getClient()->post($uri, ['form_params' => $payload]);
-        if ($request->getStatusCode() > 299) {
-            throw new AuthenticationException($request->getReasonPhrase());
-        }
-        $this->data['auth']['token']['value'] = json_decode($request->getBody())->accesstoken;
-        $this->data['auth']['token']['expires'] = \Carbon\Carbon::now()->addMinutes($this->data['auth']['token']['duration']);
-
-        return 0;
-    }
-
-    public function listAvailableFunctions()
-    {
-        $uri = $this->getUri("global/listAvailableFunctions");
-        $request = $this->getClient()->get($uri);
-        if ($request->getStatusCode() > 299) {
-            throw new AuthenticationException($request->getReasonPhrase());
-        }
-
-        return json_decode($request->getBody());
-    }
 }

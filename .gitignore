@@ -11,3 +11,5 @@ psalm.xml
 vendor
 
 _parked
+
+.psysh.php
