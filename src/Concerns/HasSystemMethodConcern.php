@@ -8,7 +8,6 @@ use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
 trait HasSystemMethodConcern
 {
-
     public function authorize()
     {
         if ($this->accessTokenIsValid()) {
@@ -30,6 +29,7 @@ trait HasSystemMethodConcern
             foreach ($body->error as $k => $v) {
                 $msg .= $k . ": " . $v . "; ";
             }
+
             throw new AuthenticationException($msg);
         }
 
@@ -52,6 +52,7 @@ trait HasSystemMethodConcern
         if ($request->getStatusCode() > 299) {
             throw new AuthenticationException($request->getReasonPhrase());
         }
+
         return json_decode($request->getBody());
     }
 
@@ -61,5 +62,4 @@ trait HasSystemMethodConcern
         $uri = $this->getUri("global/resetSession");
         $request = $this->getClient()->get($uri);
     }
-
 }

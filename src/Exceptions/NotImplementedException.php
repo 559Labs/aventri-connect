@@ -2,4 +2,6 @@
 
 namespace FFNLabs\AventriConnect\Exceptions;
 
-class NotImplementedException extends \Exception {}
+class NotImplementedException extends \Exception
+{
+}

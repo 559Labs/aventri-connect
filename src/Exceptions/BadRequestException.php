@@ -2,4 +2,6 @@
 
 namespace FFNLabs\AventriConnect\Exceptions;
 
-class BadRequestException extends \Exception {}
+class BadRequestException extends \Exception
+{
+}

@@ -6,7 +6,6 @@ use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
 trait GlobalService
 {
-
     // Contacts
     public function listContacts($params = [])
     {
@@ -135,6 +134,7 @@ trait GlobalService
     public function listCurrencies($params = [])
     {
         $uri = $this->getUri("global/listCurrencies");
+
         return $this->get($uri);
     }
 }

@@ -12,9 +12,10 @@ use GuzzleHttp\Client as GuzzleClient;
 
 class AventriClient
 {
+    use HasSystemMethodConcern;
+    use BaseService;
 
-    use HasSystemMethodConcern, BaseService,
-        GlobalService;
+    use GlobalService;
 
     /**
      * Stateful data container
@@ -33,7 +34,7 @@ class AventriClient
      * @param int    $token_duration Usually set to 10 minutes in Aventri. This can be overwritten if different.
      * @param string $format Either 'json' or 'xml'. Should generally be 'json' unless you know what you're doing.
      */
-    public function __construct($args=[])
+    public function __construct($args = [])
     {
         $opts = array_merge(
             [
@@ -120,5 +121,4 @@ class AventriClient
     {
         return $this->data['client'];
     }
-
 }
