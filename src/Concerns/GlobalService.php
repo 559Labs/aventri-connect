@@ -15,9 +15,11 @@ trait GlobalService
     /**
      * Use this function to get detailed set of information of any contact you currently have in your account.
      */
-    public function getContact($params = [])
+    public function getContact(int $contactid, $params = [])
     {
-        throw new NotImplementedException();
+        $uri = $this->getUri("global/getContact");
+        $params = array_merge($params, ['query' => ['contactid'=> $contactid]]);
+        return $this->get($uri, $params);
     }
 
     public function addContact($email = "", $other_id = "", $params = [])
@@ -134,7 +136,6 @@ trait GlobalService
     public function listCurrencies($params = [])
     {
         $uri = $this->getUri("global/listCurrencies");
-
         return $this->get($uri);
     }
 }
