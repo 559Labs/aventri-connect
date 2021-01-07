@@ -224,8 +224,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                 <div class="col-md-8 type">
                     <a href="#method_listContacts">listContacts</a>($params = [])
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Use this function to get a list of any contacts you currently have in your account.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listContacts">
 <abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a></small></div>
             </div>
@@ -234,7 +233,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContact">getContact</a>($params = [])
+                    <a href="#method_getContact">getContact</a>(int $contactid, $params = [])
         
                                             <p>Use this function to get detailed set of information of any contact you currently have in your account.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_getContact">
@@ -291,10 +290,9 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContactQuestions">listContactQuestions</a>($params = [])
+                    <a href="#method_listContactQuestions">listContactQuestions</a>(int $limit = 2000, int $offset = 0)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>This function will return a basic list of the available contact questions.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listContactQuestions">
 <abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a></small></div>
             </div>
@@ -774,7 +772,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listContacts">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listContacts">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 10</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 14</div>
         <code>                    
     <strong>listContacts</strong>($params = [])
         </code>
@@ -783,6 +781,9 @@ the function belongs to and what HTTP method is required to call it.</p>        
             
     
 
+                    <div class="method-description">
+                                    <p>Use this function to get a list of any contacts you currently have in your account.</p>                    <p>The information from this function is very basic. To get a more detailed set of
+information you can use this function in conjunction with the getContact function.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -804,9 +805,9 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_getContact">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_getContact">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 18</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 26</div>
         <code>                    
-    <strong>getContact</strong>($params = [])
+    <strong>getContact</strong>(int $contactid, $params = [])
         </code>
     </h3>
     <div class="details">
@@ -819,6 +820,11 @@ the function belongs to and what HTTP method is required to call it.</p>        
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$contactid</td>
+                <td></td>
+            </tr>
                     <tr>
                 <td></td>
                 <td>$params</td>
@@ -836,7 +842,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_addContact">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_addContact">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 23</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 33</div>
         <code>                    
     <strong>addContact</strong>($email = &quot;&quot;, $other_id = &quot;&quot;, $params = [])
         </code>
@@ -876,7 +882,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_deleteContact">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_deleteContact">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 31</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 41</div>
         <code>                    
     <strong>deleteContact</strong>($params = [])
         </code>
@@ -908,7 +914,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_updateContact">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_updateContact">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 36</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 46</div>
         <code>                    
     <strong>updateContact</strong>($params = [])
         </code>
@@ -938,7 +944,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_getContactQuestion">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_getContactQuestion">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 44</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 54</div>
         <code>                    
     <strong>getContactQuestion</strong>($params = [])
         </code>
@@ -970,23 +976,30 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listContactQuestions">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listContactQuestions">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 49</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 66</div>
         <code>                    
-    <strong>listContactQuestions</strong>($params = [])
+    <strong>listContactQuestions</strong>(int $limit = 2000, int $offset = 0)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>This function will return a basic list of the available contact questions.</p>                    <p>Custom questions will also be included.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
+                <td>int</td>
+                <td>$limit</td>
+                <td>Default 2000</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>Default 0</td>
             </tr>
             </table>
 
@@ -1000,7 +1013,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listSpeakers">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listSpeakers">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 55</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 78</div>
         <code>                    
     <strong>listSpeakers</strong>($params = [])
         </code>
@@ -1030,7 +1043,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_getSpeaker">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_getSpeaker">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 63</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 86</div>
         <code>                    
     <strong>getSpeaker</strong>($params = [])
         </code>
@@ -1062,7 +1075,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_createSpeaker">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_createSpeaker">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 71</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 94</div>
         <code>                    
     <strong>createSpeaker</strong>($params = [])
         </code>
@@ -1094,7 +1107,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_updateSpeaker">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_updateSpeaker">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 76</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 99</div>
         <code>                    
     <strong>updateSpeaker</strong>($params = [])
         </code>
@@ -1124,7 +1137,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listEvents">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listEvents">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 82</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 105</div>
         <code>                    
     <strong>listEvents</strong>($params = [])
         </code>
@@ -1154,7 +1167,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_searchEvents">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_searchEvents">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 87</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 110</div>
         <code>                    
     <strong>searchEvents</strong>($params = [])
         </code>
@@ -1184,7 +1197,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_cloneEvent">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_cloneEvent">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 95</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 118</div>
         <code>                    
     <strong>cloneEvent</strong>($params = [])
         </code>
@@ -1216,7 +1229,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listFolders">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listFolders">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 101</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 124</div>
         <code>                    
     <strong>listFolders</strong>($params = [])
         </code>
@@ -1246,7 +1259,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listLanguages">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listLanguages">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 106</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 129</div>
         <code>                    
     <strong>listLanguages</strong>($params = [])
         </code>
@@ -1276,7 +1289,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listSessions">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listSessions">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 111</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 134</div>
         <code>                    
     <strong>listSessions</strong>($params = [])
         </code>
@@ -1306,7 +1319,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listTaxRegimes">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listTaxRegimes">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 116</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 139</div>
         <code>                    
     <strong>listTaxRegimes</strong>($params = [])
         </code>
@@ -1336,7 +1349,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listTracks">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listTracks">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 121</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 144</div>
         <code>                    
     <strong>listTracks</strong>($params = [])
         </code>
@@ -1366,7 +1379,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listTransactionTypes">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listTransactionTypes">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 126</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 149</div>
         <code>                    
     <strong>listTransactionTypes</strong>($params = [])
         </code>
@@ -1396,7 +1409,7 @@ the function belongs to and what HTTP method is required to call it.</p>        
                     <div class="method-item">
                     <h3 id="method_listCurrencies">
         <div class="location">in <a href="../../FFNLabs/AventriConnect/Concerns/GlobalService.html#method_listCurrencies">
-<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 134</div>
+<abbr title="FFNLabs\AventriConnect\Concerns\GlobalService">GlobalService</abbr></a> at line 157</div>
         <code>                    
     <strong>listCurrencies</strong>($params = [])
         </code>
