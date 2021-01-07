@@ -2,9 +2,8 @@
 
 namespace FFNLabs\AventriConnect;
 
-use FFNLabs\AventriConnect\Enums;
-use GuzzleHttp\Client as GuzzleClient;
 use FFNLabs\AventriConnect\Exceptions\AuthenticationException;
+use GuzzleHttp\Client as GuzzleClient;
 
 class AventriClient
 {
@@ -66,16 +65,18 @@ class AventriClient
      *
      * @return string
      */
-    public function getUri($method="")
+    public function getUri($method = "")
     {
         $uri = $this->data['endpoint'] . "/api/" . $this->data['apiversion'] . "/";
         if ($method) {
             $uri .= $method . "." . $this->data['format'];
         }
+
         return $uri;
     }
 
-    public function accessTokenIsValid() {
+    public function accessTokenIsValid()
+    {
         if ($this->data['auth']['token']['value'] == "") {
             return false; // If the key doesn't exist, we've not acquired any key yet.
         }
@@ -104,7 +105,7 @@ class AventriClient
         $uri = $this->getUri("global/authorize");
         $payload = [
             'accountid' => $this->data['auth']['account_id'],
-            'key' => $this->data['auth']['account_key']
+            'key' => $this->data['auth']['account_key'],
         ];
         $request = $this->getClient()->post($uri, ['form_params' => $payload]);
         if ($request->getStatusCode() > 299) {
@@ -112,15 +113,18 @@ class AventriClient
         }
         $this->data['auth']['token']['value'] = json_decode($request->getBody())->accesstoken;
         $this->data['auth']['token']['expires'] = \Carbon\Carbon::now()->addMinutes($this->data['auth']['token']['duration']);
+
         return 0;
     }
 
-    public function listAvailableFunctions() {
+    public function listAvailableFunctions()
+    {
         $uri = $this->getUri("global/listAvailableFunctions");
         $request = $this->getClient()->get($uri);
         if ($request->getStatusCode() > 299) {
             throw new AuthenticationException($request->getReasonPhrase());
         }
+
         return json_decode($request->getBody());
     }
 }
