@@ -6,14 +6,22 @@ use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
 trait GlobalService
 {
-    // Contacts
+    /**
+     * Use this function to get a list of any contacts you currently have in your account.
+     * The information from this function is very basic. To get a more detailed set of
+     * information you can use this function in conjunction with the getContact function.
+     */
     public function listContacts($params = [])
     {
-        throw new NotImplementedException();
+        $uri = $this->getUri("global/listContacts");
+        return $this->get($uri, $params);
     }
 
     /**
      * Use this function to get detailed set of information of any contact you currently have in your account.
+     *
+     * @params int   $contactid The ID of the contact you'd like to retrieve.
+     * @params array $params    Additional parameters
      */
     public function getContact(int $contactid, $params = [])
     {
@@ -48,9 +56,22 @@ trait GlobalService
         throw new NotImplementedException();
     }
 
-    public function listContactQuestions($params = [])
+    /**
+     * This function will return a basic list of the available contact questions.
+     * Custom questions will also be included.
+     *
+     * @param int $limit  Default 2000
+     * @param int $offset Default 0
+     */
+    public function listContactQuestions($limit=2000, $offset=0)
     {
-        throw new NotImplementedException();
+        return $this->get(
+            $this->getUri("global/listContactQuestions"),
+            ['query' => [
+                'limit' => $limit,
+                'offset' => $offset,
+            ]]
+        );
     }
 
     // Speakers
@@ -136,6 +157,6 @@ trait GlobalService
     public function listCurrencies($params = [])
     {
         $uri = $this->getUri("global/listCurrencies");
-        return $this->get($uri);
+        return $this->get($uri, $params);
     }
 }

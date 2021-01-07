@@ -33,12 +33,12 @@ $client = new FFNLabs\AventriConnect\AventriClient(["access_key"=>"", "account_i
 | --------   | :----: | --------------------------- |
 | Global     | ✅     | authorize                   |
 | Global     | ✅     | getContact                  |
-| Global     | ❌     | listContacts                |
+| Global     | ✅     | listContacts                |
 | Global     | ❌     | addContact                  |
 | Global     | ❌     | deleteContact               |
 | Global     | ❌     | updateContact               |
 | Global     | ❌     | getContactQuestion          |
-| Global     | ❌     | listContactQuestions        |
+| Global     | ✅     | listContactQuestions        |
 | Global     | ✅     | listCurrencies              |
 | Global     | ❌     | listEvents                  |
 | Global     | ❌     | searchEvents                |
