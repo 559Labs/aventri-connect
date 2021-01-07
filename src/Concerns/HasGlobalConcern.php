@@ -4,12 +4,6 @@ namespace FFNLabs\AventriConnect\Concerns;
 
 trait HasGlobalConcern
 {
-    /**
-     * Use the authorize function to authorize your API session. Authorization is required to make any other API calls.
-     */
-    public function authorize($params = [])
-    {
-    }
 
     public function resetSession($params = [])
     {

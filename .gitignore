@@ -9,3 +9,5 @@ docs
 phpunit.xml
 psalm.xml
 vendor
+
+_parked
