@@ -24,140 +24,144 @@ composer require FFNLabs/aventri-connect
 Grab your API _access key_ (40-character string) and _account ID_ (integer) and instantiate the client:
 
 ```php
-$client = new FFNLabs\AventriConnect\AventriClient(["access_key"=>"", "account_id"=>""]);
+$client = new FFNLabs\AventriConnect\AventriClient([
+    "access_key" => "", 
+    "account_id" => 0,
+]);
+$client->listAvailableFunctions();
 ```
 
 ## Status
 
-| Category   | Status | Endpoint                    |
-| --------   | :----: | --------------------------- |
-| Global     | ✅     | authorize                   |
-| Global     | ✅     | getContact                  |
-| Global     | ✅     | listContacts                |
-| Global     | ❌     | addContact                  |
-| Global     | ❌     | deleteContact               |
-| Global     | ❌     | updateContact               |
-| Global     | ❌     | getContactQuestion          |
-| Global     | ✅     | listContactQuestions        |
-| Global     | ✅     | listCurrencies              |
-| Global     | ❌     | listEvents                  |
-| Global     | ❌     | searchEvents                |
-| Global     | ❌     | cloneEvent                  |
-| Global     | ❌     | listFolders                 |
-| Global     | ❌     | listLanguages               |
-| Global     | ❌     | listSessions                |
-| Global     | ❌     | resetSession                |
-| Global     | ❌     | updateSpeaker               |
-| Global     | ❌     | listTaxRegimes              |
-| Global     | ❌     | listTracks                  |
-| Global     | ❌     | listTransactionTypes        |
-| Global     | ✅     | listAvailableFunctions      |
-| eMarketing | ❌     | getMailinglist              |
-| eMarketing | ❌     | getMarketingMail            |
-| eMarketing | ❌     | getSubscriber               |
-| eMarketing | ❌     | listBlastResults            |
-| eMarketing | ❌     | listBouncebackRecipients    |
-| eMarketing | ❌     | listMailinglists            |
-| eMarketing | ❌     | listMarketingMails          |
-| eMarketing | ❌     | listSubscribers             |
-| eMarketing | ❌     | listUnsubscribedRecipients  |
-| eMarketing | ❌     | cancelMarketingBlast        |
-| eMarketing | ❌     | createMailinglist           |
-| eMarketing | ❌     | createSubscriber            |
-| eMarketing | ❌     | scheduleMarketingBlast      |
-| eMarketing | ❌     | cloneMarketingMail          |
-| eMarketing | ❌     | updateMailinglist           |
-| eMarketing | ❌     | updateMarketingMail         |
-| eMarketing | ❌     | updateSubscriber            |
-| eReg       | ❌     | getEventCheckins            |
-| eReg       | ❌     | getHotel                    |
-| eReg       | ❌     | getRoomtypes                |
-| eReg       | ❌     | getSessionCheckin           |
-| eReg       | ❌     | getVirtualSessionCheckin    |
-| eReg       | ❌     | listLocationSessions        |
-| eReg       | ❌     | listLocations               |
-| eReg       | ❌     | searchAttendees             |
-| eReg       | ❌     | searchPrepproved            |
-| eReg       | ❌     | getAttendee                 |
-| eReg       | ❌     | getCategory                 |
-| eReg       | ❌     | getEvent                    |
-| eReg       | ❌     | getInvoice                  |
-| eReg       | ❌     | getOption                   |
-| eReg       | ❌     | getPreLoad                  |
-| eReg       | ❌     | getQuestion                 |
-| eReg       | ❌     | getReport                   |
-| eReg       | ❌     | getSession                  |
-| eReg       | ❌     | getSpeaker                  |
-| eReg       | ❌     | getTransaction              |
-| eReg       | ❌     | listAttendees               |
-| eReg       | ❌     | listCategories              |
-| eReg       | ❌     | listHotels                  |
-| eReg       | ❌     | listInvoices                |
-| eReg       | ❌     | listLineItems               |
-| eReg       | ❌     | listOptions                 |
-| eReg       | ❌     | listPages                   |
-| eReg       | ❌     | listPreLoads                |
-| eReg       | ❌     | listPreapproved             |
-| eReg       | ❌     | listQuestions               |
-| eReg       | ❌     | listRegEmails               |
-| eReg       | ❌     | listReports                 |
-| eReg       | ❌     | listSessions                |
-| eReg       | ❌     | listSpeakers                |
-| eReg       | ❌     | listTransactions            |
-| eReg       | ❌     | createLocation              |
-| eReg       | ❌     | addPreapproved              |
-| eReg       | ❌     | addPreload                  |
-| eReg       | ❌     | createRoomtype              |
-| eReg       | ❌     | createSession               |
-| eReg       | ❌     | createSpeaker               |
-| eReg       | ❌     | setSessionCheckin           |
-| eReg       | ❌     | checkInAttendee             |
-| eReg       | ❌     | createAttendee              |
-| eReg       | ❌     | createAttendeeBridge        |
-| eReg       | ❌     | createEvent                 |
-| eReg       | ❌     | createHotel                 |
-| eReg       | ❌     | createRoomblock             |
-| eReg       | ❌     | deletePreLoad               |
-| eReg       | ❌     | deletePreapproved           |
-| eReg       | ❌     | updatePreLoad               |
-| eReg       | ❌     | updatePreapproved           |
-| eReg       | ❌     | updateSession               |
-| eReg       | ❌     | updateSpeaker               |
-| eReg       | ❌     | cloneEvent                  |
-| eReg       | ❌     | deleteRoomblock             |
-| eReg       | ❌     | deleteRoomtype              |
-| eReg       | ❌     | updateAgendaResponses       |
-| eReg       | ❌     | updateAttendeeInfoResponses |
-| eReg       | ❌     | updateAttendeeStatus        |
-| eReg       | ❌     | updateEvent                 |
-| eReg       | ❌     | updateHotel                 |
-| eReg       | ❌     | updateHotelResponses        |
-| eReg       | ❌     | updateLocation              |
-| eReg       | ❌     | updateOptionsResponses      |
-| eReg       | ❌     | updateRoomblock             |
-| eReg       | ❌     | updateRoomtype              |
-| eReg       | ❌     | updateTravelResponses       |
-| eReg       | ❌     | updateWelcomeResponses      |
-| eSeating   | ❌     | listSeats                   |
-| eSeating   | ❌     | listTables                  |
-| eSeating   | ❌     | listTableplans              |
-| eSelect    | ❌     | getApplicant                |
-| eSelect    | ❌     | listApplicants              |
-| eSelect    | ❌     | getSubmission               |
-| eSelect    | ❌     | listSubmissions             |
-| eSelect    | ❌     | download                    |
-| eSocial    | ❌     | getMeeting                  |
-| eSocial    | ❌     | listMeetings                |
-| eSocial    | ❌     | cancelMeeting               |
-| eSocial    | ❌     | modifyMeeting               |
-| eSocial    | ❌     | createMeeting               |
-| eSocial    | ❌     | listMeetingTypes            |
-| eSocial    | ❌     | changeStatus                |
-| eSocial    | ❌     | addAttendeeToMeeting        |
-| eSurvey    | ❌     | listSurveys                 |
-| eSurvey    | ❌     | listSurveyQuestions         |
-| eSurvey    | ❌     | getSurveyResponse           |
-| eSurvey    | ❌     | listSurveyResponses         |
+### EnumConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Category** | ❌ listCategories | ❌ getCategory | - | - | - | - | - |
+| **Currency** | ❌ listCurrencies | - | - | - | - | - | - |
+| **Folders** | ❌ listFolders | - | - | - | - | - | - |
+| **Languages** | ❌ listLanguages | - | - | - | - | - | - |
+| **TaxRegime** | ❌ listTaxRegimes | - | - | - | - | - | - |
+
+
+### HotelConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Hotel** | ❌ listHotels | ❌ getHotel | ❌ createHotel | - | ❌ updateHotel | - | - |
+| **HotelResponses** | - | - | - | - | ❌ updateHotelResponses | - | - |
+| **Roomblock** | - | - | ❌ createRoomblock | ❌ deleteRoomblock | ❌ updateRoomblock | - | - |
+| **Roomtype** | ❌ getRoomtypes | - | ❌ createRoomtype | ❌ deleteRoomtype | ❌ updateRoomtype | - | - |
+
+
+### MarketingConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **MarketingMail** |  ❌listMarketingMails | - | ❌ getMarketingMail | - | ❌ updateMarketingMail | - | ❌ cloneMarketingMail |
+| **Mailinglist** | ❌ listMailinglists | ❌ getMailinglist | ❌ createMailinglist | - | ❌ updateMailinglist | - | - |
+| **Subscriber** | ❌ listSubscribers | ❌ getSubscriber | ❌ createSubscriber | - | ❌ updateSubscriber | - | - |
+| **MarketingBlast** | - | - | - | ❌ cancelMarketingBlast | - | - | - |
+| **MarketingBlast** | - | - | ❌ scheduleMarketingBlast | - | - | - | - |
+| **BlastResults** | ❌ listBlastResults | - | - | - | - | - | - |
+| **BouncebackRecipients** | ❌ listBouncebackRecipients | - | - | - | - | - | - |
+| **UnsubscribedRecipient** | ❌ listUnsubscribedRecipients | - | - | - | - | - | - |
+
+
+### PersonConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Attendee** | ❌ listAttendees | ❌ getAttendee | ❌ createAttendee | - | - | ❌ searchAttendees | ❌ checkInAttendee |
+| **Speaker** | ❌ listSpeakers | ❌ getSpeaker | ❌ createSpeaker | - | ❌ updateSpeaker | - | - |
+| **AttendeeInfoResponses** | - | - | - | - | ❌ updateAttendeeInfoResponses | - | - |
+| **AttendeeStatus** | - | - | - | - | ❌ updateAttendeeStatus | - | - |
+| **Contact** | ❌ listContacts | ❌ getContact | ❌ addContact | ❌ deleteContact | ❌ updateContact | - | - |
+| **AttendeeBridge** | - | - | ❌ createAttendeeBridge | - | - | - | - |
+| **ContactQuestion** | ❌ listContactQuestions | ❌ getContactQuestion | - | - | - | - | - |
+
+### ProgramConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Event** | ❌ listEvents | ❌ getEvent | ❌ createEvent | - | ❌ updateEvent | ❌ searchEvents | ❌ cloneEvent |
+| **AgendaResponses** | - | - | - | - | ❌ updateAgendaResponses | - | - |
+| **Location** | ❌ listLocations | - | ❌ createLocation | - | ❌ updateLocation | - | - |
+| **Session** | ❌ listSessions | ❌ getSession | ❌ createSession | - | ❌ updateSession | - | - |
+| **SessionCheckin** | - | ❌ getSessionCheckin | - | - | ❌ setSessionCheckin | - | - |
+| **EventCheckins** | - | ❌ getEventCheckins | - | - | - | - | - |
+| **LocationSessions** | ❌ listLocationSessions | - | - | - | - | - | - |
+| **Track** | listTracks | - | - | - | - | - | - |
+
+### RegConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **OptionsResponse** | - | - | - | - | ❌ updateOptionsResponses | - | - |
+| **Preapproved** | ❌ listPreapproved | - | ❌ addPreapproved | ❌ deletePreapproved | ❌ updatePreapproved | - | - |
+| **Preload** | ❌ listPreLoads | ❌ getPreLoad | ❌ addPreload | ❌ deletePreLoad | ❌ updatePreLoad | - | - |
+| **TravelResponse** | - | - | - | - | ❌ updateTravelResponses | - | - |
+| **WelcomeResponse** | - | - | - | - | ❌ updateWelcomeResponses | - | - |
+| **Prepproved** | - | - | - | - | - | ❌ searchPrepproved | - |
+| **Invoice** | ❌ listInvoices | ❌ getInvoice | - | - | - | - | - |
+| **Option** | ❌ listOptions | ❌ getOption | - | - | - | - | - |
+| **Question** | ❌ listQuestions | ❌ getQuestion | - | - | - | - | - |
+| **Transaction** | ❌ listTransactions | ❌ getTransaction | - | - | - | - | - |
+| **VirtualSessionCheckin** | - | ❌ getVirtualSessionCheckin | - | - | - | - | - |
+| **LineItems** | ❌ listLineItems | - | - | - | - | - | - |
+| **Pages** | ❌ listPages | - | - | - | - | - | - |
+| **RegEmails** | ❌ listRegEmails | - | - | - | - | - | - |
+| **TransactionType** | ❌ listTransactionTypes | - | - | - | - | - | - |
+
+### SeatingConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| **TablePlan** | ❌ listTableplans | - | - | - | - | - | - |
+| **Table** | ❌ listTables | - | - | - | - | - | - | 
+| **Seat** | ❌ listSeats | - | - | - | - | - | - |
+
+### SelectConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| - | - | - | - | - | - | - | ❌ download |
+| **Applicant** | ❌ listApplicants | ❌ getApplicant | - | - | - | - | - |
+| **Submission** | ❌ listSubmissions | ❌ getSubmission | - | - | - | - | - |
+
+
+### SocialConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Status** | - | - | - | - | ❌ changeStatus | - | - |
+| **Meeting** | ❌ listMeetings | ❌ getMeeting | ❌ createMeeting | ❌ cancelMeeting | ❌ modifyMeeting | - | - |
+| **AttendeeToMeeting** | - | - | ❌ addAttendeeToMeeting | - | - | - | - |
+| **MeetingType** | ❌ listMeetingTypes | - | - | - | - | - | - |
+
+
+### SurveyConcern
+
+| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Survey** | ❌ listSurveys | - | - | - | - | - | - |
+| **SurveyQuestions** | ❌ listSurveyQuestions | - | - | - | - | - | - |
+| **SurveyResponse** | ❌ listSurveyResponses | ❌ getSurveyResponse | - | - | - | - | - |
+
+
+### SystemConcern
+
+- ✅ authorize
+- ❌ resetSession
+- ❌ listReports
+- ❌ getReport
+- ✅ listAvailableFunctions
+
+### Legend
+
+- [✅] Feature Complete
+- [❌] Not Implemented
+- [-] Not Applicable
 
 
 ## Testing
