@@ -16,7 +16,11 @@ trait GlobalService
     {
         $fields = ['databaseid', 'email', 'other_id', 'fields', 'limit', 'offset'];
         $uri = $this->getUri("global/listContacts");
+<<<<<<< HEAD
         $params = $this->getQueryParams($args, $fields);
+=======
+
+>>>>>>> f099faa7e4fd32bb99f8fa4c223e4210296a29ef
         return $this->get($uri, $params);
     }
 
@@ -28,11 +32,16 @@ trait GlobalService
     public function getContact(int $contactid=0)
     {
         $uri = $this->getUri("global/getContact");
+<<<<<<< HEAD
         $params = array_merge($params, ['query' => ['contactid'=> $contactid]]);
         $params = [];
         if ($contactid > 0) {
             $params['query'] = ['contactid' => $contactid];
         }
+=======
+        $params = array_merge($params, ['query' => ['contactid' => $contactid]]);
+
+>>>>>>> f099faa7e4fd32bb99f8fa4c223e4210296a29ef
         return $this->get($uri, $params);
     }
 
@@ -70,7 +79,7 @@ trait GlobalService
      * @param int $limit  Default 2000
      * @param int $offset Default 0
      */
-    public function listContactQuestions($limit=2000, $offset=0)
+    public function listContactQuestions($limit = 2000, $offset = 0)
     {
         return $this->get(
             $this->getUri("global/listContactQuestions"),
@@ -196,6 +205,7 @@ trait GlobalService
     public function listCurrencies($params = [])
     {
         $uri = $this->getUri("global/listCurrencies");
+
         return $this->get($uri, $params);
     }
 }
