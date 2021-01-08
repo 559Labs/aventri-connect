@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>FFNLabs\AventriConnect\Contracts\GlobalInterface | Aventri Connect API: 2021-01-08</title>
+    <title>FFNLabs\AventriConnect\Concerns\MarketingConcern | Aventri Connect API: 2021-01-08</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:FFNLabs_AventriConnect_Contracts_GlobalInterface" data-root-path="../../../">
+    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_MarketingConcern" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -67,21 +67,21 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">interface</span></li>
-                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Contracts.html">Contracts</a></li><li class="backslash">\</li><li>GlobalInterface</li>
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>MarketingConcern</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            GlobalInterface
+            MarketingConcern
                 
         </h1>
     </div>
 
-    <p>        interface
-    <strong>GlobalInterface</strong>
+    <p>        trait
+    <strong>MarketingConcern</strong>
 </p>
 
         
@@ -99,7 +99,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_AddContact">AddContact</a>()
+                    <a href="#method_listMarketingMails">listMarketingMails</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -110,7 +110,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_authorize">authorize</a>()
+                    <a href="#method_getMarketingMail">getMarketingMail</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -121,7 +121,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cloneEvent">cloneEvent</a>()
+                    <a href="#method_updateMarketingMail">updateMarketingMail</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -132,7 +132,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createSpeaker">createSpeaker</a>()
+                    <a href="#method_cloneMarketingMail">cloneMarketingMail</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -143,7 +143,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteContact">deleteContact</a>()
+                    <a href="#method_listMailinglists">listMailinglists</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -154,7 +154,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContact">getContact</a>()
+                    <a href="#method_getMailinglist">getMailinglist</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -165,7 +165,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContactQuestion">getContactQuestion</a>()
+                    <a href="#method_createMailinglist">createMailinglist</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -176,7 +176,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSpeaker">getSpeaker</a>()
+                    <a href="#method_updateMailinglist">updateMailinglist</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -187,7 +187,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listAvailableFunctions">listAvailableFunctions</a>()
+                    <a href="#method_listSubscribers">listSubscribers</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -198,7 +198,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContactQuestions">listContactQuestions</a>()
+                    <a href="#method_getSubscriber">getSubscriber</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -209,7 +209,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContacts">listContacts</a>()
+                    <a href="#method_createSubscriber">createSubscriber</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -220,7 +220,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listEvents">listEvents</a>()
+                    <a href="#method_updateSubscriber">updateSubscriber</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -231,7 +231,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listFolders">listFolders</a>()
+                    <a href="#method_cancelMarketingBlast">cancelMarketingBlast</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -242,7 +242,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listLanguages">listLanguages</a>()
+                    <a href="#method_scheduleMarketingBlast">scheduleMarketingBlast</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -253,7 +253,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listSessions">listSessions</a>()
+                    <a href="#method_listBlastResults">listBlastResults</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -264,7 +264,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listTaxRegimes">listTaxRegimes</a>()
+                    <a href="#method_listBouncebackRecipients">listBouncebackRecipients</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -275,84 +275,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listTracks">listTracks</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listTransactionTypes">listTransactionTypes</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_resetSession">resetSession</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_searchEvents">searchEvents</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listCurrencies">listCurrencies</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_updateContact">updateContact</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_updateSpeaker">updateSpeaker</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listSpeakers">listSpeakers</a>()
+                    <a href="#method_listUnsubscribedRecipients">listUnsubscribedRecipients</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -365,10 +288,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_AddContact">
+                    <h3 id="method_listMarketingMails">
         <div class="location">at line 7</div>
         <code>                    
-    <strong>AddContact</strong>()
+    <strong>listMarketingMails</strong>()
         </code>
     </h3>
     <div class="details">
@@ -384,29 +307,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_authorize">
-        <div class="location">at line 9</div>
-        <code>                    
-    <strong>authorize</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_cloneEvent">
+                    <h3 id="method_getMarketingMail">
         <div class="location">at line 11</div>
         <code>                    
-    <strong>cloneEvent</strong>()
+    <strong>getMarketingMail</strong>()
         </code>
     </h3>
     <div class="details">
@@ -422,29 +326,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_createSpeaker">
-        <div class="location">at line 13</div>
-        <code>                    
-    <strong>createSpeaker</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_deleteContact">
+                    <h3 id="method_updateMarketingMail">
         <div class="location">at line 15</div>
         <code>                    
-    <strong>deleteContact</strong>()
+    <strong>updateMarketingMail</strong>()
         </code>
     </h3>
     <div class="details">
@@ -460,29 +345,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getContact">
-        <div class="location">at line 17</div>
-        <code>                    
-    <strong>getContact</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getContactQuestion">
+                    <h3 id="method_cloneMarketingMail">
         <div class="location">at line 19</div>
         <code>                    
-    <strong>getContactQuestion</strong>()
+    <strong>cloneMarketingMail</strong>()
         </code>
     </h3>
     <div class="details">
@@ -498,29 +364,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSpeaker">
-        <div class="location">at line 21</div>
-        <code>                    
-    <strong>getSpeaker</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listAvailableFunctions">
+                    <h3 id="method_listMailinglists">
         <div class="location">at line 23</div>
         <code>                    
-    <strong>listAvailableFunctions</strong>()
+    <strong>listMailinglists</strong>()
         </code>
     </h3>
     <div class="details">
@@ -536,29 +383,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listContactQuestions">
-        <div class="location">at line 25</div>
-        <code>                    
-    <strong>listContactQuestions</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listContacts">
+                    <h3 id="method_getMailinglist">
         <div class="location">at line 27</div>
         <code>                    
-    <strong>listContacts</strong>()
+    <strong>getMailinglist</strong>()
         </code>
     </h3>
     <div class="details">
@@ -574,29 +402,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listEvents">
-        <div class="location">at line 29</div>
-        <code>                    
-    <strong>listEvents</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listFolders">
+                    <h3 id="method_createMailinglist">
         <div class="location">at line 31</div>
         <code>                    
-    <strong>listFolders</strong>()
+    <strong>createMailinglist</strong>()
         </code>
     </h3>
     <div class="details">
@@ -612,29 +421,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listLanguages">
-        <div class="location">at line 33</div>
-        <code>                    
-    <strong>listLanguages</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listSessions">
+                    <h3 id="method_updateMailinglist">
         <div class="location">at line 35</div>
         <code>                    
-    <strong>listSessions</strong>()
+    <strong>updateMailinglist</strong>()
         </code>
     </h3>
     <div class="details">
@@ -650,29 +440,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listTaxRegimes">
-        <div class="location">at line 37</div>
-        <code>                    
-    <strong>listTaxRegimes</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listTracks">
+                    <h3 id="method_listSubscribers">
         <div class="location">at line 39</div>
         <code>                    
-    <strong>listTracks</strong>()
+    <strong>listSubscribers</strong>()
         </code>
     </h3>
     <div class="details">
@@ -688,29 +459,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listTransactionTypes">
-        <div class="location">at line 41</div>
-        <code>                    
-    <strong>listTransactionTypes</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_resetSession">
+                    <h3 id="method_getSubscriber">
         <div class="location">at line 43</div>
         <code>                    
-    <strong>resetSession</strong>()
+    <strong>getSubscriber</strong>()
         </code>
     </h3>
     <div class="details">
@@ -726,29 +478,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_searchEvents">
-        <div class="location">at line 45</div>
-        <code>                    
-    <strong>searchEvents</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listCurrencies">
+                    <h3 id="method_createSubscriber">
         <div class="location">at line 47</div>
         <code>                    
-    <strong>listCurrencies</strong>()
+    <strong>createSubscriber</strong>()
         </code>
     </h3>
     <div class="details">
@@ -764,29 +497,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_updateContact">
-        <div class="location">at line 49</div>
-        <code>                    
-    <strong>updateContact</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateSpeaker">
+                    <h3 id="method_updateSubscriber">
         <div class="location">at line 51</div>
         <code>                    
-    <strong>updateSpeaker</strong>()
+    <strong>updateSubscriber</strong>()
         </code>
     </h3>
     <div class="details">
@@ -802,10 +516,86 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listSpeakers">
-        <div class="location">at line 53</div>
+                    <h3 id="method_cancelMarketingBlast">
+        <div class="location">at line 55</div>
         <code>                    
-    <strong>listSpeakers</strong>()
+    <strong>cancelMarketingBlast</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scheduleMarketingBlast">
+        <div class="location">at line 59</div>
+        <code>                    
+    <strong>scheduleMarketingBlast</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listBlastResults">
+        <div class="location">at line 63</div>
+        <code>                    
+    <strong>listBlastResults</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listBouncebackRecipients">
+        <div class="location">at line 67</div>
+        <code>                    
+    <strong>listBouncebackRecipients</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listUnsubscribedRecipients">
+        <div class="location">at line 71</div>
+        <code>                    
+    <strong>listUnsubscribedRecipients</strong>()
         </code>
     </h3>
     <div class="details">

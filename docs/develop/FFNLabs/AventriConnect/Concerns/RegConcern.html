@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>FFNLabs\AventriConnect\Concerns\HasGlobalConcern | Aventri Connect API: 2021-01-08</title>
+    <title>FFNLabs\AventriConnect\Concerns\RegConcern | Aventri Connect API: 2021-01-08</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_HasGlobalConcern" data-root-path="../../../">
+    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_RegConcern" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,20 +68,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>HasGlobalConcern</li>
+                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>RegConcern</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            HasGlobalConcern
+            RegConcern
                 
         </h1>
     </div>
 
     <p>        trait
-    <strong>HasGlobalConcern</strong>
+    <strong>RegConcern</strong>
 </p>
 
         
@@ -99,7 +99,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_authorize">authorize</a>($params = [])
+                    <a href="#method_updateOptionsResponses">updateOptionsResponses</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -110,7 +110,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_resetSession">resetSession</a>($params = [])
+                    <a href="#method_listPreapproved">listPreapproved</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -121,7 +121,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listAvailableFunctions">listAvailableFunctions</a>($params = [])
+                    <a href="#method_addPreapproved">addPreapproved</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -132,7 +132,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContacts">listContacts</a>($params = [])
+                    <a href="#method_deletePreapproved">deletePreapproved</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -143,7 +143,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContact">getContact</a>($params = [])
+                    <a href="#method_updatePreapproved">updatePreapproved</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -154,7 +154,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addContact">addContact</a>($email = &quot;&quot;, $other_id = &quot;&quot;, $params = [])
+                    <a href="#method_listPreLoads">listPreLoads</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -165,7 +165,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteContact">deleteContact</a>($params = [])
+                    <a href="#method_getPreLoad">getPreLoad</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -176,7 +176,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateContact">updateContact</a>($params = [])
+                    <a href="#method_addPreload">addPreload</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -187,7 +187,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContactQuestion">getContactQuestion</a>($params = [])
+                    <a href="#method_deletePreLoad">deletePreLoad</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -198,7 +198,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContactQuestions">listContactQuestions</a>($params = [])
+                    <a href="#method_updatePreLoad">updatePreLoad</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -209,7 +209,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listSpeakers">listSpeakers</a>($params = [])
+                    <a href="#method_updateTravelResponses">updateTravelResponses</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -220,17 +220,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSpeaker">getSpeaker</a>($params = [])
-        
-                                            <p>This function will return detailed information for a given account level speaker.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_createSpeaker">createSpeaker</a>($params = [])
+                    <a href="#method_updateWelcomeResponses">updateWelcomeResponses</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -241,7 +231,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateSpeaker">updateSpeaker</a>($params = [])
+                    <a href="#method_searchPrepproved">searchPrepproved</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -252,7 +242,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listEvents">listEvents</a>($params = [])
+                    <a href="#method_listInvoices">listInvoices</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -263,7 +253,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_searchEvents">searchEvents</a>($params = [])
+                    <a href="#method_getInvoice">getInvoice</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -274,7 +264,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cloneEvent">cloneEvent</a>($params = [])
+                    <a href="#method_listOptions">listOptions</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -285,7 +275,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listFolders">listFolders</a>($params = [])
+                    <a href="#method_getOption">getOption</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -296,7 +286,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listLanguages">listLanguages</a>($params = [])
+                    <a href="#method_listQuestions">listQuestions</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -307,7 +297,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listSessions">listSessions</a>($params = [])
+                    <a href="#method_getQuestion">getQuestion</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -318,7 +308,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listTaxRegimes">listTaxRegimes</a>($params = [])
+                    <a href="#method_listTransactions">listTransactions</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -329,7 +319,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listTracks">listTracks</a>($params = [])
+                    <a href="#method_getTransaction">getTransaction</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -340,7 +330,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listTransactionTypes">listTransactionTypes</a>($params = [])
+                    <a href="#method_getVirtualSessionCheckin">getVirtualSessionCheckin</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -351,7 +341,40 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listCurrencies">listCurrencies</a>($params = [])
+                    <a href="#method_listLineItems">listLineItems</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listPages">listPages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listRegEmails">listRegEmails</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listTransactionTypes">listTransactionTypes</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -364,10 +387,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_authorize">
+                    <h3 id="method_updateOptionsResponses">
         <div class="location">at line 7</div>
         <code>                    
-    <strong>authorize</strong>($params = [])
+    <strong>updateOptionsResponses</strong>()
         </code>
     </h3>
     <div class="details">
@@ -375,16 +398,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -393,10 +406,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_resetSession">
+                    <h3 id="method_listPreapproved">
         <div class="location">at line 11</div>
         <code>                    
-    <strong>resetSession</strong>($params = [])
+    <strong>listPreapproved</strong>()
         </code>
     </h3>
     <div class="details">
@@ -404,16 +417,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -422,10 +425,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listAvailableFunctions">
+                    <h3 id="method_addPreapproved">
         <div class="location">at line 15</div>
         <code>                    
-    <strong>listAvailableFunctions</strong>($params = [])
+    <strong>addPreapproved</strong>()
         </code>
     </h3>
     <div class="details">
@@ -433,16 +436,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -451,10 +444,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listContacts">
-        <div class="location">at line 20</div>
+                    <h3 id="method_deletePreapproved">
+        <div class="location">at line 19</div>
         <code>                    
-    <strong>listContacts</strong>($params = [])
+    <strong>deletePreapproved</strong>()
         </code>
     </h3>
     <div class="details">
@@ -462,16 +455,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -480,10 +463,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getContact">
-        <div class="location">at line 24</div>
+                    <h3 id="method_updatePreapproved">
+        <div class="location">at line 23</div>
         <code>                    
-    <strong>getContact</strong>($params = [])
+    <strong>updatePreapproved</strong>()
         </code>
     </h3>
     <div class="details">
@@ -491,16 +474,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -509,10 +482,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_addContact">
-        <div class="location">at line 28</div>
+                    <h3 id="method_listPreLoads">
+        <div class="location">at line 27</div>
         <code>                    
-    <strong>addContact</strong>($email = &quot;&quot;, $other_id = &quot;&quot;, $params = [])
+    <strong>listPreLoads</strong>()
         </code>
     </h3>
     <div class="details">
@@ -520,26 +493,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$email</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$other_id</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -548,10 +501,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_deleteContact">
-        <div class="location">at line 32</div>
+                    <h3 id="method_getPreLoad">
+        <div class="location">at line 31</div>
         <code>                    
-    <strong>deleteContact</strong>($params = [])
+    <strong>getPreLoad</strong>()
         </code>
     </h3>
     <div class="details">
@@ -559,16 +512,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -577,10 +520,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_updateContact">
-        <div class="location">at line 36</div>
+                    <h3 id="method_addPreload">
+        <div class="location">at line 35</div>
         <code>                    
-    <strong>updateContact</strong>($params = [])
+    <strong>addPreload</strong>()
         </code>
     </h3>
     <div class="details">
@@ -588,16 +531,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -606,10 +539,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getContactQuestion">
-        <div class="location">at line 41</div>
+                    <h3 id="method_deletePreLoad">
+        <div class="location">at line 39</div>
         <code>                    
-    <strong>getContactQuestion</strong>($params = [])
+    <strong>deletePreLoad</strong>()
         </code>
     </h3>
     <div class="details">
@@ -617,16 +550,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -635,10 +558,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listContactQuestions">
-        <div class="location">at line 45</div>
+                    <h3 id="method_updatePreLoad">
+        <div class="location">at line 43</div>
         <code>                    
-    <strong>listContactQuestions</strong>($params = [])
+    <strong>updatePreLoad</strong>()
         </code>
     </h3>
     <div class="details">
@@ -646,16 +569,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -664,10 +577,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listSpeakers">
-        <div class="location">at line 50</div>
+                    <h3 id="method_updateTravelResponses">
+        <div class="location">at line 47</div>
         <code>                    
-    <strong>listSpeakers</strong>($params = [])
+    <strong>updateTravelResponses</strong>()
         </code>
     </h3>
     <div class="details">
@@ -675,16 +588,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -693,29 +596,17 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSpeaker">
-        <div class="location">at line 57</div>
+                    <h3 id="method_updateWelcomeResponses">
+        <div class="location">at line 51</div>
         <code>                    
-    <strong>getSpeaker</strong>($params = [])
+    <strong>updateWelcomeResponses</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>This function will return detailed information for a given account level speaker.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -724,10 +615,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_createSpeaker">
-        <div class="location">at line 62</div>
+                    <h3 id="method_searchPrepproved">
+        <div class="location">at line 55</div>
         <code>                    
-    <strong>createSpeaker</strong>($params = [])
+    <strong>searchPrepproved</strong>()
         </code>
     </h3>
     <div class="details">
@@ -735,16 +626,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -753,10 +634,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_updateSpeaker">
-        <div class="location">at line 66</div>
+                    <h3 id="method_listInvoices">
+        <div class="location">at line 59</div>
         <code>                    
-    <strong>updateSpeaker</strong>($params = [])
+    <strong>listInvoices</strong>()
         </code>
     </h3>
     <div class="details">
@@ -764,16 +645,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -782,10 +653,48 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listEvents">
+                    <h3 id="method_getInvoice">
+        <div class="location">at line 63</div>
+        <code>                    
+    <strong>getInvoice</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listOptions">
+        <div class="location">at line 67</div>
+        <code>                    
+    <strong>listOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
         <div class="location">at line 71</div>
         <code>                    
-    <strong>listEvents</strong>($params = [])
+    <strong>getOption</strong>()
         </code>
     </h3>
     <div class="details">
@@ -793,16 +702,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -811,10 +710,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_searchEvents">
+                    <h3 id="method_listQuestions">
         <div class="location">at line 75</div>
         <code>                    
-    <strong>searchEvents</strong>($params = [])
+    <strong>listQuestions</strong>()
         </code>
     </h3>
     <div class="details">
@@ -822,16 +721,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -840,10 +729,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_cloneEvent">
+                    <h3 id="method_getQuestion">
         <div class="location">at line 79</div>
         <code>                    
-    <strong>cloneEvent</strong>($params = [])
+    <strong>getQuestion</strong>()
         </code>
     </h3>
     <div class="details">
@@ -851,16 +740,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -869,10 +748,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listFolders">
-        <div class="location">at line 84</div>
+                    <h3 id="method_listTransactions">
+        <div class="location">at line 83</div>
         <code>                    
-    <strong>listFolders</strong>($params = [])
+    <strong>listTransactions</strong>()
         </code>
     </h3>
     <div class="details">
@@ -880,16 +759,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -898,10 +767,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listLanguages">
-        <div class="location">at line 88</div>
+                    <h3 id="method_getTransaction">
+        <div class="location">at line 87</div>
         <code>                    
-    <strong>listLanguages</strong>($params = [])
+    <strong>getTransaction</strong>()
         </code>
     </h3>
     <div class="details">
@@ -909,16 +778,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -927,10 +786,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listSessions">
-        <div class="location">at line 92</div>
+                    <h3 id="method_getVirtualSessionCheckin">
+        <div class="location">at line 91</div>
         <code>                    
-    <strong>listSessions</strong>($params = [])
+    <strong>getVirtualSessionCheckin</strong>()
         </code>
     </h3>
     <div class="details">
@@ -938,16 +797,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -956,10 +805,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listTaxRegimes">
-        <div class="location">at line 96</div>
+                    <h3 id="method_listLineItems">
+        <div class="location">at line 95</div>
         <code>                    
-    <strong>listTaxRegimes</strong>($params = [])
+    <strong>listLineItems</strong>()
         </code>
     </h3>
     <div class="details">
@@ -967,16 +816,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -985,10 +824,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listTracks">
-        <div class="location">at line 100</div>
+                    <h3 id="method_listPages">
+        <div class="location">at line 99</div>
         <code>                    
-    <strong>listTracks</strong>($params = [])
+    <strong>listPages</strong>()
         </code>
     </h3>
     <div class="details">
@@ -996,16 +835,25 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+            
+            
+                    </div>
+    </div>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listRegEmails">
+        <div class="location">at line 103</div>
+        <code>                    
+    <strong>listRegEmails</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
 
+                <div class="tags">
             
             
             
@@ -1015,9 +863,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_listTransactionTypes">
-        <div class="location">at line 104</div>
+        <div class="location">at line 107</div>
         <code>                    
-    <strong>listTransactionTypes</strong>($params = [])
+    <strong>listTransactionTypes</strong>()
         </code>
     </h3>
     <div class="details">
@@ -1025,45 +873,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listCurrencies">
-        <div class="location">at line 108</div>
-        <code>                    
-    <strong>listCurrencies</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             

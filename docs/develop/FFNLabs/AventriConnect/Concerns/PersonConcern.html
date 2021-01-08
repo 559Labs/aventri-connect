@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>FFNLabs\AventriConnect\Concerns\HasGlobalConcern | Aventri Connect API: 2021-01-08</title>
+    <title>FFNLabs\AventriConnect\Concerns\PersonConcern | Aventri Connect API: 2021-01-08</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_HasGlobalConcern" data-root-path="../../../">
+    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_PersonConcern" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,20 +68,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>HasGlobalConcern</li>
+                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>PersonConcern</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            HasGlobalConcern
+            PersonConcern
                 
         </h1>
     </div>
 
     <p>        trait
-    <strong>HasGlobalConcern</strong>
+    <strong>PersonConcern</strong>
 </p>
 
         
@@ -99,7 +99,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_authorize">authorize</a>($params = [])
+                    <a href="#method_listAttendees">listAttendees</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -110,7 +110,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_resetSession">resetSession</a>($params = [])
+                    <a href="#method_getAttendee">getAttendee</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -121,7 +121,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listAvailableFunctions">listAvailableFunctions</a>($params = [])
+                    <a href="#method_createAttendee">createAttendee</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -132,7 +132,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContacts">listContacts</a>($params = [])
+                    <a href="#method_searchAttendees">searchAttendees</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -143,7 +143,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContact">getContact</a>($params = [])
+                    <a href="#method_checkInAttendee">checkInAttendee</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -154,7 +154,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_addContact">addContact</a>($email = &quot;&quot;, $other_id = &quot;&quot;, $params = [])
+                    <a href="#method_listSpeakers">listSpeakers</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -165,7 +165,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteContact">deleteContact</a>($params = [])
+                    <a href="#method_getSpeaker">getSpeaker</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -176,7 +176,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateContact">updateContact</a>($params = [])
+                    <a href="#method_createSpeaker">createSpeaker</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -187,7 +187,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getContactQuestion">getContactQuestion</a>($params = [])
+                    <a href="#method_updateSpeaker">updateSpeaker</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -198,7 +198,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listContactQuestions">listContactQuestions</a>($params = [])
+                    <a href="#method_updateAttendeeInfoResponses">updateAttendeeInfoResponses</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -209,7 +209,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listSpeakers">listSpeakers</a>($params = [])
+                    <a href="#method_updateAttendeeStatus">updateAttendeeStatus</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -220,9 +220,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getSpeaker">getSpeaker</a>($params = [])
+                    <a href="#method_listContacts">listContacts</a>($args = [])
         
-                                            <p>This function will return detailed information for a given account level speaker.</p>                </div>
+                                            <p>Use this function to get a list of any contacts you currently have in your account.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -230,10 +230,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createSpeaker">createSpeaker</a>($params = [])
+                    <a href="#method_getContact">getContact</a>(int $contactid = 0)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Use this function to get detailed set of information of any contact you currently have in your account.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -241,18 +240,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateSpeaker">updateSpeaker</a>($params = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listEvents">listEvents</a>($params = [])
+                    <a href="#method_addContact">addContact</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -263,7 +251,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_searchEvents">searchEvents</a>($params = [])
+                    <a href="#method_deleteContact">deleteContact</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -274,7 +262,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cloneEvent">cloneEvent</a>($params = [])
+                    <a href="#method_updateContact">updateContact</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -285,7 +273,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listFolders">listFolders</a>($params = [])
+                    <a href="#method_createAttendeeBridge">createAttendeeBridge</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -296,10 +284,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listLanguages">listLanguages</a>($params = [])
+                    <a href="#method_listContactQuestions">listContactQuestions</a>(int $limit = 2000, int $offset = 0)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>This function will return a basic list of the available contact questions.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -307,51 +294,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_listSessions">listSessions</a>($params = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listTaxRegimes">listTaxRegimes</a>($params = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listTracks">listTracks</a>($params = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listTransactionTypes">listTransactionTypes</a>($params = [])
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_listCurrencies">listCurrencies</a>($params = [])
+                    <a href="#method_getContactQuestion">getContactQuestion</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -364,10 +307,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_authorize">
+                    <h3 id="method_listAttendees">
         <div class="location">at line 7</div>
         <code>                    
-    <strong>authorize</strong>($params = [])
+    <strong>listAttendees</strong>()
         </code>
     </h3>
     <div class="details">
@@ -375,16 +318,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -393,10 +326,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_resetSession">
+                    <h3 id="method_getAttendee">
         <div class="location">at line 11</div>
         <code>                    
-    <strong>resetSession</strong>($params = [])
+    <strong>getAttendee</strong>()
         </code>
     </h3>
     <div class="details">
@@ -404,16 +337,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -422,10 +345,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_listAvailableFunctions">
+                    <h3 id="method_createAttendee">
         <div class="location">at line 15</div>
         <code>                    
-    <strong>listAvailableFunctions</strong>($params = [])
+    <strong>createAttendee</strong>()
         </code>
     </h3>
     <div class="details">
@@ -433,16 +356,158 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+            
+            
+                    </div>
+    </div>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchAttendees">
+        <div class="location">at line 19</div>
+        <code>                    
+    <strong>searchAttendees</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
 
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkInAttendee">
+        <div class="location">at line 23</div>
+        <code>                    
+    <strong>checkInAttendee</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listSpeakers">
+        <div class="location">at line 27</div>
+        <code>                    
+    <strong>listSpeakers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSpeaker">
+        <div class="location">at line 31</div>
+        <code>                    
+    <strong>getSpeaker</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSpeaker">
+        <div class="location">at line 35</div>
+        <code>                    
+    <strong>createSpeaker</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateSpeaker">
+        <div class="location">at line 39</div>
+        <code>                    
+    <strong>updateSpeaker</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateAttendeeInfoResponses">
+        <div class="location">at line 43</div>
+        <code>                    
+    <strong>updateAttendeeInfoResponses</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateAttendeeStatus">
+        <div class="location">at line 47</div>
+        <code>                    
+    <strong>updateAttendeeStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
             
             
             
@@ -452,22 +517,25 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_listContacts">
-        <div class="location">at line 20</div>
+        <div class="location">at line 56</div>
         <code>                    
-    <strong>listContacts</strong>($params = [])
+    <strong>listContacts</strong>($args = [])
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Use this function to get a list of any contacts you currently have in your account.</p>                    <p>The information from this function is very basic. To get a more detailed set of
+information you can use this function in conjunction with the getContact function.</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td></td>
-                <td>$params</td>
+                <td>$args</td>
                 <td></td>
             </tr>
             </table>
@@ -481,22 +549,24 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getContact">
-        <div class="location">at line 24</div>
+        <div class="location">at line 70</div>
         <code>                    
-    <strong>getContact</strong>($params = [])
+    <strong>getContact</strong>(int $contactid = 0)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Use this function to get detailed set of information of any contact you currently have in your account.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$params</td>
+                <td>int</td>
+                <td>$contactid</td>
                 <td></td>
             </tr>
             </table>
@@ -510,9 +580,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addContact">
-        <div class="location">at line 28</div>
+        <div class="location">at line 81</div>
         <code>                    
-    <strong>addContact</strong>($email = &quot;&quot;, $other_id = &quot;&quot;, $params = [])
+    <strong>addContact</strong>()
         </code>
     </h3>
     <div class="details">
@@ -520,26 +590,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$email</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$other_id</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -549,9 +599,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteContact">
-        <div class="location">at line 32</div>
+        <div class="location">at line 85</div>
         <code>                    
-    <strong>deleteContact</strong>($params = [])
+    <strong>deleteContact</strong>()
         </code>
     </h3>
     <div class="details">
@@ -559,16 +609,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -578,9 +618,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateContact">
-        <div class="location">at line 36</div>
+        <div class="location">at line 89</div>
         <code>                    
-    <strong>updateContact</strong>($params = [])
+    <strong>updateContact</strong>()
         </code>
     </h3>
     <div class="details">
@@ -588,13 +628,58 @@
     
 
                 <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createAttendeeBridge">
+        <div class="location">at line 93</div>
+        <code>                    
+    <strong>createAttendeeBridge</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listContactQuestions">
+        <div class="location">at line 104</div>
+        <code>                    
+    <strong>listContactQuestions</strong>(int $limit = 2000, int $offset = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This function will return a basic list of the available contact questions.</p>                    <p>Custom questions will also be included.</p>                            </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
+                <td>int</td>
+                <td>$limit</td>
+                <td>Default 2000</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>Default 0</td>
             </tr>
             </table>
 
@@ -607,9 +692,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getContactQuestion">
-        <div class="location">at line 41</div>
+        <div class="location">at line 115</div>
         <code>                    
-    <strong>getContactQuestion</strong>($params = [])
+    <strong>getContactQuestion</strong>()
         </code>
     </h3>
     <div class="details">
@@ -617,453 +702,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listContactQuestions">
-        <div class="location">at line 45</div>
-        <code>                    
-    <strong>listContactQuestions</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listSpeakers">
-        <div class="location">at line 50</div>
-        <code>                    
-    <strong>listSpeakers</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getSpeaker">
-        <div class="location">at line 57</div>
-        <code>                    
-    <strong>getSpeaker</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>This function will return detailed information for a given account level speaker.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_createSpeaker">
-        <div class="location">at line 62</div>
-        <code>                    
-    <strong>createSpeaker</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateSpeaker">
-        <div class="location">at line 66</div>
-        <code>                    
-    <strong>updateSpeaker</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listEvents">
-        <div class="location">at line 71</div>
-        <code>                    
-    <strong>listEvents</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_searchEvents">
-        <div class="location">at line 75</div>
-        <code>                    
-    <strong>searchEvents</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_cloneEvent">
-        <div class="location">at line 79</div>
-        <code>                    
-    <strong>cloneEvent</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listFolders">
-        <div class="location">at line 84</div>
-        <code>                    
-    <strong>listFolders</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listLanguages">
-        <div class="location">at line 88</div>
-        <code>                    
-    <strong>listLanguages</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listSessions">
-        <div class="location">at line 92</div>
-        <code>                    
-    <strong>listSessions</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listTaxRegimes">
-        <div class="location">at line 96</div>
-        <code>                    
-    <strong>listTaxRegimes</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listTracks">
-        <div class="location">at line 100</div>
-        <code>                    
-    <strong>listTracks</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listTransactionTypes">
-        <div class="location">at line 104</div>
-        <code>                    
-    <strong>listTransactionTypes</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_listCurrencies">
-        <div class="location">at line 108</div>
-        <code>                    
-    <strong>listCurrencies</strong>($params = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$params</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             

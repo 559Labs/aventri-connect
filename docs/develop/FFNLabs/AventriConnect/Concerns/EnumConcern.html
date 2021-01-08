@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>FFNLabs\AventriConnect\Concerns\BaseService | Aventri Connect API: 2021-01-08</title>
+    <title>FFNLabs\AventriConnect\Concerns\EnumConcern | Aventri Connect API: 2021-01-08</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_BaseService" data-root-path="../../../">
+    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_EnumConcern" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,20 +68,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>BaseService</li>
+                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>EnumConcern</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            BaseService
+            EnumConcern
                 
         </h1>
     </div>
 
     <p>        trait
-    <strong>BaseService</strong>
+    <strong>EnumConcern</strong>
 </p>
 
         
@@ -99,10 +99,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_request">request</a>($method, $uri, $options = [])
+                    <a href="#method_listCategories">listCategories</a>(int $eventid, array $args = [])
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>In Aventri you can create a number of different categories for attendees to register with. This function allows you to list the available categories for a given event.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -110,10 +109,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>($uri, $options = [])
+                    <a href="#method_getCategory">getCategory</a>(int $eventid, int $categoryid, bool $stats = false)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Use the get category function to retrieve information about a specific event registrant category.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -121,10 +119,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_post">post</a>($uri, $options = [])
+                    <a href="#method_listCurrencies">listCurrencies</a>($params = [])
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Use this function to return a list of all supported currencies and the corresponding ISO 4217 a 3 character code.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -132,10 +129,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_patch">patch</a>($uri, $options = [])
+                    <a href="#method_listFolders">listFolders</a>(array $args = [])
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>The Aventri system allows you to create folders to sort a number of different objects, this function will list out the available folders within your account.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -143,10 +139,19 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_put">put</a>($uri, $options = [])
+                    <a href="#method_listLanguages">listLanguages</a>(bool $native = false)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>This function will return all languages supported by Aventri. Use the abbreviation for other API calls.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listTaxRegimes">listTaxRegimes</a>()
+        
+                                            <p>This function will return a list of the tax regimes types in the system.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -156,33 +161,104 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_request">
-        <div class="location">at line 9</div>
+                    <h3 id="method_listCategories">
+        <div class="location">at line 17</div>
         <code>                    
-    <strong>request</strong>($method, $uri, $options = [])
+    <strong>listCategories</strong>(int $eventid, array $args = [])
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>In Aventri you can create a number of different categories for attendees to register with. This function allows you to list the available categories for a given event.</p>                    <p>$args can have one or more of the following:
+- int limit. Defaults to 2000.
+- int offset. Defaults to 0.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$eventid</td>
+                <td>Required.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>Array of arguments.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCategory">
+        <div class="location">at line 34</div>
+        <code>                    
+    <strong>getCategory</strong>(int $eventid, int $categoryid, bool $stats = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Use the get category function to retrieve information about a specific event registrant category.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$eventid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$categoryid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$stats</td>
+                <td>Default false</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listCurrencies">
+        <div class="location">at line 51</div>
+        <code>                    
+    <strong>listCurrencies</strong>($params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Use this function to return a list of all supported currencies and the corresponding ISO 4217 a 3 character code.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td></td>
-                <td>$method</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
+                <td>$params</td>
                 <td></td>
             </tr>
             </table>
@@ -195,28 +271,27 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_get">
-        <div class="location">at line 30</div>
+                    <h3 id="method_listFolders">
+        <div class="location">at line 67</div>
         <code>                    
-    <strong>get</strong>($uri, $options = [])
+    <strong>listFolders</strong>(array $args = [])
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>The Aventri system allows you to create folders to sort a number of different objects, this function will list out the available folders within your account.</p>                    <p>Available $args:
+- limit
+- offset</p>                            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
+                <td>array</td>
+                <td>$args</td>
                 <td></td>
             </tr>
             </table>
@@ -229,29 +304,26 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_post">
-        <div class="location">at line 38</div>
+                    <h3 id="method_listLanguages">
+        <div class="location">at line 81</div>
         <code>                    
-    <strong>post</strong>($uri, $options = [])
+    <strong>listLanguages</strong>(bool $native = false)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>This function will return all languages supported by Aventri. Use the abbreviation for other API calls.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
+                <td>bool</td>
+                <td>$native</td>
+                <td>If true, return the language name in the local language rather than English.</td>
             </tr>
             </table>
 
@@ -263,66 +335,19 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_patch">
-        <div class="location">at line 45</div>
+                    <h3 id="method_listTaxRegimes">
+        <div class="location">at line 96</div>
         <code>                    
-    <strong>patch</strong>($uri, $options = [])
+    <strong>listTaxRegimes</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>This function will return a list of the tax regimes types in the system.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_put">
-        <div class="location">at line 52</div>
-        <code>                    
-    <strong>put</strong>($uri, $options = [])
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             

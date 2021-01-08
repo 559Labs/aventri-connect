@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>FFNLabs\AventriConnect\Concerns\BaseService | Aventri Connect API: 2021-01-08</title>
+    <title>FFNLabs\AventriConnect\Concerns\SocialConcern | Aventri Connect API: 2021-01-08</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -18,7 +18,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     </head>
 
-    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_BaseService" data-root-path="../../../">
+    <body id="class" data-name="class:FFNLabs_AventriConnect_Concerns_SocialConcern" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -68,20 +68,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>BaseService</li>
+                        <li><a href="../../../FFNLabs.html">FFNLabs</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect.html">AventriConnect</a></li><li class="backslash">\</li><li><a href="../../../FFNLabs/AventriConnect/Concerns.html">Concerns</a></li><li class="backslash">\</li><li>SocialConcern</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            BaseService
+            SocialConcern
                 
         </h1>
     </div>
 
     <p>        trait
-    <strong>BaseService</strong>
+    <strong>SocialConcern</strong>
 </p>
 
         
@@ -99,7 +99,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_request">request</a>($method, $uri, $options = [])
+                    <a href="#method_changeStatus">changeStatus</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -110,7 +110,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>($uri, $options = [])
+                    <a href="#method_listMeetings">listMeetings</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -121,7 +121,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_post">post</a>($uri, $options = [])
+                    <a href="#method_getMeeting">getMeeting</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -132,7 +132,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_patch">patch</a>($uri, $options = [])
+                    <a href="#method_createMeeting">createMeeting</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -143,7 +143,40 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_put">put</a>($uri, $options = [])
+                    <a href="#method_cancelMeeting">cancelMeeting</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyMeeting">modifyMeeting</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAttendeeToMeeting">addAttendeeToMeeting</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listMeetingTypes">listMeetingTypes</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -156,10 +189,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_request">
-        <div class="location">at line 9</div>
+                    <h3 id="method_changeStatus">
+        <div class="location">at line 7</div>
         <code>                    
-    <strong>request</strong>($method, $uri, $options = [])
+    <strong>changeStatus</strong>()
         </code>
     </h3>
     <div class="details">
@@ -167,26 +200,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$method</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -195,10 +208,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_get">
-        <div class="location">at line 30</div>
+                    <h3 id="method_listMeetings">
+        <div class="location">at line 11</div>
         <code>                    
-    <strong>get</strong>($uri, $options = [])
+    <strong>listMeetings</strong>()
         </code>
     </h3>
     <div class="details">
@@ -206,21 +219,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -229,10 +227,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_post">
-        <div class="location">at line 38</div>
+                    <h3 id="method_getMeeting">
+        <div class="location">at line 15</div>
         <code>                    
-    <strong>post</strong>($uri, $options = [])
+    <strong>getMeeting</strong>()
         </code>
     </h3>
     <div class="details">
@@ -240,21 +238,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -263,10 +246,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_patch">
-        <div class="location">at line 45</div>
+                    <h3 id="method_createMeeting">
+        <div class="location">at line 19</div>
         <code>                    
-    <strong>patch</strong>($uri, $options = [])
+    <strong>createMeeting</strong>()
         </code>
     </h3>
     <div class="details">
@@ -274,21 +257,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -297,10 +265,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_put">
-        <div class="location">at line 52</div>
+                    <h3 id="method_cancelMeeting">
+        <div class="location">at line 23</div>
         <code>                    
-    <strong>put</strong>($uri, $options = [])
+    <strong>cancelMeeting</strong>()
         </code>
     </h3>
     <div class="details">
@@ -308,21 +276,63 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
+            
+            
+            
+                    </div>
+    </div>
 
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$uri</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$options</td>
-                <td></td>
-            </tr>
-            </table>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyMeeting">
+        <div class="location">at line 27</div>
+        <code>                    
+    <strong>modifyMeeting</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
 
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAttendeeToMeeting">
+        <div class="location">at line 31</div>
+        <code>                    
+    <strong>addAttendeeToMeeting</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listMeetingTypes">
+        <div class="location">at line 35</div>
+        <code>                    
+    <strong>listMeetingTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
             
             
             
