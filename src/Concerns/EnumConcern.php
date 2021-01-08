@@ -14,12 +14,13 @@ trait EnumConcern
      * @param int   $eventid Required.
      * @param array $args    Array of arguments.
      */
-    public function listCategories(int $eventid, array $args=[])
+    public function listCategories(int $eventid, array $args = [])
     {
         $uri = $this->getUri("ereg/listCategories");
         $fields = ['limit', 'offset'];
         $params = $this->getQueryParams($args, $fields);
         $params['query']['eventid'] = $eventid;
+
         return $this->get($uri, $params);
     }
 
@@ -38,8 +39,9 @@ trait EnumConcern
                 "eventid" => $eventid,
                 "categoryid" => $categoryid,
                 "stats" => $stats,
-            ]
+            ],
         ];
+
         return $this->get($uri, $params);
     }
 
@@ -49,6 +51,7 @@ trait EnumConcern
     public function listCurrencies($params = [])
     {
         $uri = $this->getUri("global/listCurrencies");
+
         return $this->get($uri, $params);
     }
 
@@ -66,6 +69,7 @@ trait EnumConcern
         $uri = $this->getUri("global/listFolders");
         $fields = ["limit", "offset"];
         $params = $this->getQueryParams($args, $fields);
+
         return $this->get($uri, $params);
     }
 
@@ -74,14 +78,15 @@ trait EnumConcern
      *
      * @param bool $native If true, return the language name in the local language rather than English.
      */
-    public function listLanguages(bool $native=false)
+    public function listLanguages(bool $native = false)
     {
         $uri = $this->getUri("global/listLanguages");
         $params = [
             "query" => [
                 "native" => (($native) ? 1 : 0),
-            ]
+            ],
         ];
+
         return $this->get($uri, $params);
     }
 
@@ -91,6 +96,7 @@ trait EnumConcern
     public function listTaxRegimes()
     {
         $uri = $this->getUri("global/listTaxRegimes");
+
         return $this->get($uri, []);
     }
 }
