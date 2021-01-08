@@ -121,4 +121,15 @@ class AventriClient
     {
         return $this->data['client'];
     }
+
+    public function getQueryParams($args=[], $fields=[])
+    {
+        $obj = [];
+        foreach ($fields as $f) {
+            if (array_key_exists($f, $args)) {
+                $org[$f] = $args[$f];
+            }
+        }
+        return ['query' => $obj];
+    }
 }
