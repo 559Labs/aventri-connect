@@ -122,7 +122,7 @@ class AventriClient
         return $this->data['client'];
     }
 
-    public function getQueryParams($args=[], $fields=[])
+    public function getQueryParams($args = [], $fields = [])
     {
         $obj = [];
         foreach ($fields as $f) {
@@ -130,6 +130,7 @@ class AventriClient
                 $org[$f] = $args[$f];
             }
         }
+
         return ['query' => $obj];
     }
 }
