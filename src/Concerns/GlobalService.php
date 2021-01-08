@@ -6,14 +6,17 @@ use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
 trait GlobalService
 {
+
     /**
      * Use this function to get a list of any contacts you currently have in your account.
      * The information from this function is very basic. To get a more detailed set of
      * information you can use this function in conjunction with the getContact function.
      */
-    public function listContacts($params = [])
+    public function listContacts($args=[])
     {
+        $fields = ['databaseid', 'email', 'other_id', 'fields', 'limit', 'offset'];
         $uri = $this->getUri("global/listContacts");
+        $params = $this->getQueryParams($args, $fields);
         return $this->get($uri, $params);
     }
 
@@ -21,14 +24,18 @@ trait GlobalService
      * Use this function to get detailed set of information of any contact you currently have in your account.
      *
      * @params int   $contactid The ID of the contact you'd like to retrieve.
-     * @params array $params    Additional parameters
      */
-    public function getContact(int $contactid, $params = [])
+    public function getContact(int $contactid=0)
     {
         $uri = $this->getUri("global/getContact");
         $params = array_merge($params, ['query' => ['contactid'=> $contactid]]);
+        $params = [];
+        if ($contactid > 0) {
+            $params['query'] = ['contactid' => $contactid];
+        }
         return $this->get($uri, $params);
     }
+
 
     public function addContact($email = "", $other_id = "", $params = [])
     {
@@ -101,10 +108,42 @@ trait GlobalService
         throw new NotImplementedException();
     }
 
-    // Events
-    public function listEvents($params = [])
+    /**
+     * At the very core of Aventri is the ability to create events. Use this function to get a list of any events
+     * you currently have in your account. The information from this function is very basic. To get a more detailed
+     * set of information you can use this function in conjunction with the getEvent function.
+     *
+     * @param string $fields
+     * @param int    $limit
+     * @param int    $offset
+     * @param string $search
+     */
+    public function listEvents(string $fields="", int $limit=2000, int $offset=0, string $search="")
     {
-        throw new NotImplementedException();
+        $query = [
+            'limit' => $limit,
+            'offset' => $offset,
+        ];
+        if (!empty($search)) {
+            $query['search'] = $search;
+        }
+        if (!empty($fields)) {
+            $query['fields'] = $fields;
+        }
+        return $this->get(
+            $this->getUri("global/listEvents"),
+            ['query' => $query]
+        );
+    }
+
+    public function getEvent(int $eventid=0) {
+        $uri = $this->getUri("ereg/getEvent");
+        $params = [
+            'query' => [
+                "eventid" => $eventid,
+            ]
+        ];
+        return $this->get($uri, $params);
     }
 
     public function searchEvents($params = [])
