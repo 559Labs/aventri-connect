@@ -6,7 +6,8 @@ use Carbon\Carbon;
 use FFNLabs\AventriConnect\Exceptions\AuthenticationException;
 use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 
-trait SystemConcern {
+trait SystemConcern
+{
     public function authorize()
     {
         if ($this->accessTokenIsValid()) {

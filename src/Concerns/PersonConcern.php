@@ -2,29 +2,63 @@
 
 namespace FFNLabs\AventriConnect\Concerns;
 
-trait PersonConcern {
-    public function listAttendees() {}
-    public function getAttendee() {}
-    public function createAttendee() {}
-    public function searchAttendees() {}
-    public function checkInAttendee() {}
-    public function listSpeakers() {}
-    public function getSpeaker() {}
-    public function createSpeaker() {}
-    public function updateSpeaker() {}
-    public function updateAttendeeInfoResponses() {}
-    public function updateAttendeeStatus() {}
+trait PersonConcern
+{
+    public function listAttendees()
+    {
+    }
+
+    public function getAttendee()
+    {
+    }
+
+    public function createAttendee()
+    {
+    }
+
+    public function searchAttendees()
+    {
+    }
+
+    public function checkInAttendee()
+    {
+    }
+
+    public function listSpeakers()
+    {
+    }
+
+    public function getSpeaker()
+    {
+    }
+
+    public function createSpeaker()
+    {
+    }
+
+    public function updateSpeaker()
+    {
+    }
+
+    public function updateAttendeeInfoResponses()
+    {
+    }
+
+    public function updateAttendeeStatus()
+    {
+    }
 
     /**
      * Use this function to get a list of any contacts you currently have in your account.
      * The information from this function is very basic. To get a more detailed set of
      * information you can use this function in conjunction with the getContact function.
      */
-    public function listContacts($args=[])
+    public function listContacts($args = [])
     {
         $fields = ['databaseid', 'email', 'other_id', 'fields', 'limit', 'offset'];
         $uri = $this->getUri("global/listContacts");
         $params = $this->getQueryParams($args, $fields);
+
         return $this->get($uri, $params);
     }
 
@@ -33,20 +67,32 @@ trait PersonConcern {
      *
      * @params int   $contactid The ID of the contact you'd like to retrieve.
      */
-    public function getContact(int $contactid=0)
+    public function getContact(int $contactid = 0)
     {
         $uri = $this->getUri("global/getContact");
         $params = [];
         if ($contactid > 0) {
             $params['query'] = ['contactid' => $contactid];
         }
+
         return $this->get($uri, $params);
     }
 
-    public function addContact() {}
-    public function deleteContact() {}
-    public function updateContact() {}
-    public function createAttendeeBridge() {}
+    public function addContact()
+    {
+    }
+
+    public function deleteContact()
+    {
+    }
+
+    public function updateContact()
+    {
+    }
+
+    public function createAttendeeBridge()
+    {
+    }
 
     /**
      * This function will return a basic list of the available contact questions.
@@ -66,5 +112,7 @@ trait PersonConcern {
         );
     }
 
-    public function getContactQuestion() {}
+    public function getContactQuestion()
+    {
+    }
 }
