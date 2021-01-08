@@ -55,10 +55,9 @@ trait PersonConcern
      */
     public function listContacts($args = [])
     {
-        $fields = ['databaseid', 'email', 'other_id', 'fields', 'limit', 'offset'];
         $uri = $this->getUri("global/listContacts");
+        $fields = ['databaseid', 'email', 'other_id', 'fields', 'limit', 'offset'];
         $params = $this->getQueryParams($args, $fields);
-
         return $this->get($uri, $params);
     }
 

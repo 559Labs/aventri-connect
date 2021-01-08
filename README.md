@@ -33,15 +33,13 @@ $client->listAvailableFunctions();
 
 ## Status
 
-### EnumConcern
+### ✅ EnumConcern
 
-| Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Category** | ❌ listCategories | ❌ getCategory | - | - | - | - | - |
-| **Currency** | ✅ listCurrencies | - | - | - | - | - | - |
-| **Folders** | ❌ listFolders | - | - | - | - | - | - |
-| **Languages** | ❌ listLanguages | - | - | - | - | - | - |
-| **TaxRegime** | ❌ listTaxRegimes | - | - | - | - | - | - |
+- **Category**: ✅ listCategories, ✅ getCategory
+- **Currency**: ✅ listCurrencies
+- **Folders**: ✅ listFolders
+- **Languages**: ✅ listLanguages
+- **TaxRegime**: ✅ listTaxRegimes
 
 
 ### HotelConcern
