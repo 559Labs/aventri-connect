@@ -1,5 +1,10 @@
  <?php
 
+if (is_file(getcwd() . '/vendor/autoload.php')) {
+    require_once getcwd() . '/vendor/autoload.php';
+}
+
+
 use Doctum\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 use Doctum\Doctum;
