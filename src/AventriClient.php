@@ -2,20 +2,29 @@
 
 namespace FFNLabs\AventriConnect;
 
-use FFNLabs\AventriConnect\Concerns\BaseService;
-use FFNLabs\AventriConnect\Concerns\GlobalService;
-use FFNLabs\AventriConnect\Concerns\HasSystemMethodConcern;
-// use FFNLabs\AventriConnect\Exceptions\AuthenticationException;
-// use FFNLabs\AventriConnect\Exceptions\BadRequestException;
-// use FFNLabs\AventriConnect\Exceptions\NotImplementedException;
 use GuzzleHttp\Client as GuzzleClient;
+
+use FFNLabs\AventriConnect\Concerns\BaseService;
+use FFNLabs\AventriConnect\Concerns\SystemConcern;
+
+use FFNLabs\AventriConnect\Concerns\EnumConcern;
+use FFNLabs\AventriConnect\Concerns\HotelConcern;
+use FFNLabs\AventriConnect\Concerns\MarketingConcern;
+use FFNLabs\AventriConnect\Concerns\PersonConcern;
+use FFNLabs\AventriConnect\Concerns\ProgramConcern;
+use FFNLabs\AventriConnect\Concerns\RegConcern;
+use FFNLabs\AventriConnect\Concerns\SeatingConcern;
+use FFNLabs\AventriConnect\Concerns\SelectConcern;
+use FFNLabs\AventriConnect\Concerns\SocialConcern;
+use FFNLabs\AventriConnect\Concerns\SurveyConcern;
 
 class AventriClient
 {
-    use HasSystemMethodConcern;
-    use BaseService;
-
-    use GlobalService;
+    use BaseService, SystemConcern,
+       EnumConcern, HotelConcern, MarketingConcern,
+       PersonConcern, ProgramConcern, RegConcern,
+       SeatingConcern, SelectConcern, SocialConcern,
+       SurveyConcern;
 
     /**
      * Stateful data container

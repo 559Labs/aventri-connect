@@ -38,7 +38,7 @@ $client->listAvailableFunctions();
 | Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Category** | ❌ listCategories | ❌ getCategory | - | - | - | - | - |
-| **Currency** | ❌ listCurrencies | - | - | - | - | - | - |
+| **Currency** | ✅ listCurrencies | - | - | - | - | - | - |
 | **Folders** | ❌ listFolders | - | - | - | - | - | - |
 | **Languages** | ❌ listLanguages | - | - | - | - | - | - |
 | **TaxRegime** | ❌ listTaxRegimes | - | - | - | - | - | - |
@@ -76,15 +76,15 @@ $client->listAvailableFunctions();
 | **Speaker** | ❌ listSpeakers | ❌ getSpeaker | ❌ createSpeaker | - | ❌ updateSpeaker | - | - |
 | **AttendeeInfoResponses** | - | - | - | - | ❌ updateAttendeeInfoResponses | - | - |
 | **AttendeeStatus** | - | - | - | - | ❌ updateAttendeeStatus | - | - |
-| **Contact** | ❌ listContacts | ❌ getContact | ❌ addContact | ❌ deleteContact | ❌ updateContact | - | - |
+| **Contact** | ✅ listContacts | ✅ getContact | ❌ addContact | ❌ deleteContact | ❌ updateContact | - | - |
 | **AttendeeBridge** | - | - | ❌ createAttendeeBridge | - | - | - | - |
-| **ContactQuestion** | ❌ listContactQuestions | ❌ getContactQuestion | - | - | - | - | - |
+| **ContactQuestion** | ✅ listContactQuestions | ❌ getContactQuestion | - | - | - | - | - |
 
 ### ProgramConcern
 
 | Noun | List | Get | Add | Del/Cancel | Update | Search | Clone/Other |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Event** | ❌ listEvents | ❌ getEvent | ❌ createEvent | - | ❌ updateEvent | ❌ searchEvents | ❌ cloneEvent |
+| **Event** | ✅ listEvents | ✅ getEvent | ❌ createEvent | - | ❌ updateEvent | ❌ searchEvents | ❌ cloneEvent |
 | **AgendaResponses** | - | - | - | - | ❌ updateAgendaResponses | - | - |
 | **Location** | ❌ listLocations | - | ❌ createLocation | - | ❌ updateLocation | - | - |
 | **Session** | ❌ listSessions | ❌ getSession | ❌ createSession | - | ❌ updateSession | - | - |
